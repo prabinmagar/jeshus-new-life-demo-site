@@ -1,0 +1,22 @@
+import banner1 from "../assets/images/banner/banner1.jpg";
+import banner2 from "../assets/images/banner/banner2.jpg";
+import banner3 from "../assets/images/banner/banner3.jpg"; 
+import notice1 from "../assets/images/notice1.jpg";
+import notice2 from "../assets/images/notice2.jpg";
+import notice3 from "../assets/images/notice3.jpg";
+import notice4 from "../assets/images/notice4.jpg";
+import gallery1 from "../assets/images/gallery1.jpeg";
+import gallery2 from "../assets/images/gallery2.jpeg";
+import gallery3 from "../assets/images/gallery3.jpeg";
+import gallery4 from "../assets/images/gallery4.jpeg";
+import gallery5 from "../assets/images/gallery5.jpeg";
+import gallery6 from "../assets/images/gallery6.jpeg";
+import ministries from "../assets/images/ministries.jpg";
+import ministry1 from "../assets/images/ministry1.jpg";
+import ministry2 from "../assets/images/ministry2.jpg";
+import ministry3 from "../assets/images/ministry3.jpg";
+import ministry4 from "../assets/images/ministry4.jpg";
+import training from "../assets/images/training.jpg";
+
+const staticImages = {banner1, banner2, banner3, notice1, notice2, notice3, notice4, gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, ministries, ministry1, ministry2, ministry3, ministry4, training };
+export default staticImages;
