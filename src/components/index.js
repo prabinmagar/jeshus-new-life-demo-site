@@ -8,6 +8,7 @@ export { default as Training } from "./common/Training";
 export { default as Branches } from "./common/Branches";
 export { default as Members } from "./common/Members";
 export { default as Notices } from "./common/Notices";
+export { default as About } from "./common/About";
 
 // header
 export { default as Header } from "./header/Header";

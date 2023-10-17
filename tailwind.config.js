@@ -18,8 +18,6 @@ export default withMT({
         cera: ["Cera Pro"]
       },
       screens: {
-        tab: { max: "768px" },
-        mobile: { max: "412px" },
         xs: "420px",
         sm: "576px",
         md: "768px",
@@ -30,7 +28,7 @@ export default withMT({
       boxShadow: {
         shadow1: "0 1px 2px rgba(55,73,87,.1), 0 2px 5px rgba(55,73,87,.15)",
         shadow2: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;",
-        shadow3: "box-shadow: 0 20px 40px 0 rgba(0,0,0,.1);",
+        shadow3: "0 20px 40px 0 rgba(0,0,0,.1);",
         default: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
         normal: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
       },

@@ -1,6 +1,7 @@
 import Title from "./Title";
 import Slider from "react-slick";
 import { CustomNextArrow, CustomPrevArrow } from "../";
+import staticImages from "../../utils/images";
 
 const Articles = () => {
   const settings = {
@@ -10,7 +11,7 @@ const Articles = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 10000,
     responsive: [
       {
@@ -48,23 +49,18 @@ const Articles = () => {
               <div className="relative flex flex-col w-full xl:flex-row rounded-lg text-white bg-clip-border text-gray-700">
                 <div className="relative m-0 xl:w-2/5 shrink-0 overflow-hidden rounded-xl xl:rounded-r-none rounded-b-none xl:rounded-l-xl bg-white bg-clip-border text-gray-700 xl:h-auto h-[320px]">
                   <img
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1471&amp;q=80"
-                    alt="image"
-                    className="h-full w-full object-cover"
+                    src={staticImages.article1} className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6 red-gradient xl:rounded-r-lg rounded-b-lg xl:rounded-l-none">
                   <h6 className="mb-4 block text-base font-semibold uppercase leading-relaxed tracking-normal text-white border-b-[1px] border-white pb-1 antialiased">
-                    visit 2023
+                    Fellowship 2023
                   </h6>
                   <h4 className="mb-2 block text-2xl font-semibold leading-snug tracking-normal antialiased text-white">
-                    New Reunion With The Fellow Partners
+                  The Power of an Invitation
                   </h4>
                   <p className="mb-4 text text-white">
-                    Like so many organizations these days, Autodesk is a company
-                    in transition. It was until recently a traditional boxed
-                    software company selling licenses. Yet its own business
-                    model disruption is only part of the story
+                  “It is our response, it is our urgency to invite people into the family of God.” In this message, Pastor Kirk Graham shares the power of an invitation!
                   </p>
                   <a className="inline-block" href="#">
                     <button
@@ -98,9 +94,8 @@ const Articles = () => {
               <div className="relative flex flex-col w-full xl:flex-row rounded-lg text-white bg-clip-border text-gray-700">
                 <div className="relative m-0 xl:w-2/5 shrink-0 overflow-hidden rounded-xl xl:rounded-r-none rounded-b-none xl:rounded-l-xl bg-white bg-clip-border text-gray-700 xl:h-auto h-[320px]">
                   <img
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1471&amp;q=80"
+                    src={staticImages.article2} className="w-full h-full object-cover"
                     alt="image"
-                    className="h-full w-full object-cover"
                   />
                 </div>
                 <div className="p-6 blue-gradient xl:rounded-r-lg rounded-b-lg xl:rounded-l-none">
@@ -148,9 +143,8 @@ const Articles = () => {
               <div className="relative flex flex-col w-full xl:flex-row rounded-lg text-white bg-clip-border text-gray-700">
                 <div className="relative m-0 xl:w-2/5 shrink-0 overflow-hidden rounded-xl xl:rounded-r-none rounded-b-none xl:rounded-l-xl bg-white bg-clip-border text-gray-700 xl:h-auto h-[320px]">
                   <img
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1471&amp;q=80"
+                    src={staticImages.article3} className="w-full h-full object-cover"
                     alt="image"
-                    className="h-full w-full object-cover"
                   />
                 </div>
                 <div className="p-6 red-gradient xl:rounded-r-lg rounded-b-lg xl:rounded-l-none">
@@ -198,9 +192,8 @@ const Articles = () => {
               <div className="relative flex flex-col w-full xl:flex-row rounded-lg text-white bg-clip-border text-gray-700">
                 <div className="relative m-0 xl:w-2/5 shrink-0 overflow-hidden rounded-xl xl:rounded-r-none rounded-b-none xl:rounded-l-xl bg-white bg-clip-border text-gray-700 xl:h-auto h-[320px]">
                   <img
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1471&amp;q=80"
+                    src={staticImages.article4} className="w-full h-full object-cover"
                     alt="image"
-                    className="h-full w-full object-cover"
                   />
                 </div>
                 <div className="p-6 blue-gradient xl:rounded-r-lg rounded-b-lg xl:rounded-l-none">

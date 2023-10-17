@@ -17,7 +17,7 @@ const Ministries = () => {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quaerat quod voluptatibus explicabo unde repellat corrupti delectus!"
           }
         />
-        <div className="section-content mb-10 grid grid-cols-4 gap-4">
+        <div className="section-content mb-10 grid xl:grid-cols-4 md:grid-cols-2 gap-4">
           <div className="shadow-normal shadow-dark/60">
             <div className="h-[280px] relative rounded-xl overflow-hidden cursor-pointer after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-dark/50 group">
               <img

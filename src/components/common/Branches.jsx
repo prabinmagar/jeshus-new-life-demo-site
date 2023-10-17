@@ -8,7 +8,7 @@ const Branches = () => {
         classes={"text-white"}
           title={"Our branches"}
           description={
-            "Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames."
+            "We are one church with multiple locations"
           }
         />
         <div className="section-content branches-list mb-10 grid xxl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-6">

@@ -1,9 +1,9 @@
 // ### VARIABLES
 $gunmetal: #1b2430;
-$red: #B31901;
-$blue: #246EB9;
-$green: #4CB944;
-$vanilla: #F5EE9E;
+$red: #b31901;
+$blue: #246eb9;
+$green: #4cb944;
+$vanilla: #f5ee9e;
 $dark: #020617;
 $gray: #757575;
 $font-family-cera: "Cera Pro";
@@ -173,34 +173,44 @@ $font-family-inter: "Inter", sans-serif;
 @tailwind components;
 @tailwind utilities;
 
-
-.banner-slider-item{
-  .container{
-    @apply ps-12 min-h-[540px] flex flex-col justify-center items-center;
-  }
-}
-
 // navbar
-.scrolled-navbar{
-  .navbar-brand{
+.scrolled-navbar {
+  .navbar-brand {
     border-color: $red;
-    span{
-      &:first-child{
+    span {
+      &:first-child {
         background-color: $red;
         color: #fff;
       }
-      &:last-child{
+      &:last-child {
         color: $dark;
       }
     }
   }
 
-  .nav-list{
-    li{
-      a{
+  .navbar-open-btn {
+    color: $dark !important;
+  }
+
+  .nav-list {
+    li {
+      a {
         color: $dark;
+
+        @media screen and (max-width: 991.98px){
+          color: $gray;
+        }
       }
     }
   }
 }
 
+body{
+  position: relative;
+}
+// sidebar drawer css fixes
+header{
+  .backdrop-blur-sm{
+    position: fixed;
+  }
+}

@@ -8,11 +8,11 @@ const Ministries = () => {
       <div className="container">
         <Title title={"upcoming events"} description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aperiam labore fuga non, itaque id eaque obcaecati illum odit incidunt."} />
 
-        <div className="section-content grid grid-cols-4 gap-6 mb-10">
-          <div className="notice-card relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-normal font-cera">
-            <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 red-overlay">
+        <div className="section-content grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mb-10">
+          <div className="notice-card relative flex w-full md:max-w-[26rem] mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-normal font-cera">
+            <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 h-[220px] red-overlay">
               <img
-                src={staticImages.notice1}
+                src={staticImages.notice1} className="w-full h-full object-cover"
               />
             </div>
             <div className="px-6 pt-5 pb-5 flex flex-col justify-between flex-1">
@@ -30,7 +30,7 @@ const Ministries = () => {
                 <div className="flex flex-row items-center mt-3 bg-blue/10 rounded-md py-2 px-3 w-full">
                   <div className="inline-flex items-center gap-x-3">
                     <FaMapMarkerAlt />
-                    <p>New Street, Highland Province</p>
+                    <p className="text-sm">House of God, Lalitpur, NP</p>
                   </div>
                 </div>
               </div>
@@ -43,17 +43,17 @@ const Ministries = () => {
             </div>
           </div>
 
-          <div className="notice-card relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-normal font-cera">
-            <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 red-overlay">
+          <div className="notice-card relative flex w-full md:max-w-[26rem] mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-normal font-cera">
+            <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 h-[220px] red-overlay">
               <img
-                src={staticImages.notice2}
+                src={staticImages.notice2} className="w-full h-full object-cover"
               />
             </div>
             <div className="px-6 pt-5 pb-5 flex flex-col justify-between flex-1">
               <div className="mb-3 flex items-start flex-col">
                 <div className="flex flex-col">
                   <div className="w-full text-2xl leading-8 text-gray-200 font-bold mb-3">
-                    New Location Visit 2023
+                  Christian Hymns Seminar
                   </div>
                   <div className="flex-auto text-gray-400 my-1">
                     <span className="mr-3">December 35, 2023</span>
@@ -64,7 +64,7 @@ const Ministries = () => {
                 <div className="flex flex-row items-center mt-3 bg-blue/10 rounded-md py-2 px-3 w-full">
                   <div className="inline-flex items-center gap-x-3">
                     <FaMapMarkerAlt />
-                    <p>New Street, Highland Province</p>
+                    <p className="text-sm">House of God, Lalitpur, NP</p>
                   </div>
                 </div>
               </div>
@@ -77,17 +77,17 @@ const Ministries = () => {
             </div>
           </div>
 
-          <div className="notice-card relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-normal font-cera">
-            <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 red-overlay">
+          <div className="notice-card relative flex w-full md:max-w-[26rem] mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-normal font-cera">
+            <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 h-[220px] red-overlay">
               <img
-                src={staticImages.notice3}
+                src={staticImages.notice3} className="w-full h-full object-cover"
               />
             </div>
             <div className="px-6 pt-5 pb-5 flex flex-col justify-between flex-1">
               <div className="mb-3 flex items-start flex-col">
                 <div className="flex flex-col">
                   <div className="w-full text-2xl leading-8 text-gray-200 font-bold mb-3">
-                    Photo Shoot in the Local tribe village
+                  Bible Study: Book of Romans
                   </div>
                   <div className="flex-auto text-gray-400 my-1">
                     <span className="mr-3">December 35, 2023</span>
@@ -98,7 +98,7 @@ const Ministries = () => {
                 <div className="flex flex-row items-center mt-3 bg-blue/10 rounded-md py-2 px-3 w-full">
                   <div className="inline-flex items-center gap-x-3">
                     <FaMapMarkerAlt />
-                    <p>New Street, Highland Province</p>
+                    <p className="text-sm">House of God, Lalitpur, NP</p>
                   </div>
                 </div>
               </div>
@@ -110,17 +110,17 @@ const Ministries = () => {
               </button>
             </div>
           </div>
-          <div className="notice-card relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-normal font-cera">
-            <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 red-overlay">
+          <div className="notice-card relative flex w-full md:max-w-[26rem] mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-normal font-cera">
+            <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 h-[220px] red-overlay">
               <img
-                src={staticImages.notice4}
+                src={staticImages.notice4} className="w-full h-full object-cover"
               />
             </div>
             <div className="px-6 pt-5 pb-5 flex flex-col justify-between flex-1">
               <div className="mb-3 flex items-start flex-col">
                 <div className="flex flex-col">
                   <div className="w-full text-2xl leading-8 text-gray-200 font-bold mb-3">
-                    Resuming Classes After The Summer Vacation
+                  Elevate Christmas Party
                   </div>
                   <div className="flex-auto text-gray-400 my-1">
                     <span className="mr-3">December 35, 2023</span>
@@ -131,7 +131,7 @@ const Ministries = () => {
                 <div className="flex flex-row items-center mt-3 bg-blue/10 rounded-md py-2 px-3 w-full">
                   <div className="inline-flex items-center gap-x-3">
                     <FaMapMarkerAlt />
-                    <p>New Street, Highland Province</p>
+                    <p className="text-sm">House of God, Lalitpur, NP</p>
                   </div>
                 </div>
               </div>
