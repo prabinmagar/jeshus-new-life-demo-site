@@ -1,4 +1,4 @@
-import { Gallery, Ministries, SectionMinistry, Training } from "../../components";
+import { Branches, Gallery, Members, Ministries, Notices, SectionMinistry, Training } from "../../components";
 import Articles from "../../components/common/Articles";
 
 const Home = () => {
@@ -9,6 +9,9 @@ const Home = () => {
       <Gallery />
       <Articles />
       <Training />
+      <Branches />
+      <Members />
+      <Notices />
     </div>
   );
 };

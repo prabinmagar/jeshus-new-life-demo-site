@@ -17,6 +17,11 @@ import ministry2 from "../assets/images/ministry2.jpg";
 import ministry3 from "../assets/images/ministry3.jpg";
 import ministry4 from "../assets/images/ministry4.jpg";
 import training from "../assets/images/training.jpg";
+import member1 from "../assets/images/member1.jpg";
+import member2 from "../assets/images/member2.jpg";
+import member3 from "../assets/images/member3.jpg";
+import member4 from "../assets/images/member4.jpg";
+import member5 from "../assets/images/member5.jpg";
 
-const staticImages = {banner1, banner2, banner3, notice1, notice2, notice3, notice4, gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, ministries, ministry1, ministry2, ministry3, ministry4, training };
+const staticImages = {banner1, banner2, banner3, notice1, notice2, notice3, notice4, gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, ministries, ministry1, ministry2, ministry3, ministry4, training, member1, member2, member3, member4, member5 };
 export default staticImages;

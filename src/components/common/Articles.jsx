@@ -10,7 +10,7 @@ const Articles = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 10000,
     responsive: [
       {
