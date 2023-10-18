@@ -1,5 +1,9 @@
 .container {
-  @apply max-w-[1400px] py-0 px-4 mx-auto my-0 w-full;
+  // @apply max-w-[1400px] py-0 px-4 mx-auto my-0 w-full;
+  max-width: 1400px!important;
+  padding: 0 16px!important;
+  margin: 0 auto!important;
+  width: 100%!important;
 }
 
 .default-transition {

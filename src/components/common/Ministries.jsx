@@ -8,7 +8,7 @@ const Ministries = () => {
         <Title
           title={"our programmes"}
           description={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quaerat quod voluptatibus explicabo unde repellat corrupti delectus!"
+            "Yeshua New Life is a focused group with a clear mission, serving both the congregation and the wider community."
           }
         />
         <div className="section-content mb-10 grid xl:grid-cols-4 md:grid-cols-2 gap-4">
@@ -21,11 +21,10 @@ const Ministries = () => {
               />
               <div className="absolute bottom-2 left-1/2 text-center bg-white -translate-x-1/2 w-[92%] py-3 px-2">
                 <h3 className="text-xl font-semibold capitalize text-red mb-1">
-                  Worships & Prayer
+                  Children’s Ministry
                 </h3>
                 <p className="text text-gray">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Fugiat, architecto.
+                  Nurturing the faith of the youngest members of our church.
                 </p>
               </div>
             </div>
@@ -40,11 +39,11 @@ const Ministries = () => {
               />
               <div className="absolute bottom-2 left-1/2 text-center bg-white -translate-x-1/2 w-[92%] py-3 px-2">
                 <h3 className="text-xl font-semibold capitalize text-blue mb-1">
-                  Scripture Study
+                  Youth Ministry
                 </h3>
                 <p className="text text-gray">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Fugiat, architecto.
+                  Supportive community where young people can grow in their
+                  faith.
                 </p>
               </div>
             </div>
@@ -59,11 +58,10 @@ const Ministries = () => {
               />
               <div className="absolute bottom-2 left-1/2 text-center bg-white -translate-x-1/2 w-[92%] py-3 px-2">
                 <h3 className="text-xl font-semibold capitalize text-green mb-1">
-                  Conferences & Programmes
+                  Revival Conference & Seminars
                 </h3>
                 <p className="text text-gray">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Fugiat, architecto.
+                  Fostering spiritual connection and growth.
                 </p>
               </div>
             </div>
@@ -78,11 +76,11 @@ const Ministries = () => {
               />
               <div className="absolute bottom-2 left-1/2 text-center bg-white -translate-x-1/2 w-[92%] py-3 px-2">
                 <h3 className="text-xl font-semibold capitalize text-gray mb-1">
-                  Gospel Ministry
+                  Mission and Outreach
                 </h3>
                 <p className="text text-gray">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Fugiat, architecto.
+                  Dedicated to spreading the love of Christ beyond our church
+                  walls.
                 </p>
               </div>
             </div>

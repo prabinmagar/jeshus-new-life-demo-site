@@ -5,11 +5,11 @@ const Members = () => {
   return (
     <section className="py-8">
       <div className="container">
-        <Title title={"our leading members"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, quod!"} />
-        <div className="section-content flex justify-center flex-wrap gap-6">
-          <div className="shadow-normal w-full md:w-[280px] rounded-lg">
+        <Title title={"Yeshua New Life's frontiers"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, quod!"} />
+        <div className="section-content flex justify-center flex-wrap gap-y-6 gap-x-8">
+          <div className="shadow-normal h-full w-full md:w-[315px] rounded-lg">
             <div className="block rounded-lg overflow-hidden bg-white">
-              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[260px]">
+              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[320px]">
                 <img
                   src={staticImages.member1}
                   className="w-full h-full object-cover object-top"
@@ -26,17 +26,17 @@ const Members = () => {
                 </svg>
               </div>
               <div className="px-6 py-2 bg-blue text-white">
-                <h5 className="text-lg font-bold">Mr. Smithson</h5>
+                <h5 className="text-lg font-bold">Paul David Limbu</h5>
                 <p className="mb-4 text-neutral-500 dark:text-neutral-300">
-                Elder of YNL
+                Pastor of YNL
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="shadow-normal w-full md:w-[280px] rounded-lg">
+          <div className="shadow-normal h-full w-full md:w-[315px] rounded-lg">
             <div className="block rounded-lg overflow-hidden bg-white">
-              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[260px]">
+              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[320px]">
                 <img
                   src={staticImages.member2}
                   className="w-full h-full object-cover object-top"
@@ -53,17 +53,17 @@ const Members = () => {
                 </svg>
               </div>
               <div className="px-6 py-2 bg-blue text-white">
-                <h5 className="text-lg font-bold">Luther Smith</h5>
+                <h5 className="text-lg font-bold">Subash Chettri</h5>
                 <p className="mb-4 text-neutral-500 dark:text-neutral-300">
-                Youth Leader of YNL
+                Deacon of YNL
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="shadow-normal w-full md:w-[280px] rounded-lg">
+          <div className="shadow-normal h-full w-full md:w-[315px] rounded-lg">
             <div className="block rounded-lg overflow-hidden bg-white">
-              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[260px]">
+              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[320px]">
                 <img
                   src={staticImages.member3}
                   className="w-full h-full object-cover object-top"
@@ -80,7 +80,7 @@ const Members = () => {
                 </svg>
               </div>
               <div className="px-6 py-2 bg-blue text-white">
-                <h5 className="text-lg font-bold">Luther Smith</h5>
+                <h5 className="text-lg font-bold">Tsiring Rai</h5>
                 <p className="mb-4 text-neutral-500 dark:text-neutral-300">
                 Missionary from YNL
                 </p>
@@ -88,9 +88,9 @@ const Members = () => {
             </div>
           </div>
 
-          <div className="shadow-normal w-full md:w-[280px] rounded-lg">
+          <div className="shadow-normal h-full w-full md:w-[315px] rounded-lg">
             <div className="block rounded-lg overflow-hidden bg-white">
-              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[260px]">
+              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[320px]">
                 <img
                   src={staticImages.member4}
                   className="w-full h-full object-cover object-top"
@@ -107,9 +107,9 @@ const Members = () => {
                 </svg>
               </div>
               <div className="px-6 py-2 bg-blue text-white">
-                <h5 className="text-lg font-bold">Luther Smith</h5>
+                <h5 className="text-lg font-bold">Ramesh Thapa</h5>
                 <p className="mb-4 text-neutral-500 dark:text-neutral-300">
-                Deacon of YNL
+                Youth Leader of YNL
                 </p>
               </div>
             </div>

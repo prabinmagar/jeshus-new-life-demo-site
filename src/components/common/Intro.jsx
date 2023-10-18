@@ -9,28 +9,36 @@ const Intro = () => {
             <div className="p-6 lg:self-center">
               <div>
                 <h2 className="mb-6 text-3xl font-bold">
-                  About Yeshua New Life
+                  Our Vision and Beliefs
                 </h2>
                 <p className="text mb-3 text-justify">
-                  Welcome to Yeshua New Life Church, a vibrant and thriving
-                  Pentecostal congregation nestled in the heart of Nepal. With a
-                  profound commitment to faith and spirituality, our church is a
-                  welcoming haven for believers from all walks of life. Rooted
-                  in the rich tradition of Pentecostalism, we serve as a source
-                  of spiritual growth and community for the diverse population
-                  of Nepal.{" "}
+                  At Yeshua New Life, we aspire to be a dynamic Pentecostal
+                  community where people discover the life-changing power of
+                  Jesus. We're committed to nurturing a strong, inclusive
+                  fellowship that deepens their relationship with God and shares
+                  the message of hope, salvation, and love with the world.
                 </p>
-                <p className="text mb-3 text-justify">
-                  At Yeshua New Life Church, we are dedicated to fostering a
-                  holistic Christian experience, offering an array of
-                  ministries, including worship, prayer, gospel outreach, and a
-                  variety of programs that enrich the lives of our members and
-                  the communities we serve. Our mission is to spread the
-                  teachings of Jesus Christ and nurture a deep and abiding faith
-                  among the faithful in Nepal. Join us on this spiritual
-                  journey, and discover the transformative power of Yeshua in
-                  your life.
-                </p>
+                <h4 className="my-3 font-semibold text-lg">Our Beliefs</h4>
+                <ul className="text">
+                  <li className="mb-3">
+                    <span className="font-semibold">Faith in Jesus Christ</span>: We believe in Jesus as the Son of
+                    God, the way to salvation and eternal life through faith.
+                    John 14:6
+                  </li>
+                  <li className="mb-3">
+                    <span className="font-semibold">The Holy Spirit</span>: We embrace the active presence and work of
+                    the Holy Spirit, empowering believers for service and
+                    spiritual gifts. Acts 1:8
+                  </li>
+                  <li className="mb-3">
+                    <span className="font-semibold">Worship and Praise</span>: We're committed to Spirit-led worship,
+                    celebrating God's goodness, mercy, and grace. Psalm 150:6
+                  </li>
+                  <li className="mb-3">
+                    <span className="font-semibold">Salvation by Grace</span>: Salvation is a gift of God's grace,
+                    received through faith in Jesus Christ. Ephesians 2:8-9
+                  </li>
+                </ul>
               </div>
             </div>
             <div className="p-5 h-[400px] md:h-[500px]">
