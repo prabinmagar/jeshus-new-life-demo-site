@@ -11,8 +11,8 @@ const Articles = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 10000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
@@ -53,11 +53,12 @@ const Articles = () => {
                   />
                 </div>
                 <div className="p-6 red-gradient xl:rounded-r-lg rounded-b-lg xl:rounded-l-none">
-                  <h6 className="mb-4 block text-base font-semibold uppercase leading-relaxed tracking-normal text-white border-b-[1px] border-white pb-1 antialiased">
-                    Fellowship 2023
+                  <h6 className="mb-3 block text-base font-semibold uppercase leading-relaxed tracking-normal text-white border-b-[1px] border-white pb-1 antialiased">
+                    Blog
                   </h6>
+                  <span className="italic text-sm block mb-3">Pastor David Paul Limbu, Sept 30, 2023</span>
                   <h4 className="mb-2 block text-2xl font-semibold leading-snug tracking-normal antialiased text-white">
-                  The Power of an Invitation
+                  The Daily Habit of Reading
                   </h4>
                   <p className="mb-4 text text-white">
                   “It is our response, it is our urgency to invite people into the family of God.” In this message, Pastor Kirk Graham shares the power of an invitation!
@@ -99,11 +100,12 @@ const Articles = () => {
                   />
                 </div>
                 <div className="p-6 blue-gradient xl:rounded-r-lg rounded-b-lg xl:rounded-l-none">
-                  <h6 className="mb-4 block text-base font-semibold uppercase leading-relaxed tracking-normal text-white border-b-[1px] border-white pb-1 antialiased">
-                    visit 2023
+                  <h6 className="mb-3 block text-base font-semibold uppercase leading-relaxed tracking-normal text-white border-b-[1px] border-white pb-1 antialiased">
+                    History
                   </h6>
+                  <span className="italic text-sm block mb-3">Pastor David Paul Limbu, Sept 30, 2023</span>
                   <h4 className="mb-2 block text-2xl font-semibold leading-snug tracking-normal antialiased text-white">
-                    New Reunion With The Fellow Partners
+                    Present Scenario of the Promised Land!
                   </h4>
                   <p className="mb-4 text text-white">
                     Like so many organizations these days, Autodesk is a company
@@ -148,11 +150,12 @@ const Articles = () => {
                   />
                 </div>
                 <div className="p-6 red-gradient xl:rounded-r-lg rounded-b-lg xl:rounded-l-none">
-                  <h6 className="mb-4 block text-base font-semibold uppercase leading-relaxed tracking-normal text-white border-b-[1px] border-white pb-1 antialiased">
-                    visit 2023
+                  <h6 className="mb-3 block text-base font-semibold uppercase leading-relaxed tracking-normal text-white border-b-[1px] border-white pb-1 antialiased">
+                    Study Materials
                   </h6>
+                  <span className="italic text-sm block mb-3">Pastor David Paul Limbu, Sept 30, 2023</span>
                   <h4 className="mb-2 block text-2xl font-semibold leading-snug tracking-normal antialiased text-white">
-                    New Reunion With The Fellow Partners
+                    Most Treasured Commentary & Handbooks
                   </h4>
                   <p className="mb-4 text text-white">
                     Like so many organizations these days, Autodesk is a company
@@ -197,11 +200,12 @@ const Articles = () => {
                   />
                 </div>
                 <div className="p-6 blue-gradient xl:rounded-r-lg rounded-b-lg xl:rounded-l-none">
-                  <h6 className="mb-4 block text-base font-semibold uppercase leading-relaxed tracking-normal text-white border-b-[1px] border-white pb-1 antialiased">
-                    visit 2023
+                  <h6 className="mb-3 block text-base font-semibold uppercase leading-relaxed tracking-normal text-white border-b-[1px] border-white pb-1 antialiased">
+                    Study
                   </h6>
+                  <span className="italic text-sm block mb-3">Pastor David Paul Limbu, Sept 30, 2023</span>
                   <h4 className="mb-2 block text-2xl font-semibold leading-snug tracking-normal antialiased text-white">
-                    New Reunion With The Fellow Partners
+                    Revival Like in the Day of Pentecost
                   </h4>
                   <p className="mb-4 text text-white">
                     Like so many organizations these days, Autodesk is a company
