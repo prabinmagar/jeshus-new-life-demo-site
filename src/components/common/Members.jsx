@@ -5,7 +5,7 @@ const Members = () => {
   return (
     <section className="py-8">
       <div className="container">
-        <Title title={"our pastors & elders"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, quod!"} />
+        <Title title={"our leading members"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, quod!"} />
         <div className="section-content flex justify-center flex-wrap gap-6">
           <div className="shadow-normal w-full md:w-[280px] rounded-lg">
             <div className="block rounded-lg overflow-hidden bg-white">
@@ -26,9 +26,9 @@ const Members = () => {
                 </svg>
               </div>
               <div className="px-6 py-2 bg-blue text-white">
-                <h5 className="text-lg font-bold">David Paul Limbu</h5>
+                <h5 className="text-lg font-bold">Mr. Smithson</h5>
                 <p className="mb-4 text-neutral-500 dark:text-neutral-300">
-                Pastor of the Church
+                Elder of YNL
                 </p>
               </div>
             </div>
@@ -55,7 +55,7 @@ const Members = () => {
               <div className="px-6 py-2 bg-blue text-white">
                 <h5 className="text-lg font-bold">Luther Smith</h5>
                 <p className="mb-4 text-neutral-500 dark:text-neutral-300">
-                Director of the company
+                Youth Leader of YNL
                 </p>
               </div>
             </div>
@@ -82,7 +82,7 @@ const Members = () => {
               <div className="px-6 py-2 bg-blue text-white">
                 <h5 className="text-lg font-bold">Luther Smith</h5>
                 <p className="mb-4 text-neutral-500 dark:text-neutral-300">
-                Director of the company
+                Missionary from YNL
                 </p>
               </div>
             </div>
@@ -109,7 +109,7 @@ const Members = () => {
               <div className="px-6 py-2 bg-blue text-white">
                 <h5 className="text-lg font-bold">Luther Smith</h5>
                 <p className="mb-4 text-neutral-500 dark:text-neutral-300">
-                Director of the company
+                Deacon of YNL
                 </p>
               </div>
             </div>

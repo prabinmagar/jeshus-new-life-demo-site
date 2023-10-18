@@ -3,8 +3,18 @@ import { FaEnvelope, FaFacebookSquare } from "react-icons/fa";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 import useNavbarBackground from "../../hooks/useNavbarBackground";
 import { BiMenu } from "react-icons/bi";
-import { Drawer, IconButton } from "@material-tailwind/react";
+import {
+  Button,
+  Drawer,
+  IconButton,
+  Menu,
+  MenuHandler,
+  MenuItem,
+  MenuList,
+  Typography,
+} from "@material-tailwind/react";
 import { useState } from "react";
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const Navbar = () => {
   // ### HEADER CHANGE ON SCROLL
@@ -13,7 +23,9 @@ const Navbar = () => {
   const navbarStyle = hasBackground
     ? "bg-white shadow-normal scrolled-navbar"
     : "bg-transparent";
+
   const [openRight, setOpenRight] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
   const openDrawerRight = () => setOpenRight(true);
   const closeDrawerRight = () => setOpenRight(false);
 
@@ -180,12 +192,49 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to=""
-                  className="text-white uppercase py-1 px-3 hover:opacity-80 font-inter tracking-[0.5px] font-medium"
-                >
-                  branches
-                </Link>
+                <Menu open={openMenu} handler={setOpenMenu} allowHover>
+                  <MenuHandler>
+                    <Link
+                      to=""
+                      className="text-white uppercase py-1 px-3 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2"
+                    >
+                      <span>branches</span>
+                      <ChevronDownIcon
+                        strokeWidth={2.5}
+                        className={`h-3.5 w-3.5 transition-transform ${
+                          openMenu ? "rotate-180" : ""
+                        }`}
+                      />
+                    </Link>
+                  </MenuHandler>
+                  <MenuList className="hidden w-[30rem] grid-cols-7  lg:grid px-1">
+                    <ul className="col-span-7 flex w-full flex-col gap-1 py-2">
+                      <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0.5">
+                        <div className="border-[1px] border-gray/20 rounded-lg px-3 py-2">
+                          <h4 className="text-dark text-lg font-medium">
+                            Grace Pentecostal College
+                          </h4>
+                          <p className="text">Pokhara, Nepal</p>
+                          <p className="text">gracebaptist.com</p>
+                        </div>
+                      </MenuItem>
+                      <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0.5">
+                        <div className="border-[1px] border-gray/20 rounded-lg px-3 py-2"><h4 className="text-dark text-lg font-medium">
+                          New Faith Pentecostal Church
+                        </h4>
+                        <p className="text">Suryabinayak, Bhaktapur</p>
+                        <p className="text">Phone no. 985586609</p></div>
+                      </MenuItem>
+                      <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0.5">
+                        <div className="border-[1px] border-gray/20 rounded-lg px-2 py-2"><h4 className="text-dark text-lg font-medium">
+                          Apostle House of Prayer
+                        </h4>
+                        <p className="text">New Your, United States</p>
+                        <p className="text">apostlehouse@mail.us</p></div>
+                      </MenuItem>
+                    </ul>
+                  </MenuList>
+                </Menu>
               </li>
             </ul>
           </div>
