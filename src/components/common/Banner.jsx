@@ -6,8 +6,9 @@ import { bannerclip } from "../../utils/videos";
 
 const Banner = () => {
   return (
-    <div className="min-h-screen flex">
-      <div className="banner-slider-item relative">
+    <div className="min-h-screen flex relative">
+      <div className="black-gradient h-full absolute top-0 left-0 w-full z-50"></div>
+      <div className="banner-slider-item flex-1 w-full relative">
         <video autoPlay muted loop className="w-full h-full object-cover">
           <source src={bannerclip} type="video/mp4" />
           {/* Add additional source elements for different formats if needed */}
@@ -15,8 +16,8 @@ const Banner = () => {
           {/* <source src={bannerclipOgg} type="video/ogg" /> */}
           Your browser does not support the video tag.
         </video>
-        <div className="text-white flex items-center justify-center pt-[80px] absolute top-0 bottom-0 left-5 right-5">
-          <div className="container py-12">
+        <div className="text-white flex items-center justify-center pt-[80px] absolute top-0 bottom-0 left-0 right-0 z-50">
+          <div className="container py-12 bg-black/20">
             <h1 className="uppercase text-center xxl:text-7xl lg:6xl text-5xl font-semibold drop-shadow-lg">
               Welcome to Our{" "}
             </h1>
