@@ -6,7 +6,7 @@ const Intro = () => {
       <div className="container">
         <div className="block rounded-lg bg-white shadow-normal">
           <div className="grid lg:grid-cols-[auto_400px] xl:grid-cols-[auto_600px] xxl:grid-cols-[auto_720px]">
-            <div className="p-6">
+            <div className="p-6 lg:self-center">
               <div>
                 <h2 className="mb-6 text-3xl font-bold">
                   About Yeshua New Life
