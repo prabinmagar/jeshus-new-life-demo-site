@@ -29,6 +29,7 @@ import article1 from "../assets/images/article1.jpg";
 import article2 from "../assets/images/article2.jpg";
 import article3 from "../assets/images/article3.jpg";
 import article4 from "../assets/images/article4.jpg";
+import intro from "../assets/images/intro.jpg";
 
-const staticImages = {banner1, banner2, banner3, notice1, notice2, notice3, notice4, gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, ministries, ministry1, ministry2, ministry3, ministry4, training, member1, member2, member3, member4, member5, notices, about_banner, about, article1, article2, article3, article4 };
+const staticImages = {banner1, banner2, banner3, notice1, notice2, notice3, notice4, gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, ministries, ministry1, ministry2, ministry3, ministry4, training, member1, member2, member3, member4, member5, notices, about_banner, about, article1, article2, article3, article4, intro };
 export default staticImages;
