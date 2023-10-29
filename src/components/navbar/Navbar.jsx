@@ -21,12 +21,14 @@ const Navbar = () => {
   const scrollThreshold = 100;
   const hasBackground = useNavbarBackground(scrollThreshold);
   const navbarStyle = hasBackground
-    ? "bg-white shadow-normal scrolled-navbar"
-    : "bg-transparent";
+    ? "bg-white shadow-normal scrolled-navbar h-[72px]"
+    : "bg-transparent h-[84px]";
 
   const [openRight, setOpenRight] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
   const [openMenu2, setOpenMenu2] = useState(false);
+  const [openMenu3, setOpenMenu3] = useState(false);
+  const [openMenu4, setOpenMenu4] = useState(false);
   const openDrawerRight = () => setOpenRight(true);
   const closeDrawerRight = () => setOpenRight(false);
 
@@ -141,7 +143,7 @@ const Navbar = () => {
       </Drawer>
 
       <nav
-        className={`${navbarStyle} fixed top-0 left-0 right-0 z-[999] h-[84px] flex items-center`}
+        className={`${navbarStyle} fixed top-0 left-0 right-0 z-[999] flex items-center`}
       >
         <div className="container flex items-center justify-between">
           <Link
@@ -159,13 +161,66 @@ const Navbar = () => {
             <BiMenu size={36} />
           </button>
           <div>
-            <ul className="items-center xxl:gap-x-3 nav-list hidden lg:flex">
+            <ul className="items-center gap-x-3 nav-list hidden lg:flex">
               <li>
-                <Menu open={openMenu} handler={setOpenMenu} allowHover>
+                <Menu
+                  placement="top-end"
+                  open={openMenu3}
+                  handler={setOpenMenu3}
+                  allowHover
+                >
                   <MenuHandler>
                     <Link
                       to=""
-                      className="text-white uppercase py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2"
+                      className="text-white capitalize py-1 xl:mx-3 mx-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2"
+                    >
+                      <span>About</span>
+                      <ChevronDownIcon
+                        strokeWidth={2.5}
+                        className={`h-3.5 w-3.5 transition-transform ${
+                          openMenu3 ? "rotate-180" : ""
+                        }`}
+                      />
+                    </Link>
+                  </MenuHandler>
+                  <MenuList className="hidden min-w-[auto] w-12rem grid-cols-7 lg:grid p-0 m-0  border-none blue-gradient">
+                    <ul className="col-span-7 flex w-full flex-col gap-1 py-2 outline-none border-0">
+                      <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0">
+                        <div className="px-1 py-1 border-b-[1px] border-gray/10">
+                          <h4 className="text-white text-sm font-medium">
+                            About us
+                          </h4>
+                        </div>
+                      </MenuItem>
+                      <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0">
+                        <div className="px-1 py-1 border-b-[1px] border-gray/10">
+                          <h4 className="text-white text-sm font-medium">
+                            Leadership
+                          </h4>
+                        </div>
+                      </MenuItem>
+                      <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0">
+                        <div className="px-1 py-1 border-b-[1px] border-gray/10">
+                          <h4 className="text-white text-sm font-medium">
+                            Our Ministries
+                          </h4>
+                        </div>
+                      </MenuItem>
+                    </ul>
+                  </MenuList>
+                </Menu>
+              </li>
+              <li>
+                <Menu
+                  placement="top-end"
+                  open={openMenu}
+                  handler={setOpenMenu}
+                  allowHover
+                >
+                  <MenuHandler>
+                    <Link
+                      to=""
+                      className="text-white capitalize py-1 xl:mx-3 mx-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2"
                     >
                       <span>Locations</span>
                       <ChevronDownIcon
@@ -176,45 +231,42 @@ const Navbar = () => {
                       />
                     </Link>
                   </MenuHandler>
-                  <MenuList className="hidden w-[16rem] grid-cols-7 lg:grid p-0 m-0  border-none blue-gradient">
+                  <MenuList className="hidden w-[14rem] grid-cols-7 lg:grid p-0 m-0  border-none blue-gradient">
                     <ul className="col-span-7 flex w-full flex-col gap-1 py-2 outline-none border-0">
                       <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0">
-                        <div className="px-3 py-2 border-b-[1px] border-gray/10">
-                          <h4 className="text-white text-base font-medium">
-                            Yeshua New Life - KTM
+                        <div className="px-1 py-1 border-b-[1px] border-gray/10">
+                          <h4 className="text-white text-sm font-medium">
+                            Yeshua New Life , Lamachour Marg, Jhamsikhel,
+                            Lalitpur
                           </h4>
-                          <p className="text text-[15px] text-white">
-                            Jhapa, Nepal
-                          </p>
-                          <p className="text text-[15px] text-white">
-                            yeshuanewlife.com
-                          </p>
                         </div>
                       </MenuItem>
                       <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0">
-                        <div className="px-3 py-2 border-b-[1px] border-gray/10">
-                          <h4 className="text-white text-base font-medium">
-                            Yeshua New Life - JP
+                        <div className="px-1 py-1 border-b-[1px] border-gray/10">
+                          <h4 className="text-white text-sm font-medium">
+                            Newlife Apostolic Church, Damak, Jhapa
                           </h4>
-                          <p className="text text-[15px] text-white">
-                            Jhapa, Nepal
-                          </p>
-                          <p className="text text-[15px] text-white">
-                            yeshuanewlife.com
-                          </p>
                         </div>
                       </MenuItem>
                       <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0">
-                        <div className="px-2 py-2 border-b-[1px] border-gray/10">
-                          <h4 className="text-white text-base font-medium">
-                            Yeshua New Life - POK
+                        <div className="px-1 py-1 border-b-[1px] border-gray/10">
+                          <h4 className="text-white text-sm font-medium">
+                            Newlife Apostolic Church, Surunga, Jhapa
                           </h4>
-                          <p className="text text-[15px] text-white">
-                            Pokhara, Nepal
-                          </p>
-                          <p className="text text-[15px] text-white">
-                            yeshuanewlife.com
-                          </p>
+                        </div>
+                      </MenuItem>
+                      <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0">
+                        <div className="px-1 py-1 border-b-[1px] border-gray/10">
+                          <h4 className="text-white text-sm font-medium">
+                            Newlife Apostolic Church, Birtamod, Jhapa
+                          </h4>
+                        </div>
+                      </MenuItem>
+                      <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0">
+                        <div className="px-1 py-1 border-b-[1px] border-gray/10">
+                          <h4 className="text-white text-sm font-medium">
+                            Newlife Apostolic Church, Urlabari, Morang
+                          </h4>
                         </div>
                       </MenuItem>
                     </ul>
@@ -222,13 +274,18 @@ const Navbar = () => {
                 </Menu>
               </li>
               <li>
-                <Menu open={openMenu2} handler={setOpenMenu2} allowHover>
+                <Menu
+                  placement="top-end"
+                  open={openMenu2}
+                  handler={setOpenMenu2}
+                  allowHover
+                >
                   <MenuHandler>
                     <Link
                       to=""
-                      className="text-white uppercase py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2"
+                      className="text-white capitalize py-1 xl:mx-3 mx-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2"
                     >
-                      <span>Ministries</span>
+                      <span>Services</span>
                       <ChevronDownIcon
                         strokeWidth={2.5}
                         className={`h-3.5 w-3.5 transition-transform ${
@@ -237,26 +294,81 @@ const Navbar = () => {
                       />
                     </Link>
                   </MenuHandler>
-                  <MenuList className="hidden w-[16rem] grid-cols-7 lg:grid p-0 m-0  border-none blue-gradient">
+                  <MenuList className="hidden min-w-[auto] w-12rem grid-cols-7 lg:grid p-0 m-0  border-none blue-gradient">
                     <ul className="col-span-7 flex w-full flex-col gap-1 py-2 outline-none border-0">
                       <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0">
-                        <div className="px-3 py-2 border-b-[1px] border-gray/10">
-                          <h4 className="text-white text-base font-medium">
-                            Yeshua New Life - KTM
+                        <div className="px-1 py-1 border-b-[1px] border-gray/10">
+                          <h4 className="text-white text-sm font-medium">
+                          Worship Service
                           </h4>
                         </div>
                       </MenuItem>
                       <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0">
-                        <div className="px-3 py-2 border-b-[1px] border-gray/10">
-                          <h4 className="text-white text-base font-medium">
-                            Yeshua New Life - JP
+                        <div className="px-1 py-1 border-b-[1px] border-gray/10">
+                          <h4 className="text-white text-sm font-medium">
+                          Events
                           </h4>
                         </div>
                       </MenuItem>
                       <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0">
-                        <div className="px-2 py-2 border-b-[1px] border-gray/10">
-                          <h4 className="text-white text-base font-medium">
-                            Yeshua New Life - POK
+                        <div className="px-1 py-1 border-b-[1px] border-gray/10">
+                          <h4 className="text-white text-sm font-medium">
+                          Prayer Request
+                          </h4>
+                        </div>
+                      </MenuItem>
+                    </ul>
+                  </MenuList>
+                </Menu>
+              </li>
+              <li>
+                <Menu
+                  placement="top-end"
+                  open={openMenu4}
+                  handler={setOpenMenu4}
+                  allowHover
+                >
+                  <MenuHandler>
+                    <Link
+                      to=""
+                      className="text-white capitalize py-1 xl:mx-3 mx-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2"
+                    >
+                      <span>Media</span>
+                      <ChevronDownIcon
+                        strokeWidth={2.5}
+                        className={`h-3.5 w-3.5 transition-transform ${
+                          openMenu4 ? "rotate-180" : ""
+                        }`}
+                      />
+                    </Link>
+                  </MenuHandler>
+                  <MenuList className="hidden min-w-[auto] w-12rem grid-cols-7 lg:grid p-0 m-0  border-none blue-gradient">
+                    <ul className="col-span-7 flex w-full flex-col gap-1 py-2 outline-none border-0">
+                      <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0">
+                        <div className="px-1 py-1 border-b-[1px] border-gray/10">
+                          <h4 className="text-white text-sm font-medium">
+                          Photos
+                          </h4>
+                        </div>
+                      </MenuItem>
+                      <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0">
+                        <div className="px-1 py-1 border-b-[1px] border-gray/10">
+                          <h4 className="text-white text-sm font-medium">
+                          Sermons
+                          </h4>
+                        </div>
+                      </MenuItem>
+                      <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0">
+                        <div className="px-1 py-1 border-b-[1px] border-gray/10">
+                          <h4 className="text-white text-sm font-medium">
+                          Testimonials
+                          </h4>
+                        </div>
+                      </MenuItem>
+                      <MenuItem className="cursor-default w-full hover:bg-transparent active:bg-transparent py-0">
+                        <div className="px-1 py-1 border-b-[1px] border-gray/10">
+                          <h4 className="text-white text-sm font-medium">
+                          Watch Live
                           </h4>
                         </div>
                       </MenuItem>
@@ -267,33 +379,17 @@ const Navbar = () => {
               <li>
                 <Link
                   to=""
-                  className="text-white uppercase py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium"
-                >
-                  Missionary
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to=""
-                  className="text-white uppercase py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium"
-                >
-                  Events
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to=""
-                  className="text-white uppercase py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium"
-                >
-                  Testimonials
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to=""
-                  className="text-white uppercase py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium"
+                  className="text-white capitalize py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium"
                 >
                   Articles
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to=""
+                  className="text-white capitalize py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium"
+                >
+                  Donate
                 </Link>
               </li>
             </ul>

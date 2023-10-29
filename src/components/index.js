@@ -17,7 +17,7 @@ export { default as Header } from "./header/Header";
 export { default as Footer } from "./footer/Footer";
 // navbar
 export { default as Navbar } from "./navbar/Navbar";
-export { default as SectionMinistry} from "./common/SectionMinistry";
+export { default as Events} from "./common/Events";
 
 // layout
 export { default as BaseLayout } from "./layout/BaseLayout";

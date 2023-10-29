@@ -1,9 +1,9 @@
 .container {
   // @apply max-w-[1400px] py-0 px-4 mx-auto my-0 w-full;
-  max-width: 1400px!important;
-  padding: 0 16px!important;
-  margin: 0 auto!important;
-  width: 100%!important;
+  max-width: 1400px !important;
+  padding: 0 16px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
 }
 
 .default-transition {
@@ -11,10 +11,10 @@
 }
 
 .btn {
-  @apply shadow-normal text-center inline-flex items-center justify-center uppercase font-medium text-base tracking-[0.5px] rounded-full px-3 py-1 text-white;
+  @apply shadow-normal text-center inline-flex items-center justify-center uppercase font-medium text-base tracking-[0.5px] rounded-full px-6 py-1 text-white;
 }
 .btn-lg {
-  @apply h-[54px] min-w-[180px] text-lg;
+  @apply h-[52px] min-w-[180px] text-lg;
 }
 .text {
   @apply text-base text-gray leading-relaxed;
@@ -53,4 +53,33 @@
     rgba(111, 16, 1, 1) 0%,
     rgba(179, 25, 1, 1) 100%
   );
+}
+
+.green-gradient {
+  background: rgb(76, 185, 68);
+  background: linear-gradient(
+    90deg,
+    rgba(56, 135, 50, 1) 0%,
+    rgba(76, 185, 68, 1) 100%
+  );
+}
+
+.vanilla-gradient {
+  background: rgb(207, 193, 38);
+  background: linear-gradient(
+    90deg,
+    rgb(207, 193, 38) 0%,
+    rgb(247, 234, 88) 100%
+  );
+}
+
+// button
+.btn-gradient {
+  @extend .red-gradient;
+  @apply rounded-full h-[40px] px-4 min-w-[120px] flex items-center justify-center text-center;
+}
+
+
+.text-np{
+  @apply leading-7;
 }

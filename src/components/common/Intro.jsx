@@ -1,12 +1,15 @@
 import staticImages from "../../utils/images";
+import { FaBible } from "react-icons/fa";
+import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
+import { BsBookmarkStarFill } from "react-icons/bs";
 
 const Intro = () => {
   return (
     <section className="py-8">
       <div className="container">
         <div className="block rounded-lg bg-white shadow-normal">
-          <div className="grid lg:grid-cols-[auto_400px] xl:grid-cols-[auto_600px] xxl:grid-cols-[auto_720px]">
-            <div className="p-6 lg:self-center">
+          <div className="grid items-center lg:grid-cols-[auto_400px] xl:grid-cols-[auto_600px]">
+            <div className="p-8 lg:self-center">
               <div>
                 <h2 className="mb-6 text-3xl font-bold">
                   Our Vision and Beliefs
@@ -18,34 +21,71 @@ const Intro = () => {
                   fellowship that deepens their relationship with God and shares
                   the message of hope, salvation, and love with the world.
                 </p>
-                <h4 className="my-3 font-semibold text-lg">Our Beliefs</h4>
-                <ul className="text">
-                  <li className="mb-3">
-                    <span className="font-semibold">Faith in Jesus Christ</span>: We believe in Jesus as the Son of
-                    God, the way to salvation and eternal life through faith.
-                    John 14:6
+                <h4 className="mb-3 mt-5 font-semibold text-2xl">Our Beliefs</h4>
+                <ul className="text grid sm:grid-cols-2 sm:gap-x-4 md:gap-x-6 items-stretch">
+                  <li className="mb-3 rounded-lg overflow-hidden">
+                    <div className="font-semibold blue-gradient text-white py-2 px-3 flex items-center gap-x-2 ">
+                      <BsBookmarkStarFill /> <span>Faith in Jesus Christ</span>
+                    </div>
+                    <p className="p-3 bg-blue-gray-50/20 h-full">
+                      We believe in Jesus as the Son of God, the way to
+                      salvation and eternal life through faith. John 14:6
+                    </p>
                   </li>
-                  <li className="mb-3">
-                    <span className="font-semibold">The Holy Spirit</span>: We embrace the active presence and work of
-                    the Holy Spirit, empowering believers for service and
-                    spiritual gifts. Acts 1:8
+                  <li className="mb-3 rounded-lg overflow-hidden">
+                    <div className="font-semibold red-gradient text-white py-2 px-3 flex items-center gap-x-2">
+                      <BsBookmarkStarFill /> <span>The Holy Spirit</span>
+                    </div>
+                    <p className="p-3 bg-blue-gray-50/20 h-full">
+                      We embrace the active presence and work of the Holy
+                      Spirit, empowering believers for service and spiritual
+                      gifts. Acts 1:8
+                    </p>
                   </li>
-                  <li className="mb-3">
-                    <span className="font-semibold">Worship and Praise</span>: We're committed to Spirit-led worship,
-                    celebrating God's goodness, mercy, and grace. Psalm 150:6
+                  <li className="mb-3 rounded-lg overflow-hidden">
+                    <div className="font-semibold green-gradient text-white py-2 px-3 flex items-center gap-x-2">
+                      <BsBookmarkStarFill /> <span>Worship and Praise</span>
+                    </div>
+                    <p className="p-3 bg-blue-gray-50/20 h-full">
+                      We're committed to Spirit-led worship, celebrating God's
+                      goodness, mercy, and grace. Psalm 150:6
+                    </p>
                   </li>
-                  <li className="mb-3">
-                    <span className="font-semibold">Salvation by Grace</span>: Salvation is a gift of God's grace,
-                    received through faith in Jesus Christ. Ephesians 2:8-9
+                  <li className="mb-3 rounded-lg overflow-hidden">
+                    <div className="font-semibold vanilla-gradient text-white py-2 px-3 flex items-center gap-x-2">
+                      <BsBookmarkStarFill /> <span>Salvation by Grace</span>
+                    </div>
+                    <p className="p-3 bg-blue-gray-50/20 h-full">
+                      Salvation is a gift of God's grace, received through faith
+                      in Jesus Christ. Ephesians 2:8-9
+                    </p>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="p-5 h-[400px] md:h-[500px]">
+            <div className="p-5 h-[400px] md:h-[500px] relative">
               <img
                 src={staticImages.intro}
                 className="w-full h-full object-cover rounded-lg"
               />
+              <div className="text mb-5 text-justify bg-blue-gray-50 rounded px-5 py-4 border-[1px] border-blue-gray-50 absolute left-0 bottom-5 right-0 mx-10">
+                <span className="inline-block me-1 text-dark">
+                  <BiSolidQuoteAltLeft />
+                </span>
+                <span className="italic text-dark font-normal opacity-90">
+                  Yet a time is coming and has now come when the true worshipers
+                  will worship the Father in the Spirit and in truth, for they
+                  are the kind of worshipers the Father seeks. God is spirit,
+                  and his worshipers must worship in the Spirit and in truth.
+                </span>
+                <span className="inline-block ms-1 text-dark">
+                  <BiSolidQuoteAltRight />
+                </span>
+                <div className="flex items-center gap-x-2 font-semibold justify-end">
+                  <FaBible className="text-red" />{" "}
+                  <span className="text-red">John 4:23-24</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

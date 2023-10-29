@@ -1,4 +1,4 @@
-import { About, Branches, Gallery, Intro, Members, Ministries, Notices, SectionMinistry, Training } from "../../components";
+import { About, Branches, Events, Gallery, Intro, Members, Ministries, Notices, Training } from "../../components";
 import Articles from "../../components/common/Articles";
 
 const Home = () => {
@@ -6,7 +6,7 @@ const Home = () => {
     <div>
       <Intro />
       <About />
-      <SectionMinistry />
+      <Events />
       <Ministries />
       <Gallery />
       <Articles />
