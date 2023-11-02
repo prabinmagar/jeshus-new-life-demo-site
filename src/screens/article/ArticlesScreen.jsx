@@ -67,11 +67,10 @@ const ArticlesScreen = () => {
                           </span>
                         </div>
                       </div>
-                      {/* <span
-                        className="px-2 py-1 font-normal text-[13px] text-dark/70"
-                      >
-                        History & Archaeology
-                      </span> */}
+                      <Button className="bg-green py-1.5 px-2.5 rounded inline-flex gap-x-2 items-center">
+                        {" "}
+                        <FaShareAlt /> Share
+                      </Button>
                     </div>
                     <div className="mt-2">
                       <Link
@@ -542,34 +541,65 @@ const ArticlesScreen = () => {
               <h1 className="mb-4 text-xl font-bold text-gray-700">
                 Recent Post
               </h1>
-              <div className="flex flex-col p-6 mx-auto bg-white rounded-lg shadow-md">
-                <div>
-                  <span className="text-sm font-medium inline-flex items-center gap-x-2 px-2.5 py-1 bg-blue/10 text-blue rounded">
-                    <BsBookHalf />
-                    <span>Theoritical Studies</span>
-                  </span>
-                </div>
-                <div className="mt-2">
-                  <a
-                    href="#"
-                    className="text-lg font-medium text-gray-700 hover:underline"
-                  >
-                    The New Age Theory impact on the socio-cultural life of
-                    today.
-                  </a>
-                </div>
-                <div className="flex items-center justify-between mt-4 flex-wrap gap-y-4">
-                  <div className="flex items-center">
-                    <img
-                      src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
-                      alt="avatar"
-                      className="object-cover w-8 h-8 rounded-full"
-                    />
-                    <a href="#" className="mx-3 text-sm text hover:underline">
-                      Alex John
+              <div className="grid gap-4">
+                <div className="flex w-full flex-col p-6 mx-auto bg-white rounded-lg shadow-md">
+                  <div>
+                    <span className="text-sm font-medium inline-flex items-center gap-x-2 px-2.5 py-1 bg-blue/10 text-blue rounded">
+                      <BsBookHalf />
+                      <span>Theoritical Studies</span>
+                    </span>
+                  </div>
+                  <div className="mt-2">
+                    <a
+                      href="#"
+                      className="text-base font-semibold text-gray-700 hover:underline"
+                    >
+                      यी ७ खाने कुरालाई कहिल्यै फ्रिजमा नराख्नुस्
                     </a>
                   </div>
-                  <span className="text-sm text">Jun 1, 2020</span>
+                  <div className="flex items-center justify-between mt-4 flex-wrap gap-y-4">
+                    <div className="flex items-center">
+                      <img
+                        src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
+                        alt="avatar"
+                        className="object-cover w-8 h-8 rounded-full"
+                      />
+                      <a href="#" className="mx-3 text-sm text hover:underline">
+                        Alex John
+                      </a>
+                    </div>
+                    <span className="text-sm text">Jun 1, 2020</span>
+                  </div>
+                </div>
+
+                <div className="flex w-full flex-col p-6 mx-auto bg-white rounded-lg shadow-md">
+                  <div>
+                    <span className="text-sm font-medium inline-flex items-center gap-x-2 px-2.5 py-1 bg-blue/10 text-blue rounded">
+                      <BsBookHalf />
+                      <span>Theoritical Studies</span>
+                    </span>
+                  </div>
+                  <div className="mt-2">
+                    <a
+                      href="#"
+                      className="text-base font-semibold text-gray-700 hover:underline"
+                    >
+                      एमबीबीएस अध्ययनका लागि राक्सिराङ गाउँपालिकाले अनुदान दिने
+                    </a>
+                  </div>
+                  <div className="flex items-center justify-between mt-4 flex-wrap gap-y-4">
+                    <div className="flex items-center">
+                      <img
+                        src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
+                        alt="avatar"
+                        className="object-cover w-8 h-8 rounded-full"
+                      />
+                      <a href="#" className="mx-3 text-sm text hover:underline">
+                        Alex John
+                      </a>
+                    </div>
+                    <span className="text-sm text">Jun 1, 2020</span>
+                  </div>
                 </div>
               </div>
             </div>
