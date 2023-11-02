@@ -14,8 +14,11 @@ import {
   BsFillEyeFill,
 } from "react-icons/bs";
 import { FaShareAlt } from "react-icons/fa";
+import { useEffect } from "react";
+import { scrollToTop } from "../../utils/scrollToTop";
 
 const ArticlesScreen = () => {
+  useEffect(() => scrollToTop(), []);
   return (
     <main className="content-wrapper">
       <div className="pg-article py-8">

@@ -1,7 +1,8 @@
-import { BsBookFill, BsEyeFill } from "react-icons/bs";
+import { BsBookFill } from "react-icons/bs";
 import Title from "./Title";
-import { AiFillEye, AiFillHeart } from "react-icons/ai";
+import { AiFillHeart } from "react-icons/ai";
 import staticImages from "../../utils/images";
+import { Link } from "react-router-dom";
 
 const Articles = () => {
   return (
@@ -348,26 +349,34 @@ const Articles = () => {
                 सञ्चारको पहुँच पुग्न नसकेको एउटा गाउँ
               </h3>
               <div className="my-5">
-                <p className="text-base">
+                <p className="text-base text text-white">
                   स्याङ्जा- सूचना एवम् प्रबिधिले निकै फड्को मारेको पाचौँ
                   जेनेरेसनको अवस्थामा आईपुगेको सञ्चार जगत् कुनै ठाउँ यस्ता पनि
                   छन् जहाँ सञ्चारबिहिन बन्न पुगेका छन् । त्यसैको उदाहरणको रुपमा
                   रहेको छ, स्याङजाको ...
                 </p>
               </div>
-              <div className="text-sm leading-4 text-white flex items-center gap-x-3 pt-3">
-                <div className="flex-shrink-0 flex">
-                  <img
-                    className="h-10 w-10 border-2 object-cover border-white rounded-full"
-                    src={staticImages.member1}
-                  />
+              <div className="flex items-end justify-between gap-x-3 flex-wrap mt-2">
+                <div className="text-sm leading-4 text-white flex items-center gap-x-3">
+                  <div className="flex-shrink-0 flex">
+                    <img
+                      className="h-10 w-10 border-2 object-cover border-white rounded-full"
+                      src={staticImages.member1}
+                    />
+                  </div>
+                  <div className="flex flex-col gap-y-1">
+                    <span className="italic font-semibold">
+                      डेविङ पावल लिम्बु
+                    </span>
+                    <span className="text-[13px]">Jan 4, 2023</span>
+                  </div>
                 </div>
-                <div className="flex flex-col gap-y-1">
-                  <span className="italic font-semibold">
-                    डेविङ पावल लिम्बु
-                  </span>
-                  <span className="text-[13px]">Jan 4, 2023</span>
-                </div>
+                <Link
+                  to="/article"
+                  className="btn capitalize bg-transparent text-white border-[1px] border-white hover:bg-white hover:text-dark py-1 px-4"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
           </div>
@@ -400,26 +409,34 @@ const Articles = () => {
                 सञ्चारको पहुँच पुग्न नसकेको एउटा गाउँ
               </h3>
               <div className="my-5">
-                <p className="text-base">
+                <p className="text-base text text-white">
                   स्याङ्जा- सूचना एवम् प्रबिधिले निकै फड्को मारेको पाचौँ
                   जेनेरेसनको अवस्थामा आईपुगेको सञ्चार जगत् कुनै ठाउँ यस्ता पनि
                   छन् जहाँ सञ्चारबिहिन बन्न पुगेका छन् । त्यसैको उदाहरणको रुपमा
                   रहेको छ, स्याङजाको ...
                 </p>
               </div>
-              <div className="text-sm leading-4 text-white flex items-center gap-x-3 pt-3">
-                <div className="flex-shrink-0 flex">
-                  <img
-                    className="h-10 w-10 border-2 object-cover border-white rounded-full"
-                    src={staticImages.member2}
-                  />
+              <div className="flex items-end justify-between gap-x-3 flex-wrap mt-2">
+                <div className="text-sm leading-4 text-white flex items-center gap-x-3">
+                  <div className="flex-shrink-0 flex">
+                    <img
+                      className="h-10 w-10 border-2 object-cover border-white rounded-full"
+                      src={staticImages.member1}
+                    />
+                  </div>
+                  <div className="flex flex-col gap-y-1">
+                    <span className="italic font-semibold">
+                      डेविङ पावल लिम्बु
+                    </span>
+                    <span className="text-[13px]">Jan 4, 2023</span>
+                  </div>
                 </div>
-                <div className="flex flex-col gap-y-1">
-                  <span className="italic font-semibold">
-                    डेविङ पावल लिम्बु
-                  </span>
-                  <span className="text-[13px]">Jan 4, 2023</span>
-                </div>
+                <Link
+                  to="/article"
+                  className="btn capitalize bg-transparent text-white border-[1px] border-white hover:bg-white hover:text-dark py-1 px-4"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
           </div>
@@ -452,26 +469,34 @@ const Articles = () => {
                 सञ्चारको पहुँच पुग्न नसकेको एउटा गाउँ
               </h3>
               <div className="my-5">
-                <p className="text-base">
+                <p className="text-base text text-white">
                   स्याङ्जा- सूचना एवम् प्रबिधिले निकै फड्को मारेको पाचौँ
                   जेनेरेसनको अवस्थामा आईपुगेको सञ्चार जगत् कुनै ठाउँ यस्ता पनि
                   छन् जहाँ सञ्चारबिहिन बन्न पुगेका छन् । त्यसैको उदाहरणको रुपमा
                   रहेको छ, स्याङजाको ...
                 </p>
               </div>
-              <div className="text-sm leading-4 text-white flex items-center gap-x-3 pt-3">
-                <div className="flex-shrink-0 flex">
-                  <img
-                    className="h-10 w-10 border-2 object-cover border-white rounded-full"
-                    src={staticImages.member3}
-                  />
+              <div className="flex items-end justify-between gap-x-3 flex-wrap mt-2">
+                <div className="text-sm leading-4 text-white flex items-center gap-x-3">
+                  <div className="flex-shrink-0 flex">
+                    <img
+                      className="h-10 w-10 border-2 object-cover border-white rounded-full"
+                      src={staticImages.member1}
+                    />
+                  </div>
+                  <div className="flex flex-col gap-y-1">
+                    <span className="italic font-semibold">
+                      डेविङ पावल लिम्बु
+                    </span>
+                    <span className="text-[13px]">Jan 4, 2023</span>
+                  </div>
                 </div>
-                <div className="flex flex-col gap-y-1">
-                  <span className="italic font-semibold">
-                    डेविङ पावल लिम्बु
-                  </span>
-                  <span className="text-[13px]">Jan 4, 2023</span>
-                </div>
+                <Link
+                  to="/article"
+                  className="btn capitalize bg-transparent text-white border-[1px] border-white hover:bg-white hover:text-dark py-1 px-4"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
           </div>
@@ -501,32 +526,50 @@ const Articles = () => {
                 </div>
               </div>
               <h3 className="font-bold text-gray-800 md:text-2xl text-xl">
-                सञ्चारको पहुँच पुग्न नसकेको एउटा गाउँ
+                Every Next Level of Your Life Will Demand a Different You
               </h3>
               <div className="my-5">
-                <p className="text-base">
+                <p className="text-base text text-white">
                   स्याङ्जा- सूचना एवम् प्रबिधिले निकै फड्को मारेको पाचौँ
                   जेनेरेसनको अवस्थामा आईपुगेको सञ्चार जगत् कुनै ठाउँ यस्ता पनि
                   छन् जहाँ सञ्चारबिहिन बन्न पुगेका छन् । त्यसैको उदाहरणको रुपमा
                   रहेको छ, स्याङजाको ...
                 </p>
               </div>
-              <div className="text-sm leading-4 text-white flex items-center gap-x-3 pt-3">
-                <div className="flex-shrink-0 flex">
-                  <img
-                    className="h-10 w-10 border-2 object-cover border-white rounded-full"
-                    src={staticImages.member4}
-                  />
+              <div className="flex items-end justify-between gap-x-3 flex-wrap mt-2">
+                <div className="text-sm leading-4 text-white flex items-center gap-x-3">
+                  <div className="flex-shrink-0 flex">
+                    <img
+                      className="h-10 w-10 border-2 object-cover border-white rounded-full"
+                      src={staticImages.member1}
+                    />
+                  </div>
+                  <div className="flex flex-col gap-y-1">
+                    <span className="italic font-semibold">
+                      डेविङ पावल लिम्बु
+                    </span>
+                    <span className="text-[13px]">Jan 4, 2023</span>
+                  </div>
                 </div>
-                <div className="flex flex-col gap-y-1">
-                  <span className="italic font-semibold">
-                    डेविङ पावल लिम्बु
-                  </span>
-                  <span className="text-[13px]">Jan 4, 2023</span>
-                </div>
+                <Link
+                  to="/article"
+                  className="btn capitalize bg-transparent text-white border-[1px] border-white hover:bg-white hover:text-dark py-1 px-4"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="flex items-center justify-center mt-10">
+          <Link
+            to="/article"
+            className="relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-base font-medium text-gray-500"
+            href="/archive"
+          >
+            <span>See All Articles</span>
+          </Link>
         </div>
       </div>
     </section>
