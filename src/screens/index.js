@@ -1,3 +1,4 @@
-export { default as Home } from "./home/Home";
+export { default as Home } from "./home/HomeScreen";
+export { default as Articles } from "./article/ArticlesScreen";
 export { default as Maintenance } from "./error/MaintenanceScreen";
 export { default as PageNotFound } from "./error/NotFoundScreen";

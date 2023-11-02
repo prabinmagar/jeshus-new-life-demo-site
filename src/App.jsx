@@ -1,6 +1,6 @@
 import { BaseLayout } from "./components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, PageNotFound } from "./screens";
+import { Articles, Home, PageNotFound } from "./screens";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -11,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<BaseLayout />}>
             <Route index element={<Home />} />
+            <Route path="/article" element={<Articles /> } />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>

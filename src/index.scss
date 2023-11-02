@@ -174,7 +174,7 @@ $font-family-inter: "Inter", sans-serif;
 @tailwind utilities;
 
 // navbar
-.scrolled-navbar {
+.scrolled-navbar{
   .navbar-brand {
     border-color: $red;
     span {
@@ -203,6 +203,11 @@ $font-family-inter: "Inter", sans-serif;
       }
     }
   }
+}
+
+.non-index-navbar{
+  @apply bg-white shadow-normal;
+  @extend .scrolled-navbar;
 }
 
 body{

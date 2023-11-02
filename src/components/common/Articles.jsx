@@ -235,7 +235,7 @@ const Articles = () => {
                 </p>
                 <div className="absolute bottom-0 left-0 px-5 pb-5 pt-2.5 bg-black/20 w-full">
                   <h2 className="text-xl font-semibold 5 text-white">
-                    The Comparison of Past With New Era
+                  सञ्चारको पहुँच पुग्न नसकेको एउटा गाउँ
                   </h2>
                   <p className="text-sm leading-4 text-white mt-2">
                     By{" "}

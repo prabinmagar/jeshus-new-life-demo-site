@@ -19,7 +19,7 @@ const Events = () => {
         eventDialogOpen={eventDialogOpen}
         handleEventDialogOpen={handleEventDialogOpen}
       />
-      <section className="py-8 bg-gray/10">
+      <section className="py-8 bg-whitesmoke">
         <div className="container">
           <Title
             title={"upcoming events"}
@@ -41,9 +41,9 @@ const Events = () => {
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/50 rounded px-3 py-1 drop-shadow opacity-0 group-hover:opacity-100 default-transition whitespace-nowrap">
                   Click for details
                 </div>
-                <div className="absolute z-10 top-0 rotate-180 left-3 border-t-[20px] border-t-transparent border-l-[36px] border-l-red border-r-[36px] border-r-red border-b-[48px] border-b-red shadow-lg">
-                  <div className="absolute top-4 rotate-180 flex text-center right-1/2 translate-x-1/2 leading-4 gap-x-1 font-bold uppercase">
-                    <span>29</span>
+                <div className="absolute z-10 top-0 rotate-180 left-3 border-t-[20px] border-t-transparent border-l-[36px] border-l-red border-r-[36px] border-r-red border-b-[80px] border-b-red shadow-lg">
+                  <div className="absolute top-5 rotate-180 flex text-center right-1/2 translate-x-1/2 leading-[6px] gap-y-2 font-bold uppercase flex-col">
+                    <span className="text-3xl">29</span>
                     <span>Dec</span>
                   </div>
                 </div>
@@ -54,7 +54,7 @@ const Events = () => {
                     <div className="w-full xl:text-2xl text-xl xl:leading-8 text-gray-200 font-bold mb-3">
                       2073 Annual Seminar With Congregation
                     </div>
-                    <div className="flex-auto text-gray-400 my-1">
+                    <div className="flex-auto text-gray-400 mb-1 text-sm">
                       <span className="mr-3">December 35, 2023</span>
                       <span className="mr-3 border-r border-gray-600  max-h-0"></span>
                       <span>Friday</span>
@@ -87,9 +87,9 @@ const Events = () => {
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/50 rounded px-3 py-1 drop-shadow opacity-0 group-hover:opacity-100 default-transition whitespace-nowrap">
                   Click for details
                 </div>
-                <div className="absolute z-10 top-0 rotate-180 left-3 border-t-[20px] border-t-transparent border-l-[36px] border-l-red border-r-[36px] border-r-red border-b-[48px] border-b-red shadow-lg">
-                  <div className="absolute top-4 rotate-180 flex text-center right-1/2 translate-x-1/2 leading-4 gap-x-1 font-bold uppercase">
-                    <span>29</span>
+                <div className="absolute z-10 top-0 rotate-180 left-3 border-t-[20px] border-t-transparent border-l-[36px] border-l-red border-r-[36px] border-r-red border-b-[80px] border-b-red shadow-lg">
+                  <div className="absolute top-5 rotate-180 flex text-center right-1/2 translate-x-1/2 leading-[6px] gap-y-2 font-bold uppercase flex-col">
+                    <span className="text-3xl">29</span>
                     <span>Dec</span>
                   </div>
                 </div>
@@ -100,7 +100,7 @@ const Events = () => {
                     <div className="w-full xl:text-2xl text-xl xl:leading-8 text-gray-200 font-bold mb-3">
                       Christian Hymns Seminar
                     </div>
-                    <div className="flex-auto text-gray-400 my-1">
+                    <div className="flex-auto text-gray-400 mb-1 text-sm">
                       <span className="mr-3">December 35, 2023</span>
                       <span className="mr-3 border-r border-gray-600  max-h-0"></span>
                       <span>Friday</span>
@@ -125,9 +125,9 @@ const Events = () => {
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/50 rounded px-3 py-1 drop-shadow opacity-0 group-hover:opacity-100 default-transition whitespace-nowrap">
                   Click for details
                 </div>
-                <div className="absolute z-10 top-0 rotate-180 left-3 border-t-[20px] border-t-transparent border-l-[36px] border-l-green border-r-[36px] border-r-green border-b-[48px] border-b-green shadow-lg">
-                  <div className="absolute top-4 rotate-180 flex text-center right-1/2 translate-x-1/2 leading-4 gap-x-1 font-bold uppercase">
-                    <span>29</span>
+                <div className="absolute z-10 top-0 rotate-180 left-3 border-t-[20px] border-t-transparent border-l-[36px] border-l-green border-r-[36px] border-r-green border-b-[80px] border-b-green shadow-lg">
+                  <div className="absolute top-5 rotate-180 flex text-center right-1/2 translate-x-1/2 leading-[6px] gap-y-2 font-bold uppercase flex-col">
+                    <span className="text-3xl">29</span>
                     <span>Dec</span>
                   </div>
                 </div>
@@ -138,7 +138,7 @@ const Events = () => {
                     <div className="w-full xl:text-2xl text-xl xl:leading-8 text-gray-200 font-bold mb-3">
                       Bible Study: Book of Romans
                     </div>
-                    <div className="flex-auto text-gray-400 my-1">
+                    <div className="flex-auto text-gray-400 mb-1 text-sm">
                       <span className="mr-3">December 35, 2023</span>
                       <span className="mr-3 border-r border-gray-600  max-h-0"></span>
                       <span>Friday</span>
@@ -163,9 +163,9 @@ const Events = () => {
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/50 rounded px-3 py-1 drop-shadow opacity-0 group-hover:opacity-100 default-transition whitespace-nowrap">
                   Click for details
                 </div>
-                <div className="absolute z-10 top-0 rotate-180 left-3 border-t-[20px] border-t-transparent border-l-[36px] border-l-red border-r-[36px] border-r-red border-b-[48px] border-b-red shadow-lg">
-                  <div className="absolute top-4 rotate-180 flex text-center right-1/2 translate-x-1/2 leading-4 gap-x-1 font-bold uppercase">
-                    <span>29</span>
+                <div className="absolute z-10 top-0 rotate-180 left-3 border-t-[20px] border-t-transparent border-l-[36px] border-l-red border-r-[36px] border-r-red border-b-[80px] border-b-red shadow-lg">
+                  <div className="absolute top-5 rotate-180 flex text-center right-1/2 translate-x-1/2 leading-[6px] gap-y-2 font-bold uppercase flex-col">
+                    <span className="text-3xl">29</span>
                     <span>Dec</span>
                   </div>
                 </div>
@@ -176,7 +176,7 @@ const Events = () => {
                     <div className="w-full xl:text-2xl text-xl xl:leading-8 text-gray-200 font-bold mb-3">
                       Elevate Christmas Party
                     </div>
-                    <div className="flex-auto text-gray-400 my-1">
+                    <div className="flex-auto text-gray-400 mb-1 text-sm">
                       <span className="mr-3">December 35, 2023</span>
                       <span className="mr-3 border-r border-gray-600  max-h-0"></span>
                       <span>Friday</span>

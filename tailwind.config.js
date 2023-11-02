@@ -3,6 +3,9 @@ import withMT from "@material-tailwind/react/utils/withMT";
 export default withMT({
   content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/screens/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
+    fontFamily: {
+      sans: ["Cera Pro"]
+    },
     extend: {
       colors: {
         gunmetal: "#1B2430",

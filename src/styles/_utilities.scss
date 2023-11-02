@@ -6,12 +6,16 @@
   width: 100% !important;
 }
 
+.content-wrapper{
+  @apply mt-[84px];
+}
+
 .default-transition {
   @apply transition-all ease-in-out duration-300;
 }
 
 .btn {
-  @apply shadow-normal text-center inline-flex items-center justify-center uppercase font-medium text-base tracking-[0.5px] rounded-full px-6 py-1 text-white;
+  @apply shadow-normal text-center inline-flex items-center justify-center uppercase font-medium text-base rounded-full px-6 py-1.5 text-white;
 }
 .btn-lg {
   @apply h-[52px] min-w-[180px] text-lg;

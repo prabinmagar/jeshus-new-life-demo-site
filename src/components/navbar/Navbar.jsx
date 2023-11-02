@@ -1,22 +1,21 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaEnvelope, FaFacebookSquare } from "react-icons/fa";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 import useNavbarBackground from "../../hooks/useNavbarBackground";
 import { BiMenu } from "react-icons/bi";
 import {
-  Button,
   Drawer,
   IconButton,
   Menu,
   MenuHandler,
   MenuItem,
   MenuList,
-  Typography,
 } from "@material-tailwind/react";
 import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const Navbar = () => {
+  const location = useLocation();
   // ### HEADER CHANGE ON SCROLL
   const scrollThreshold = 100;
   const hasBackground = useNavbarBackground(scrollThreshold);
@@ -143,7 +142,7 @@ const Navbar = () => {
       </Drawer>
 
       <nav
-        className={`${navbarStyle} fixed top-0 left-0 right-0 z-[999] flex items-center`}
+        className={`${navbarStyle} ${location.pathname !== "/" && "non-index-navbar default-transition"} fixed top-0 left-0 right-0 z-[999] flex items-center`}
       >
         <div className="container flex items-center justify-between">
           <Link
