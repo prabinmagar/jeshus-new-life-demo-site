@@ -17,11 +17,11 @@ import { FaShareAlt } from "react-icons/fa";
 
 const ArticlesScreen = () => {
   return (
-    <main className="content-wrapper bg-whitesmoke/50">
+    <main className="content-wrapper">
       <div className="pg-article py-8">
         <div className="container grid lg:grid-cols-[2fr_1fr] gap-10 items-start">
           <div className="w-full">
-            <div className="flex items-center justify-between pb-2 mb-6 border-b-[1px] border-dark/20">
+            <div className="flex items-center justify-between pb-2 mb-6 border-b-[1px] border-dark/10">
               <h1 className="text-xl font-bold text-gray-700 md:text-2xl">
                 Articles To Read
               </h1>
@@ -52,8 +52,7 @@ const ArticlesScreen = () => {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex gap-x-4">
                         <div className="flex items-center gap-x-2.5">
-                          <BsFillCalendarCheckFill
-                            className="text-blue"
+                          <BsFillCalendarCheckFill className="text-gray"
                             size={14}
                           />
                           <span className="font-normal text-sm text-dark/50">
@@ -61,7 +60,7 @@ const ArticlesScreen = () => {
                           </span>
                         </div>
                         <div className="flex items-center gap-x-2.5">
-                          <BsFillEyeFill className="text-green" size={17} />
+                          <BsFillEyeFill className="text-gray" size={17} />
                           <span className="font-normal text-sm text-dark/50">
                             245
                           </span>
@@ -114,9 +113,9 @@ const ArticlesScreen = () => {
                           <img
                             src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
                             alt="avatar"
-                            className="hidden object-cover w-10 h-10 me-4 rounded-full sm:block"
+                            className="hidden object-cover w-8 h-8 me-3 rounded-full sm:block"
                           />
-                          <h1 className="font-semibold text-[15px]">
+                          <h1 className="font-normal text-[15px] text-gray">
                             David Paul Limbu
                           </h1>
                         </a>
@@ -137,8 +136,7 @@ const ArticlesScreen = () => {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex gap-x-4">
                         <div className="flex items-center gap-x-2.5">
-                          <BsFillCalendarCheckFill
-                            className="text-blue"
+                          <BsFillCalendarCheckFill className="text-gray"
                             size={14}
                           />
                           <span className="font-normal text-sm text-dark/50">
@@ -146,7 +144,7 @@ const ArticlesScreen = () => {
                           </span>
                         </div>
                         <div className="flex items-center gap-x-2.5">
-                          <BsFillEyeFill className="text-green" size={17} />
+                          <BsFillEyeFill className="text-gray" size={17} />
                           <span className="font-normal text-sm text-dark/50">
                             245
                           </span>
@@ -201,9 +199,9 @@ const ArticlesScreen = () => {
                           <img
                             src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
                             alt="avatar"
-                            className="hidden object-cover w-10 h-10 me-4 rounded-full sm:block"
+                            className="hidden object-cover w-8 h-8 me-3 rounded-full sm:block"
                           />
-                          <h1 className="font-semibold text-[15px]">
+                          <h1 className="font-normal text-[15px] text-gray">
                             डेविङ पावल लिम्बु
                           </h1>
                         </a>
@@ -224,8 +222,7 @@ const ArticlesScreen = () => {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex gap-x-4">
                         <div className="flex items-center gap-x-2.5">
-                          <BsFillCalendarCheckFill
-                            className="text-blue"
+                          <BsFillCalendarCheckFill className="text-gray"
                             size={14}
                           />
                           <span className="font-normal text-sm text-dark/50">
@@ -233,7 +230,7 @@ const ArticlesScreen = () => {
                           </span>
                         </div>
                         <div className="flex items-center gap-x-2.5">
-                          <BsFillEyeFill className="text-green" size={17} />
+                          <BsFillEyeFill className="text-gray" size={17} />
                           <span className="font-normal text-sm text-dark/50">
                             245
                           </span>
@@ -287,9 +284,9 @@ const ArticlesScreen = () => {
                           <img
                             src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
                             alt="avatar"
-                            className="hidden object-cover w-10 h-10 me-4 rounded-full sm:block"
+                            className="hidden object-cover w-8 h-8 me-3 rounded-full sm:block"
                           />
-                          <h1 className="font-semibold text-[15px]">
+                          <h1 className="font-normal text-[15px] text-gray">
                             David Paul Limbu
                           </h1>
                         </a>
@@ -310,8 +307,7 @@ const ArticlesScreen = () => {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex gap-x-4">
                         <div className="flex items-center gap-x-2.5">
-                          <BsFillCalendarCheckFill
-                            className="text-blue"
+                          <BsFillCalendarCheckFill className="text-gray"
                             size={14}
                           />
                           <span className="font-normal text-sm text-dark/50">
@@ -319,7 +315,7 @@ const ArticlesScreen = () => {
                           </span>
                         </div>
                         <div className="flex items-center gap-x-2.5">
-                          <BsFillEyeFill className="text-green" size={17} />
+                          <BsFillEyeFill className="text-gray" size={17} />
                           <span className="font-normal text-sm text-dark/50">
                             245
                           </span>
@@ -373,9 +369,9 @@ const ArticlesScreen = () => {
                           <img
                             src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
                             alt="avatar"
-                            className="hidden object-cover w-10 h-10 me-4 rounded-full sm:block"
+                            className="hidden object-cover w-8 h-8 me-3 rounded-full sm:block"
                           />
-                          <h1 className="font-semibold text-[15px]">
+                          <h1 className="font-normal text-[15px] text-gray">
                             David Paul Limbu
                           </h1>
                         </a>
