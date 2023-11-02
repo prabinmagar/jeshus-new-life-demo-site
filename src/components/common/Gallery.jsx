@@ -3,7 +3,7 @@ import Title from "./Title";
 
 const Gallery = () => {
   return (
-    <section className="py-8">
+    <section className="py-8 bg-whitesmoke/50">
       <div className="container">
         <Title
           title={"our gallery"}

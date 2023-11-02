@@ -12,6 +12,7 @@ export default withMT({
         vanilla: "#F5EE9E",
         dark: "#020617",
         gray: "#757575",
+        whitesmoke: "#F5F5F5"
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

@@ -1,118 +1,96 @@
-import React, { useState } from "react";
 import {
   Button,
-  Dialog,
-  DialogHeader,
-  DialogBody,
-  DialogFooter,
-  Avatar,
   IconButton,
   Typography,
-  Card,
 } from "@material-tailwind/react";
- 
-export function DialogWithImage() {
-  const [open, setOpen] = useState(false);
-  const [isFavorite, setIsFavorite] = useState(false);
- 
-  const handleOpen = () => setOpen((cur) => !cur);
-  const handleIsFavorite = () => setIsFavorite((cur) => !cur);
- 
+import PropTypes from "prop-types";
+import staticImages from "../../utils/images";
+import { FaMapMarkerAlt, FaTimes } from "react-icons/fa";
+
+export function EventDialog({ eventDialogOpen, handleEventDialogOpen }) {
   return (
     <>
-      <Card
-        className="h-64 w-96 cursor-pointer overflow-hidden transition-opacity hover:opacity-90"
-        onClick={handleOpen}
+      <div
+        className={`event-dialog font-cera ${
+          eventDialogOpen ? "block" : "hidden"
+        }`}
       >
-        <img
-          alt="nature"
-          className="h-full w-full object-cover object-center"
-          src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2717&q=80"
-        />
-      </Card>
-       <Dialog size="xl" open={open} handler={handleOpen}>
-        <DialogHeader className="justify-between">
-          <div className="flex items-center gap-3">
-            <Avatar
-              size="sm"
-              variant="circular"
-              alt="tania andrew"
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-            />
-            <div className="-mt-px flex flex-col">
-              <Typography
-                variant="small"
-                color="blue-gray"
-                className="font-medium"
-              >
-                Tania Andrew
-              </Typography>
-              <Typography
-                variant="small"
-                color="gray"
-                className="text-xs font-normal"
-              >
-                @emmaroberts
-              </Typography>
+        <div className="event-dialog-content scrollbar-y-dir">
+          <div className="justify-between lg:px-8 px-6 py-4">
+            <div className="flex items-center gap-3 mb-2 w-full border-b-[1px] border-blue-gray-50">
+              <div className="flex w-full justify-between flex-wrap gap-x-4 items-center mb-2">
+                <Typography className="font-medium font-cera text-lg text-dark">
+                  2073 Annual Seminar With Congregation
+                </Typography>
+                <IconButton
+                  className="bg-dark rounded w-[30px] h-[30px]"
+                  onClick={handleEventDialogOpen}
+                >
+                  <FaTimes size={14} />
+                </IconButton>
+              </div>
             </div>
           </div>
-          <div className="flex items-center gap-2">
-            <IconButton
-              variant="text"
-              size="sm"
-              color={isFavorite ? "red" : "blue-gray"}
-              onClick={handleIsFavorite}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-              </svg>
-            </IconButton>
-            <Button color="gray" size="sm">
-              Free Download
-            </Button>
-          </div>
-        </DialogHeader>
-        <DialogBody>
-          <img
-            alt="nature"
-            className="h-[48rem] w-full rounded-lg object-cover object-center"
-            src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2717&q=80"
-          />
-        </DialogBody>
-        <DialogFooter className="justify-between">
-          <div className="flex items-center gap-16">
-            <div>
-              <Typography variant="small" color="gray" className="font-normal">
-                Views
-              </Typography>
-              <Typography color="blue-gray" className="font-medium">
-                44,082,044
-              </Typography>
+          <div className="px-6 lg:px-8 py-1 mb-6">
+            <div className="grid md:grid-cols-2 gap-x-6 md:mb-5">
+              <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 h-[240px] red-overlay">
+                <img
+                  src={staticImages.notice1}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="pt-2 pb-5 flex flex-col justify-between flex-1">
+                <div className="mb-3 flex items-start flex-col">
+                  <div className="flex flex-col">
+                    <div className="w-full text-2xl leading-8 text-gray-200 font-bold mb-3 mt-3">
+                      Christian Hymns Seminar
+                    </div>
+                    <div className="flex-auto text-gray-400 my-1">
+                      <span className="mr-3">December 35, 2023</span>
+                      <span className="mr-3 border-r border-gray-600  max-h-0"></span>
+                      <span>Friday</span>
+                    </div>
+                  </div>
+                  <div className="flex flex-row items-center mt-3 bg-blue/10 rounded-md py-1.5 px-3">
+                    <div className="inline-flex items-center gap-x-3">
+                      <FaMapMarkerAlt />
+                      <p className="text-sm">House of God, Lalitpur, NP</p>
+                    </div>
+                  </div>
+                  <Button
+                    variant="gradient"
+                    size="sm"
+                    className="font-medium capitalize font-cera rounded-full text-sm bg-red mt-4"
+                  >
+                    Register Here !
+                  </Button>
+                </div>
+              </div>
             </div>
-            <div>
-              <Typography variant="small" color="gray" className="font-normal">
-                Downloads
-              </Typography>
-              <Typography color="blue-gray" className="font-medium">
-                553,031
-              </Typography>
+            <div className="grid gap-y-2">
+              <p className="font-normal text-base text-dark/80 font-cera">
+                Join us for a spiritually uplifting experience at the Christian
+                Hymns Seminar. Immerse yourself in the timeless beauty of hymns
+                that inspire and touch the soul. This seminar is a gathering of
+                like-minded individuals who share a deep appreciation for the
+                power of music in worship and reflection.
+              </p>
+              <p className="font-normal text-base text-dark/80 font-cera">
+                Together, we'll explore the rich history and meaning behind some
+                of the most beloved Christian hymns, deepening our understanding
+                of the faith and the role of music in it. Join us for a
+                harmonious journey through the melodies and lyrics that have
+                touched hearts for generations.
+              </p>
             </div>
           </div>
-          <Button
-            size="sm"
-            variant="outlined"
-            color="blue-gray"
-            className="mr-5 flex items-center"
-          >
-            Share
-          </Button>
-        </DialogFooter>
-      </Dialog>
+        </div>
+      </div>
     </>
   );
 }
+
+EventDialog.propTypes = {
+  eventDialogOpen: PropTypes.bool,
+  handleEventDialogOpen: PropTypes.func,
+};

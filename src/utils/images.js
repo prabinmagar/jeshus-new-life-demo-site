@@ -1,6 +1,6 @@
 import banner1 from "../assets/images/banner/banner1.jpg";
 import banner2 from "../assets/images/banner/banner2.jpg";
-import banner3 from "../assets/images/banner/banner3.jpg"; 
+import banner3 from "../assets/images/banner/banner3.jpg";
 import notice1 from "../assets/images/notice1.jpg";
 import notice2 from "../assets/images/notice2.jpg";
 import notice3 from "../assets/images/notice3.jpg";
@@ -30,6 +30,45 @@ import article2 from "../assets/images/article2.jpg";
 import article3 from "../assets/images/article3.jpg";
 import article4 from "../assets/images/article4.jpg";
 import intro from "../assets/images/intro.jpg";
+import temp1 from "../assets/images/temp1.jpeg";
+import temp2 from "../assets/images/temp2.jpeg";
+import temp3 from "../assets/images/temp3.jpeg";
 
-const staticImages = {banner1, banner2, banner3, notice1, notice2, notice3, notice4, gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, ministries, ministry1, ministry2, ministry3, ministry4, training, member1, member2, member3, member4, member5, notices, about_banner, about, article1, article2, article3, article4, intro };
+const staticImages = {
+  banner1,
+  banner2,
+  banner3,
+  notice1,
+  notice2,
+  notice3,
+  notice4,
+  gallery1,
+  gallery2,
+  gallery3,
+  gallery4,
+  gallery5,
+  gallery6,
+  ministries,
+  ministry1,
+  ministry2,
+  ministry3,
+  ministry4,
+  training,
+  member1,
+  member2,
+  member3,
+  member4,
+  member5,
+  notices,
+  about_banner,
+  about,
+  article1,
+  article2,
+  article3,
+  article4,
+  intro,
+  temp1,
+  temp2,
+  temp3,
+};
 export default staticImages;

@@ -1,6 +1,5 @@
 import {
   FaEnvelope,
-  FaEnvelopeOpen,
   FaFacebookSquare,
   FaMapMarkerAlt,
   FaPhone,
@@ -10,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-white">
+    <footer className="bg-whitesmoke">
       <div className="container">
         <div className="footer-content py-14 grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
