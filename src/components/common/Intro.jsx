@@ -21,7 +21,9 @@ const Intro = () => {
                   fellowship that deepens their relationship with God and shares
                   the message of hope, salvation, and love with the world.
                 </p>
-                <h4 className="mb-3 mt-5 font-semibold text-2xl">Our Beliefs</h4>
+                <h4 className="mb-3 mt-5 font-semibold text-2xl">
+                  Our Beliefs
+                </h4>
                 <ul className="text grid sm:grid-cols-2 sm:gap-x-4 md:gap-x-6 items-stretch">
                   <li className="mb-3 rounded-lg overflow-hidden">
                     <div className="font-semibold blue-gradient text-white py-2 px-3 flex items-center gap-x-2 ">
@@ -34,30 +36,31 @@ const Intro = () => {
                   </li>
                   <li className="mb-3 rounded-lg overflow-hidden">
                     <div className="font-semibold red-gradient text-white py-2 px-3 flex items-center gap-x-2">
-                      <BsBookmarkStarFill /> <span>The Holy Spirit</span>
-                    </div>
-                    <p className="p-3 bg-blue-gray-50/20 h-full">
-                      We embrace the active presence and work of the Holy
-                      Spirit, empowering believers for service and spiritual
-                      gifts. Acts 1:8
-                    </p>
-                  </li>
-                  <li className="mb-3 rounded-lg overflow-hidden">
-                    <div className="font-semibold green-gradient text-white py-2 px-3 flex items-center gap-x-2">
-                      <BsBookmarkStarFill /> <span>Worship and Praise</span>
-                    </div>
-                    <p className="p-3 bg-blue-gray-50/20 h-full">
-                      We're committed to Spirit-led worship, celebrating God's
-                      goodness, mercy, and grace. Psalm 150:6
-                    </p>
-                  </li>
-                  <li className="mb-3 rounded-lg overflow-hidden">
-                    <div className="font-semibold vanilla-gradient text-white py-2 px-3 flex items-center gap-x-2">
                       <BsBookmarkStarFill /> <span>Salvation by Grace</span>
                     </div>
                     <p className="p-3 bg-blue-gray-50/20 h-full">
                       Salvation is a gift of God's grace, received through faith
-                      in Jesus Christ. Ephesians 2:8-9
+                      in Jesus Christ. (Ephesians 2:8-9)
+                    </p>
+                  </li>
+                  <li className="mb-3 rounded-lg overflow-hidden">
+                    <div className="font-semibold green-gradient text-white py-2 px-3 flex items-center gap-x-2">
+                      <BsBookmarkStarFill /> <span>Fivefold Ministry</span>
+                    </div>
+                    <p className="p-3 bg-blue-gray-50/20 h-full">
+                      We honor the fivefold ministry, including apostolic,
+                      prophetic, evangelistic, pastoral, and teaching roles, for
+                      equipping and building the church (Ephesians 4:11).
+                    </p>
+                  </li>
+                  <li className="mb-3 rounded-lg overflow-hidden">
+                    <div className="font-semibold vanilla-gradient text-white py-2 px-3 flex items-center gap-x-2">
+                      <BsBookmarkStarFill />{" "}
+                      <span>Empowered by the Holy Spirit</span>
+                    </div>
+                    <p className="p-3 bg-blue-gray-50/20 h-full">
+                      We embrace the active presence and empowering work of the
+                      Holy Spirit (Acts 1:8).
                     </p>
                   </li>
                 </ul>

@@ -174,7 +174,7 @@ $font-family-inter: "Inter", sans-serif;
 @tailwind utilities;
 
 // navbar
-.scrolled-navbar{
+.scrolled-navbar {
   .navbar-brand {
     border-color: $red;
     span {
@@ -197,7 +197,7 @@ $font-family-inter: "Inter", sans-serif;
       a {
         color: $dark;
 
-        @media screen and (max-width: 991.98px){
+        @media screen and (max-width: 991.98px) {
           color: $gray;
         }
       }
@@ -205,22 +205,49 @@ $font-family-inter: "Inter", sans-serif;
   }
 }
 
-.non-index-navbar{
+.non-index-navbar {
   @apply bg-white shadow-normal;
   @extend .scrolled-navbar;
 }
 
-body{
+body {
   position: relative;
 }
 // sidebar drawer css fixes
-header{
-  .backdrop-blur-sm{
+header {
+  .backdrop-blur-sm {
     position: fixed;
   }
 }
 
-.black-gradient{
+.black-gradient {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
 }
 
+.content-stylings {
+  @apply leading-7;
+  p {
+    @apply my-3 text-gray text-justify;
+  }
+  img {
+    @apply my-6 w-full rounded-xl;
+  }
+  a {
+    @apply hover:underline font-medium mx-1 text-red;
+  }
+  blockquote {
+    @apply text-center px-4 sm:px-7 font-medium text-dark/80 py-1 text-lg;
+    p{
+      @apply text-center px-4 sm:px-7 font-medium text-dark/80;
+    }
+  }
+  h1, h2, h3, h4, h5, h6{
+    @apply font-semibold mt-3 text-justify;
+  }
+  ul{
+    @apply my-3 list-disc ms-4 text-gray text-justify;
+    li{
+      @apply my-1;
+    }
+  }
+}
