@@ -565,7 +565,7 @@ const Articles = () => {
         <div className="flex items-center justify-center mt-10">
           <Link
             to="/article"
-            className="relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-base font-medium text-gray-500"
+            className="relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-base font-medium text-gray-500 hover:bg-red hover:text-white hover:border-white"
             href="/archive"
           >
             <span>See All Articles</span>

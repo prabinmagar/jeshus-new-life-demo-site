@@ -1,4 +1,3 @@
-import Banner from "../common/Banner"
 import Navbar from "../navbar/Navbar"
 
 const Header = () => {

@@ -6,7 +6,7 @@
   width: 100% !important;
 }
 
-.content-wrapper{
+.content-wrapper {
   @apply mt-[84px];
 }
 
@@ -21,7 +21,7 @@
   @apply h-[52px] min-w-[180px] text-lg;
 }
 .text {
-  @apply text-base text-gray leading-relaxed;
+  @apply text-base text-dark/70 leading-relaxed;
 }
 
 // image overlay bg
@@ -101,4 +101,3 @@
     @apply rounded-lg bg-white max-w-[800px] w-[90vw] h-auto max-h-[90vh] overflow-y-scroll absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
   }
 }
-
