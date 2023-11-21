@@ -15,311 +15,6 @@ const Articles = () => {
           }
         />
 
-        {/* <div className="grid grid-cols-4 grid-rows-3 gap-4">
-          <div className="cursor-pointer shadow-lg h-[260px] col-span-4 group md:col-span-2 xl:col-span-1 xl:row-span-1 rounded-lg overflow-hidden">
-            <div className="relative h-full">
-              <div>
-                <p className="px-4 py-2 rounded uppercase text-sm font-medium leading-3 text-white absolute top-3 right-3 bg-red">
-                  इतिहास
-                </p>
-                <div className="absolute bottom-0 left-0 px-5 pb-5 pt-3 bg-black/30 w-full">
-                  <h2 className="text-lg font-semibold text-white">
-                    सञ्चारको पहुँच पुग्न नसकेको एउटा गाउँ
-                  </h2>
-                  <div className="focus:outline-none focus:underline items-center cursor-pointer text-white -mb-10 flex justify-between opacity-0 group-hover:opacity-100 group-hover:mb-0 default-transition group-hover:mt-4">
-                    <p className="text-sm leading-4 text-white flex items-center gap-x-2">
-                      <div className="flex-shrink-0 flex">
-                        <img
-                          className="h-8 w-8 border-2 border-white rounded-full"
-                          src="https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                        />
-                      </div>
-                      <span className="italic font-semibold">
-                        डेविङ पावल लिम्बु
-                      </span>
-                    </p>
-
-                    <div className="flex">
-                      <p className="pr-2 text-sm font-medium leading-none">
-                        Read More
-                      </p>
-                      <svg
-                        className="fill-stroke"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5.75 12.5L10.25 8L5.75 3.5"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <img
-                src={staticImages.temp1}
-                className="w-full h-full object-cover"
-                alt="chair"
-              />
-            </div>
-          </div>
-          <div className="cursor-pointer shadow-lg h-[260px] col-span-4 group md:col-span-2 xl:col-span-1 xl:row-span-1 rounded-lg overflow-hidden">
-            <div className="relative h-full">
-              <div>
-                <p className="px-4 py-2 rounded uppercase text-sm font-medium leading-3 text-white absolute top-3 right-3 bg-red">
-                  इतिहास
-                </p>
-                <div className="absolute bottom-0 left-0 px-5 pb-5 pt-3 bg-black/30 w-full">
-                  <h2 className="text-lg font-semibold text-white">
-                    आफ्नो इ‍च्छाअनुरूप पढ्ने कोठा यसरी सजाउनुस्
-                  </h2>
-                  <p className="text-sm leading-4 text-white mt-2">
-                    By{" "}
-                    <span className="italic font-semibold">
-                      डेविङ पावल लिम्बु
-                    </span>
-                  </p>
-                  <a
-                    href="/"
-                    className="focus:outline-none focus:underline items-center cursor-pointer text-white hover:text-gray-200 hover:underline -mb-5 flex opacity-0 group-hover:opacity-100 group-hover:mb-0 group-hover:mt-4"
-                  >
-                    <p className="pr-2 text-sm font-medium leading-none">
-                      Read More
-                    </p>
-                    <svg
-                      className="fill-stroke"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.75 12.5L10.25 8L5.75 3.5"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <img
-                src={staticImages.article2}
-                className="w-full h-full object-cover"
-                alt="wall design"
-              />
-            </div>
-          </div>
-          <div className="cursor-pointer shadow-lg h-[260px] xl:h-[540px] col-span-4 group md:col-span-2 xl:col-span-2 xl:row-span-2 rounded-lg overflow-hidden">
-            <div className="relative h-full">
-              <div>
-                <p className="px-4 py-2 rounded uppercase text-sm font-medium leading-3 text-white absolute top-3 right-3 bg-red">
-                  इतिहास
-                </p>
-                <div className="absolute bottom-0 left-0 px-5 pb-5 pt-3 bg-black/30 w-full">
-                  <h2 className="text-lg font-semibold text-white">
-                    एकीकृत विकास कार्ययोजना बनाउँदै काभ्रेपलाञ्चोकका चार स्थानीय
-                    तह
-                  </h2>
-                  <p className="text-sm leading-4 text-white mt-2">
-                    By{" "}
-                    <span className="italic font-semibold">
-                      डेविङ पावल लिम्बु
-                    </span>
-                  </p>
-                  <a
-                    href="/"
-                    className="focus:outline-none focus:underline items-center cursor-pointer text-white hover:text-gray-200 hover:underline -mb-5 flex opacity-0 group-hover:opacity-100 group-hover:mb-0 group-hover:mt-4"
-                  >
-                    <p className="pr-2 text-sm font-medium leading-none">
-                      Read More
-                    </p>
-                    <svg
-                      className="fill-stroke"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.75 12.5L10.25 8L5.75 3.5"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <img
-                src={staticImages.temp2}
-                alt="sitting place"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-          <div className="cursor-pointer shadow-lg h-[260px] xl:h-[540px] col-span-4 group md:col-span-2 xl:col-span-2 xl:row-span-2 rounded-lg overflow-hidden">
-            <div className="relative h-full">
-              <div>
-                <p className="px-4 py-2 rounded uppercase text-sm font-medium leading-3 text-white absolute top-3 right-3 bg-red">
-                  इतिहास
-                </p>
-                <div className="absolute bottom-0 left-0 px-5 pb-5 pt-3 bg-black/30 w-full">
-                  <h2 className="text-lg font-semibold text-white">
-                    नयाँ स्मार्टवाच र इयरबड ल्याउँदै अल्टिमा, सार्वजनिक हुने
-                    बित्तिकै खरिद गर्दा २ हजार छुट
-                  </h2>
-                  <p className="text-sm leading-4 text-white mt-2">
-                    By{" "}
-                    <span className="italic font-semibold">
-                      डेविङ पावल लिम्बु
-                    </span>
-                  </p>
-                  <a
-                    href="/"
-                    className="focus:outline-none focus:underline items-center cursor-pointer text-white hover:text-gray-200 hover:underline -mb-5 flex opacity-0 group-hover:opacity-100 group-hover:mb-0 group-hover:mt-4"
-                  >
-                    <p className="pr-2 text-sm font-medium leading-none">
-                      Read More
-                    </p>
-                    <svg
-                      className="fill-stroke"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.75 12.5L10.25 8L5.75 3.5"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <img
-                src={staticImages.article4}
-                alt="sitting place"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-          <div className="cursor-pointer shadow-lg h-[260px] col-span-4 group md:col-span-2 xl:col-span-1 xl:row-span-1 rounded-lg overflow-hidden">
-            <div className="relative h-full">
-              <div>
-                <p className="px-4 py-2 rounded uppercase text-sm font-medium leading-3 text-white absolute top-3 right-3 bg-red">
-                  इतिहास
-                </p>
-                <div className="absolute bottom-0 left-0 px-5 pb-5 pt-3 bg-black/30 w-full">
-                  <h2 className="text-lg font-semibold text-white">
-                    खाना पुग्ने अन्न पाएपछि कुमाल परिवार खुशी
-                  </h2>
-                  <p className="text-sm leading-4 text-white mt-2">
-                    By{" "}
-                    <span className="italic font-semibold">
-                      डेविङ पावल लिम्बु
-                    </span>
-                  </p>
-                  <a
-                    href="/"
-                    className="focus:outline-none focus:underline items-center cursor-pointer text-white hover:text-gray-200 hover:underline -mb-5 flex opacity-0 group-hover:opacity-100 group-hover:mb-0 group-hover:mt-4"
-                  >
-                    <p className="pr-2 text-sm font-medium leading-none">
-                      Read More
-                    </p>
-                    <svg
-                      className="fill-stroke"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.75 12.5L10.25 8L5.75 3.5"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <img
-                src={staticImages.article2}
-                className="w-full h-full object-cover"
-                alt="chair"
-              />
-            </div>
-          </div>
-          <div className="cursor-pointer shadow-lg h-[260px] col-span-4 group md:col-span-2 xl:col-span-1 xl:row-span-1 rounded-lg overflow-hidden">
-            <div className="relative h-full">
-              <div>
-                <p className="px-4 py-2 rounded uppercase text-sm font-medium leading-3 text-white absolute top-3 right-3 bg-red">
-                  इतिहास
-                </p>
-                <div className="absolute bottom-0 left-0 px-5 pb-5 pt-3 bg-black/30 w-full">
-                  <h2 className="text-lg font-semibold text-white">
-                    निर्वाचन शिक्षा स्वयंसेवकमा वैदेशिक रोजगारीबाट फर्किएकालाई
-                    प्राथमिकता
-                  </h2>
-                  <p className="text-sm leading-4 text-white mt-2">
-                    By{" "}
-                    <span className="italic font-semibold">
-                      डेविङ पावल लिम्बु
-                    </span>
-                  </p>
-                  <a
-                    href="/"
-                    className="focus:outline-none focus:underline items-center cursor-pointer text-white hover:text-gray-200 hover:underline -mb-5 flex opacity-0 group-hover:opacity-100 group-hover:mb-0 group-hover:mt-4"
-                  >
-                    <p className="pr-2 text-sm font-medium leading-none">
-                      Read More
-                    </p>
-                    <svg
-                      className="fill-stroke"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.75 12.5L10.25 8L5.75 3.5"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <img
-                src={staticImages.temp3}
-                className="w-full h-full object-cover"
-                alt="wall design"
-              />
-            </div>
-          </div>
-        </div> */}
-
         <div className="grid xxl:grid-cols-2 gap-4">
           <div className="relative flex flex-col md:flex-row md:space-x-2 space-y-3 md:space-y-0 rounded-xl shadow-lg p-2 border border-white bg-white">
             <div className="relative w-full md:w-1/3 bg-white grid place-items-center h-[320px] lg:h-auto">
@@ -372,7 +67,7 @@ const Articles = () => {
                   </div>
                 </div>
                 <Link
-                  to="/article"
+                  to="/article/1"
                   className="btn capitalize bg-transparent text-white border-[1px] border-white hover:bg-white hover:text-dark py-1 px-4"
                 >
                   Read More
@@ -432,7 +127,7 @@ const Articles = () => {
                   </div>
                 </div>
                 <Link
-                  to="/article"
+                  to="/article/1"
                   className="btn capitalize bg-transparent text-white border-[1px] border-white hover:bg-white hover:text-dark py-1 px-4"
                 >
                   Read More
@@ -492,7 +187,7 @@ const Articles = () => {
                   </div>
                 </div>
                 <Link
-                  to="/article"
+                  to="/article/1"
                   className="btn capitalize bg-transparent text-white border-[1px] border-white hover:bg-white hover:text-dark py-1 px-4"
                 >
                   Read More
@@ -552,7 +247,7 @@ const Articles = () => {
                   </div>
                 </div>
                 <Link
-                  to="/article"
+                  to="/article/1"
                   className="btn capitalize bg-transparent text-white border-[1px] border-white hover:bg-white hover:text-dark py-1 px-4"
                 >
                   Read More

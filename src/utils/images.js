@@ -33,6 +33,18 @@ import intro from "../assets/images/intro.jpg";
 import temp1 from "../assets/images/temp1.jpeg";
 import temp2 from "../assets/images/temp2.jpeg";
 import temp3 from "../assets/images/temp3.jpeg";
+import album_banner from "../assets/images/album_banner.jpg";
+import donate_banner from "../assets/images/donate_banner.jpg";
+import event_banner from "../assets/images/event_banner.jpg";
+import media_banner from "../assets/images/media_banner.jpg";
+import donate from "../assets/images/donate.jpg";
+import pay_gateway1 from "../assets/images/payment/pay_gateway1.png";
+import pay_gateway2 from "../assets/images/payment/pay_gateway2.jpg";
+import pay_gateway3 from "../assets/images/payment/pay_gateway3.png";
+import pay_gateway4 from "../assets/images/payment/pay_gateway4.png";
+import pay_gateway5 from "../assets/images/payment/pay_gateway5.png";
+import qr_sample from "../assets/images/payment/qr_sample.png";
+import prayer_bg from "../assets/images/prayer_bg.jpg";
 
 const staticImages = {
   banner1,
@@ -70,5 +82,17 @@ const staticImages = {
   temp1,
   temp2,
   temp3,
+  album_banner,
+  donate_banner,
+  donate,
+  pay_gateway1,
+  pay_gateway2,
+  pay_gateway3,
+  pay_gateway4,
+  pay_gateway5,
+  qr_sample,
+  prayer_bg,
+  event_banner, 
+  media_banner
 };
 export default staticImages;

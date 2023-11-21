@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import staticImages from "../../utils/images";
 import Title from "./Title";
 
@@ -13,7 +14,7 @@ const Gallery = () => {
         />
         <div className="section-content mb-10">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 lg:gap-6">
-            <div className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
+            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
               <img
                 className="h-full w-full object-cover group-hover:scale-110 default-transition"
                 src={staticImages.gallery1}
@@ -22,8 +23,8 @@ const Gallery = () => {
               <div className="absolute bottom-4 left-0 px-6 py-2.5 text-white z-10 uppercase text-xl font-semibold shadow-normal red-gradient -translate-x-full group-hover:translate-x-0 default-transition">
                 current events
               </div>
-            </div>
-            <div className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
+            </Link>
+            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
               <img
                 className="h-full w-full object-cover group-hover:scale-110 default-transition"
                 src={staticImages.gallery2}
@@ -32,8 +33,8 @@ const Gallery = () => {
               <div className="absolute bottom-4 left-0 px-6 py-2.5 text-white z-10 uppercase text-xl font-semibold shadow-normal red-gradient -translate-x-full group-hover:translate-x-0 default-transition">
                 current events
               </div>
-            </div>
-            <div className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
+            </Link>
+            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
               <img
                 className="h-full w-full object-cover group-hover:scale-110 default-transition"
                 src={staticImages.gallery3}
@@ -42,8 +43,8 @@ const Gallery = () => {
               <div className="absolute bottom-4 left-0 px-6 py-2.5 text-white z-10 uppercase text-xl font-semibold shadow-normal red-gradient -translate-x-full group-hover:translate-x-0 default-transition">
                 current events
               </div>
-            </div>
-            <div className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
+            </Link>
+            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
               <img
                 className="h-full w-full object-cover group-hover:scale-110 default-transition"
                 src={staticImages.gallery4}
@@ -52,8 +53,8 @@ const Gallery = () => {
               <div className="absolute bottom-4 left-0 px-6 py-2.5 text-white z-10 uppercase text-xl font-semibold shadow-normal red-gradient -translate-x-full group-hover:translate-x-0 default-transition">
                 current events
               </div>
-            </div>
-            <div className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
+            </Link>
+            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
               <img
                 className="h-full w-full object-cover group-hover:scale-110 default-transition"
                 src={staticImages.gallery5}
@@ -62,8 +63,8 @@ const Gallery = () => {
               <div className="absolute bottom-4 left-0 px-6 py-2.5 text-white z-10 uppercase text-xl font-semibold shadow-normal red-gradient -translate-x-full group-hover:translate-x-0 default-transition">
                 current events
               </div>
-            </div>
-            <div className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
+            </Link>
+            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
               <img
                 className="h-full w-full object-cover group-hover:scale-110 default-transition"
                 src={staticImages.gallery6}
@@ -72,7 +73,7 @@ const Gallery = () => {
               <div className="absolute bottom-4 left-0 px-6 py-2.5 text-white z-10 uppercase text-xl font-semibold shadow-normal red-gradient -translate-x-full group-hover:translate-x-0 default-transition">
                 current events
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

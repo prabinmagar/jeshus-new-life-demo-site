@@ -15,7 +15,7 @@ const Intro = () => {
                   Our Vision and Beliefs
                 </h2>
                 <p className="text mb-3 text-justify">
-                  At Yeshua New Life, we aspire to be a dynamic Pentecostal
+                  At Yeshua New Life, we aspire to be a Apostolic Yeshua
                   community where people discover the life-changing power of
                   Jesus. We're committed to nurturing a strong, inclusive
                   fellowship that deepens their relationship with God and shares

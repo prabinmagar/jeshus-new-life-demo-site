@@ -76,7 +76,7 @@ const ArticlesScreen = () => {
                     </div>
                     <div className="mt-2">
                       <Link
-                        to="/"
+                        to="/article/1"
                         className="text-2xl font-bold text-gray-700 hover:underline"
                       >
                         बाइडेनले भने- इजरायल-हमास युद्ध रोकिनुपर्छ
@@ -90,7 +90,7 @@ const ArticlesScreen = () => {
                     </div>
                     <div className="flex items-center justify-between mt-4 flex-wrap gap-y-4">
                       <Link
-                        to="/"
+                        to="/article/1"
                         className="flex focus:outline-none focus:underline items-center cursor-pointer btn capitalize py-[6px] px-4 bg-red"
                       >
                         <p className="pr-2 text-base font-medium">Read More</p>
@@ -160,7 +160,7 @@ const ArticlesScreen = () => {
                     </div>
                     <div className="mt-2">
                       <Link
-                        to="/"
+                        to="/article/1"
                         className="text-2xl font-bold text-gray-700 hover:underline"
                       >
                         सञ्चारको पहुँच पुग्न नसकेको एउटा गाउँ
@@ -174,7 +174,7 @@ const ArticlesScreen = () => {
                     </div>
                     <div className="flex items-center justify-between mt-4 flex-wrap gap-y-4">
                       <Link
-                        to="/"
+                        to="/article/1"
                         className="flex focus:outline-none focus:underline items-center cursor-pointer btn capitalize py-[6px] px-4 bg-red"
                       >
                         <p className="pr-2 text-base font-medium">
@@ -247,7 +247,7 @@ const ArticlesScreen = () => {
                     </div>
                     <div className="mt-2">
                       <Link
-                        to="/"
+                        to="/article/1"
                         className="text-2xl font-bold text-gray-700 hover:underline"
                       >
                         आफ्नो इ‍च्छाअनुरूप पढ्ने कोठा यसरी सजाउनुस्
@@ -261,7 +261,7 @@ const ArticlesScreen = () => {
                     </div>
                     <div className="flex items-center justify-between mt-4 flex-wrap gap-y-4">
                       <Link
-                        to="/"
+                        to="/article/1"
                         className="flex focus:outline-none focus:underline items-center cursor-pointer btn capitalize py-[6px] px-4 bg-red"
                       >
                         <p className="pr-2 text-base font-medium">Read More</p>
@@ -332,7 +332,7 @@ const ArticlesScreen = () => {
                     </div>
                     <div className="mt-2">
                       <Link
-                        to="/"
+                        to="/article/1"
                         className="text-2xl font-bold text-gray-700 hover:underline"
                       >
                         What does the natural reveal about its existence?
@@ -346,7 +346,7 @@ const ArticlesScreen = () => {
                     </div>
                     <div className="flex items-center justify-between mt-4 flex-wrap gap-y-4">
                       <Link
-                        to="/"
+                        to="/article/1"
                         className="flex focus:outline-none focus:underline items-center cursor-pointer btn capitalize py-[6px] px-4 bg-red"
                       >
                         <p className="pr-2 text-base font-medium">Read More</p>
@@ -393,93 +393,98 @@ const ArticlesScreen = () => {
                 </h1>
                 <div className="flex flex-col px-6 py-4 bg-white rounded-lg shadow-md">
                   <ul className="-mx-4">
-                    <li className="flex items-center">
+                    <li className="flex items-center bg-gray/5 py-2 rounded-md">
                       <img
-                        src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
+                        src={staticImages.member1}
                         alt="avatar"
                         className="object-cover w-10 h-10 mx-4 rounded-full"
                       />
-                      <p>
+                      <p className="flex-1 flex justify-between items-center">
                         <a
                           href="#"
-                          className="mx-1 font-bold text-gray-700 hover:underline"
+                          className="font-bold text-gray-700 hover:underline"
                         >
-                          Alex John
+                          David Paul Limbu
+                          <span className="block text-xs font-normal">Founder of YNL</span>
                         </a>
-                        <span className="text-sm font-light text">
-                          - 23 Posts
+                        <span className="text-xs font-light text bg-blue text-white rounded px-2 py-1 drop-shadow me-3">
+                          230 Articles
                         </span>
                       </p>
                     </li>
-                    <li className="flex items-center mt-6">
+                    <li className="flex items-center mt-3.5 bg-gray/5 py-2 rounded-md">
                       <img
-                        src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=333&amp;q=80"
+                        src={staticImages.member2}
                         alt="avatar"
                         className="object-cover w-10 h-10 mx-4 rounded-full"
                       />
-                      <p>
+                      <p className="flex-1 flex justify-between items-center">
                         <a
                           href="#"
-                          className="mx-1 font-bold text-gray-700 hover:underline"
+                          className="font-bold text-gray-700 hover:underline"
                         >
-                          Jane Doe
+                          John Doe
+                          <span className="block text-xs font-normal">Co-founder of YNL</span>
                         </a>
-                        <span className="text-sm font-light text">
-                          - 52 Posts
+                        <span className="text-xs font-light text bg-blue text-white rounded px-2 py-1 drop-shadow me-3">
+                          52 Articles
                         </span>
                       </p>
                     </li>
-                    <li className="flex items-center mt-6">
+                    <li className="flex items-center mt-3.5 bg-gray/5 py-2 rounded-md">
                       <img
                         src="https://images.unsplash.com/photo-1531251445707-1f000e1e87d0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=281&amp;q=80"
                         alt="avatar"
                         className="object-cover w-10 h-10 mx-4 rounded-full"
                       />
-                      <p>
+                      <p className="flex-1 flex justify-between items-center">
                         <a
                           href="#"
-                          className="mx-1 font-bold text-gray-700 hover:underline"
+                          className="font-bold text-gray-700 hover:underline"
                         >
                           Lisa Way
+                          <span className="block text-xs font-normal">Women's leader</span>
                         </a>
-                        <span className="text-sm font-light text">
-                          - 73 Posts
+                        <span className="text-xs font-light text bg-blue text-white rounded px-2 py-1 drop-shadow me-3">
+                          73 Articles
                         </span>
                       </p>
                     </li>
-                    <li className="flex items-center mt-6">
+                    <li className="flex items-center mt-3.5 bg-gray/5 py-2 rounded-md">
                       <img
-                        src="https://images.unsplash.com/photo-1500757810556-5d600d9b737d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=735&amp;q=80"
+                        src={staticImages.member5}
                         alt="avatar"
                         className="object-cover w-10 h-10 mx-4 rounded-full"
                       />
-                      <p>
+                      <p className="flex-1 flex justify-between items-center">
                         <a
                           href="#"
-                          className="mx-1 font-bold text-gray-700 hover:underline"
+                          className="font-bold text-gray-700 hover:underline"
                         >
                           Steve Matt
+                          <span className="block text-xs font-normal">Teacher / Preacher</span>
                         </a>
-                        <span className="text-sm font-light text">
-                          - 245 Posts
+                        <span className="text-xs font-light text bg-blue text-white rounded px-2 py-1 drop-shadow me-3">
+                          245 Articles
                         </span>
                       </p>
                     </li>
-                    <li className="flex items-center mt-6">
+                    <li className="flex items-center mt-3.5 bg-gray/5 py-2 rounded-md">
                       <img
-                        src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=373&amp;q=80"
+                        src={staticImages.member4}
                         alt="avatar"
                         className="object-cover w-10 h-10 mx-4 rounded-full"
                       />
-                      <p>
+                      <p className="flex-1 flex justify-between items-center">
                         <a
                           href="#"
-                          className="mx-1 font-bold text-gray-700 hover:underline"
+                          className="font-bold text-gray-700 hover:underline"
                         >
-                          Khatab Wedaa
+                          Rajiv Shrestha
+                          <span className="block text-xs font-normal">Service Leader</span>
                         </a>
-                        <span className="text-sm font-light text">
-                          - 332 Posts
+                        <span className="text-xs font-light text bg-blue text-white rounded px-2 py-1 drop-shadow me-3">
+                          332 Articles
                         </span>
                       </p>
                     </li>
@@ -488,47 +493,47 @@ const ArticlesScreen = () => {
               </div>
 
               <div className="">
-                <h1 className="mb-4 text-xl font-bold text-gray-700">Tags</h1>
+                <h1 className="mb-4 text-xl font-bold text-gray-700">Popular Topics / Tags</h1>
                 <div className="flex flex-col px-4 py-6 mx-auto bg-white rounded-lg shadow-md">
-                  <ul>
+                  <ul className="flex flex-wrap gap-2">
                     <li>
                       <a
                         href="#"
-                        className="mx-1 font-bold text-gray-700 hover:text-gray-600 hover:underline"
+                        className="font-bold text-gray-700 hover:text-gray-600 hover:underline bg-gray/5 px-3 py-1 inline-flex rounded"
                       >
-                        - Study
+                        Study
                       </a>
                     </li>
-                    <li className="mt-2">
+                    <li>
                       <a
                         href="#"
-                        className="mx-1 font-bold text-gray-700 hover:text-gray-600 hover:underline"
+                        className="font-bold text-gray-700 hover:text-gray-600 hover:underline bg-gray/5 px-3 py-1 inline-flex rounded"
                       >
-                        - Spiritualism
+                        Spiritualism
                       </a>
                     </li>
-                    <li className="mt-2">
+                    <li>
                       <a
                         href="#"
-                        className="mx-1 font-bold text-gray-700 hover:text-gray-600 hover:underline"
+                        className="font-bold text-gray-700 hover:text-gray-600 hover:underline bg-gray/5 px-3 py-1 inline-flex rounded"
                       >
-                        - Archaeology
+                        Archaeology
                       </a>
                     </li>
-                    <li className="mt-2">
+                    <li>
                       <a
                         href="#"
-                        className="mx-1 font-bold text-gray-700 hover:text-gray-600 hover:underline"
+                        className="font-bold text-gray-700 hover:text-gray-600 hover:underline bg-gray/5 px-3 py-1 inline-flex rounded"
                       >
-                        - History
+                        History
                       </a>
                     </li>
-                    <li className="flex items-center mt-2">
+                    <li>
                       <a
                         href="#"
-                        className="mx-1 font-bold text-gray-700 hover:text-gray-600 hover:underline"
+                        className="font-bold text-gray-700 hover:text-gray-600 hover:underline bg-gray/5 px-3 py-1 inline-flex rounded"
                       >
-                        - Tribulation
+                        Tribulation
                       </a>
                     </li>
                   </ul>
