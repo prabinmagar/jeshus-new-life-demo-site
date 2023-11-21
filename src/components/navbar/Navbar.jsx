@@ -378,13 +378,13 @@ const Navbar = () => {
                           </h4>
                         </div>
                       </Link>
-                      <MenuItem className="w-full hover:bg-transparent active:bg-transparent py-0">
+                      <Link to="/watch" className="w-full hover:bg-transparent active:bg-transparent py-0 px-3">
                         <div className="px-1 py-1">
                           <h4 className="text text-sm font-medium">
                             Watch Live
                           </h4>
                         </div>
-                      </MenuItem>
+                      </Link>
                     </ul>
                   </MenuList>
                 </Menu>

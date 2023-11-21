@@ -37,6 +37,7 @@ import album_banner from "../assets/images/album_banner.jpg";
 import donate_banner from "../assets/images/donate_banner.jpg";
 import event_banner from "../assets/images/event_banner.jpg";
 import media_banner from "../assets/images/media_banner.jpg";
+import live_banner from "../assets/images/live_banner.jpg";
 import donate from "../assets/images/donate.jpg";
 import pay_gateway1 from "../assets/images/payment/pay_gateway1.png";
 import pay_gateway2 from "../assets/images/payment/pay_gateway2.jpg";
@@ -93,6 +94,8 @@ const staticImages = {
   qr_sample,
   prayer_bg,
   event_banner, 
-  media_banner
+  media_banner,
+  live_banner
 };
+
 export default staticImages;
