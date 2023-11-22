@@ -13,7 +13,7 @@ const DonateScreen = () => {
           }}
         >
           <div className="container">
-            <div className="grid lg:grid-cols-2 bg-white min-h-[320px] mb-10 max-w-[1000px] mx-auto rounded-lg shadow-normal overflow-hidden">
+            <div className="grid lg:grid-cols-2 bg-white min-h-[320px] max-w-[1000px] mx-auto rounded-lg shadow-normal overflow-hidden">
               <div>
                 <img
                   src={staticImages.donate_banner}
@@ -34,9 +34,11 @@ const DonateScreen = () => {
                 </p>
               </div>
             </div>
-            <div className="rounded-full border-2 shadow border-gray/10 w-20 h-20 overflow-hidden flex items-center justify-center mx-auto mb-6 bg-white">
-              <img src={staticImages.donate} className="w-16 mx-auto" alt="" />
+
+            <div className="rounded-full border-2 shadow border-gray/10 w-20 h-20 flex items-center justify-center mx-auto my-8 bg-white relative after:absolute after:content-[''] after:bottom-full after:w-[2px] after:bg-gray/20 after:h-[34px] after:left-1/2 after:-translate-x-1/2 before:absolute before:content-[''] before:top-full before:w-[2px] before:bg-gray/20 before:h-[33px] before:left-1/2 before:-translate-x-1/2">
+              <img src={staticImages.donate} className="w-16 mx-auto rounded-full" alt="" />
             </div>
+
             <div className="section-content grid lg:grid-cols-2 shadow-normal min-h-[500px] max-w-[1000px] rounded-lg overflow-hidden mx-auto">
               <div className="px-8 py-8 bg-white border-b-[1px] border-b-gray/5 lg:border-r-[1px] lg:border-r-gray/10 lg:border-b-0">
                 <h3 className="text-3xl font-semibold mb-4 text-green flex flex-wrap gap-x-4 items-center">
