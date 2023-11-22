@@ -23,12 +23,12 @@ const AboutScreen = () => {
                   John Hagee
                 </h3>
                 <h5 className="text-lg font-bold text-red md:text-xl mt-3 mb-1">
-                  Founder & Senior Pastor
+                  Founder & Senior Chariman
                 </h5>
                 <p className="text bg-white p-6 mt-3">
                   Pastor John C. Hagee is the founder and Senior Pastor of
-                  Cornerstone Church in San Antonio, Texas, a non-denominational
-                  evangelical church with more than 22,000 active members.
+                  Cornerstone Foundation in San Antonio, Texas, a non-denominational
+                  evangelical society with more than 22,000 active members.
                   Pastor Hagee has served the Lord in the gospel ministry for
                   over 60 years.
                 </p>
@@ -48,10 +48,10 @@ const AboutScreen = () => {
                 Matt Hagee
                 </h3>
                 <h5 className="text-lg font-bold text-red md:text-xl mt-3 mb-1">
-                Lead Pastor
+                Lead Co-founder
                 </h5>
                 <p className="text bg-gray/5 p-6 mt-3">
-                Pastor Matt Hagee is the Lead Pastor of the 22,000-member Cornerstone Church in San Antonio, Texas where he partners with his father, founder Pastor John Hagee. Pastor Matt and his wife Kendal are committed to sharing the Gospel of Jesus Christ with the nations of the world and committed to building bridges between generations.
+                Pastor Matt Hagee is the Lead Pastor of the 22,000-member Cornerstone community in San Antonio, Texas where he partners with his father, founder Pastor John Hagee. Pastor Matt and his wife Kendal are committed to sharing the Gospel of Jesus Christ with the nations of the world and committed to building bridges between generations.
                 </p>
               </div>
             </div>
@@ -69,12 +69,12 @@ const AboutScreen = () => {
                   John Hagee
                 </h3>
                 <h5 className="text-lg font-bold text-red md:text-xl mt-3 mb-1">
-                  Founder & Senior Pastor
+                  Vice President
                 </h5>
                 <p className="text bg-white p-6 mt-3">
                   Pastor John C. Hagee is the founder and Senior Pastor of
-                  Cornerstone Church in San Antonio, Texas, a non-denominational
-                  evangelical church with more than 22,000 active members.
+                  Cornerstone denomination in San Antonio, Texas, a non-denominational
+                  evangelical denomination with more than 22,000 active members.
                   Pastor Hagee has served the Lord in the gospel ministry for
                   over 60 years.
                 </p>

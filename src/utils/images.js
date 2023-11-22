@@ -51,6 +51,7 @@ import location_bg from "../assets/images/location_bg.jpg";
 import bg_pattern1 from "../assets/images/bg_pattern1.jpg";
 import giftbox from "../assets/images/giftbox.jpg";
 import arrow from "../assets/images/shapes/arrow.svg";
+import map from "../assets/images/shapes/map.svg";
 
 // shapes
 import bubbles from "../assets/images/shapes/bubbles.svg";
@@ -109,7 +110,8 @@ const staticImages = {
   bg_pattern1,
   giftbox,
   bubbles,
-  arrow
+  arrow,
+  map
 };
 
 export default staticImages;
