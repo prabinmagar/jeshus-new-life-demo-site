@@ -34,6 +34,7 @@ export default withMT({
         shadow2: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;",
         shadow3: "0 20px 40px 0 rgba(0,0,0,.1);",
         default: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+        shadow4: "rgba(0, 0, 0, 0.25) 0px 25px 20px -20px",
         normal: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
       },
     },
