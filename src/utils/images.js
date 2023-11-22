@@ -50,6 +50,10 @@ import prayer_bg from "../assets/images/prayer_bg.jpg";
 import location_bg from "../assets/images/location_bg.jpg";
 import bg_pattern1 from "../assets/images/bg_pattern1.jpg";
 import giftbox from "../assets/images/giftbox.jpg";
+import arrow from "../assets/images/shapes/arrow.svg";
+
+// shapes
+import bubbles from "../assets/images/shapes/bubbles.svg";
 
 const staticImages = {
   banner1,
@@ -103,7 +107,9 @@ const staticImages = {
   location_banner,
   location_bg,
   bg_pattern1,
-  giftbox
+  giftbox,
+  bubbles,
+  arrow
 };
 
 export default staticImages;

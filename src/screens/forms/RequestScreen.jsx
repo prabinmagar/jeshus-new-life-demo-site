@@ -12,15 +12,17 @@ const RequestScreen = () => {
           }}
         >
           <div className="container">
-            {/* <div className="bg-white min-h-[140px] max-w-[1200px] mx-auto rounded-lg shadow-normal mb-6">
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, sapiente.</h3>
-            </div> */}
             <div className="section-content grid lg:grid-cols-[2fr_3fr] lg:min-h-[500px] max-w-[1200px] rounded-lg overflow-hidden mx-auto shadow-normal">
-              <div className="px-8 py-8 bg-whitesmoke">
-                <h3 className="text-2xl font-semibold mb-8">
+              <div
+                className="px-8 lg:pe-12 py-8 bg-white"
+                style={{
+                  background: `url(${staticImages.bubbles}) center/cover no-repeat`,
+                }}
+              >
+                <h3 className="text-2xl font-semibold mb-4">
                   Express your request to us!
                 </h3>
-                <div className="bg-dark/10 p-6 rounded">
+                <div className="bg-green/5 p-6 rounded relative after:absolute after:bg-green/20 after:content-[''] after:w-full after:h-full after:-bottom-2 after:-right-2 after:top-2 after:left-2 after:rounded">
                   <p className="text">
                     Remember, you don’t have to go through difficult times
                     alone. There is a spiritual battle happening on the heavenly
@@ -33,6 +35,26 @@ const RequestScreen = () => {
                     what God is doing in the circumstances of your life.
                   </p>
                 </div>
+                <blockquote className="relative border-s-4 ps-4 sm:ps-6 border-red mt-8">
+                  <p className="text">
+                    <em>
+                      I just wanted to say that I'm very happy with my purchase
+                      so far. The documentation is outstanding - clear and
+                      detailed.
+                    </em>
+                  </p>
+                  <footer className="mt-3">
+                    <div className="flex items-center">
+                      <div>
+                        <div className="text-base font-semibold text-dark">
+                          Quoted part
+                        </div>
+                        <div className="text-sm text">Source title</div>
+                      </div>
+                    </div>
+                  </footer>
+                </blockquote>
+                <img src={staticImages.arrow} alt="" />
               </div>
               <div className="px-8 py-8 bg-white/10">
                 <h3 className="text-xl font-semibold mb-3 text-white py-3">
@@ -45,11 +67,13 @@ const RequestScreen = () => {
                         <label className="block capitalize tracking-wide text-white text font-medium mb-1">
                           First Name
                         </label>
-                        <input
-                          className="appearance-none block w-full bg-white/20 text-white py-3 px-4 leading-tight outline-none focus:bg-gray/10 default-transition"
-                          type="text"
-                          placeholder=""
-                        />
+                        <div className="border-b-[1px] border-b-white/60">
+                          <input
+                            className="appearance-none block w-full bg-transparent text-white py-3 px-4 leading-tight outline-none focus:bg-gray/10 default-transition"
+                            type="text"
+                            placeholder=""
+                          />
+                        </div>
                         <p className="text-red text-xs italic hidden">
                           Please fill out this field.
                         </p>
@@ -58,8 +82,22 @@ const RequestScreen = () => {
                         <label className="block capitalize tracking-wide text-white text font-medium mb-1">
                           last Name
                         </label>
+                        <div className="border-b-[1px] border-b-white/60">
+                          <input
+                            className="appearance-none block w-full bg-transparent text-white py-3 px-4 leading-tight outline-none focus:bg-gray/10 default-transition"
+                            type="text"
+                            placeholder=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label className="block capitalize tracking-wide text-white text font-medium mb-1">
+                        Email Address
+                      </label>
+                      <div className="border-b-[1px] border-b-white/60">
                         <input
-                          className="appearance-none block w-full bg-white/20 text-white py-3 px-4 leading-tight outline-none focus:bg-gray/10 default-transition"
+                          className="appearance-none block w-full bg-transparent text-white py-3 px-4 leading-tight outline-none focus:bg-gray/10 default-transition"
                           type="text"
                           placeholder=""
                         />
@@ -67,41 +105,34 @@ const RequestScreen = () => {
                     </div>
                     <div>
                       <label className="block capitalize tracking-wide text-white text font-medium mb-1">
-                        Email Address
-                      </label>
-                      <input
-                        className="appearance-none block w-full bg-white/20 text-white py-3 px-4 leading-tight outline-none focus:bg-gray/10 default-transition"
-                        type="text"
-                        placeholder=""
-                      />
-                    </div>
-                    <div>
-                      <label className="block capitalize tracking-wide text-white text font-medium mb-1">
                         Phone Number
                       </label>
-                      <input
-                        className="appearance-none block w-full bg-white/20 text-white py-3 px-4 leading-tight outline-none focus:bg-gray/10 default-transition"
-                        type="text"
-                        placeholder=""
-                      />
+                      <div className="border-b-[1px] border-b-white/60">
+                        <input
+                          className="appearance-none block w-full bg-transparent text-white py-3 px-4 leading-tight outline-none focus:bg-gray/10 default-transition"
+                          type="text"
+                          placeholder=""
+                        />
+                      </div>
                     </div>
                     <div>
                       <label className="block capitalize tracking-wide text-white text font-medium mb-1">
                         Request Message
                       </label>
                       <textarea
-                        className="appearance-none block w-full bg-white/20 text-white border h-[140px] py-3 px-4 leading-tight outline-none focus:bg-gray/10 default-transition resize-none"
+                        className="appearance-none block w-full bg-white/20 text-white border h-[120px] py-3 px-4 leading-tight outline-none focus:bg-gray/10 default-transition resize-none"
                         type="text"
                         placeholder=""
                       ></textarea>
                     </div>
                   </div>
-                  <button type="submit" className="btn btn-lg bg-red">
+                  <button type="submit" className="btn btn-lg bg-green">
                     Send Request
                   </button>
                 </form>
               </div>
             </div>
+            <img src={staticImages.peaks} alt="" />
           </div>
         </div>
       </div>
