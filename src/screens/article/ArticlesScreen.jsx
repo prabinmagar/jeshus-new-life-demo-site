@@ -21,7 +21,7 @@ const ArticlesScreen = () => {
   useEffect(() => scrollToTop(), []);
   return (
     <main className="content-wrapper">
-      <div className="pg-article py-8">
+      <div className="pg-article py-8 bg-whitesmoke">
         <div className="container grid lg:grid-cols-[2fr_1fr] gap-10 items-start">
           <div className="w-full">
             <div className="flex items-center justify-between pb-2 mb-6 border-b-[1px] border-dark/10">
@@ -51,7 +51,7 @@ const ArticlesScreen = () => {
                       className="w-full h-full object-cover absolute"
                     />
                   </div>
-                  <div className="max-w-4xl p-6 mx-auto bg-white shadow-md">
+                  <div className="max-w-4xl p-6 mx-auto bg-white shadow-md lg:py-8">
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex gap-x-4">
                         <div className="flex items-center gap-x-2.5">
@@ -135,7 +135,7 @@ const ArticlesScreen = () => {
                       className="w-full h-full object-cover absolute"
                     />
                   </div>
-                  <div className="max-w-4xl p-6 mx-auto bg-white shadow-md">
+                  <div className="max-w-4xl p-6 mx-auto bg-white shadow-md lg:py-8">
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex gap-x-4">
                         <div className="flex items-center gap-x-2.5">
@@ -221,7 +221,7 @@ const ArticlesScreen = () => {
                       className="w-full h-full object-cover absolute"
                     />
                   </div>
-                  <div className="max-w-4xl p-6 mx-auto bg-white shadow-md">
+                  <div className="max-w-4xl p-6 mx-auto bg-white shadow-md lg:py-8">
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex gap-x-4">
                         <div className="flex items-center gap-x-2.5">
@@ -306,7 +306,7 @@ const ArticlesScreen = () => {
                       className="w-full h-full object-cover absolute"
                     />
                   </div>
-                  <div className="max-w-4xl p-6 mx-auto bg-white shadow-md">
+                  <div className="max-w-4xl p-6 mx-auto bg-white shadow-md lg:py-8">
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex gap-x-4">
                         <div className="flex items-center gap-x-2.5">

@@ -11,7 +11,7 @@ const ArticleSingleScreen = () => {
     <main className="content-wrapper">
       <div className="pg-article py-8">
         <div className="container">
-          <div className="px-4 pt-10 grid lg:grid-cols-[2fr_1fr] gap-12">
+          <div className="px-4 pt-4 grid lg:grid-cols-[2fr_1fr] gap-12">
             <div className="max-w-4xl">
               <Link
                 to="/"
@@ -39,11 +39,11 @@ const ArticleSingleScreen = () => {
                     <div className="flex flex-col items-start md:flex-row md:justify-between md:items-center gap-5">
                       <address className="flex items-center not-italic">
                         <div className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
-                          <img
-                            className="mr-4 w-14 h-14 rounded-full"
+                          <div className="w-14 h-14 mr-4"><img
+                            className="w-full h-full object-cover object-top rounded-full"
                             src={staticImages.member1}
                             alt=""
-                          />
+                          /></div>
                           <div className="flex flex-col">
                             <a
                               href="#"
