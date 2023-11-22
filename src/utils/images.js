@@ -49,6 +49,7 @@ import qr_sample from "../assets/images/payment/qr_sample.png";
 import prayer_bg from "../assets/images/prayer_bg.jpg";
 import location_bg from "../assets/images/location_bg.jpg";
 import bg_pattern1 from "../assets/images/bg_pattern1.jpg";
+import giftbox from "../assets/images/giftbox.jpg";
 
 const staticImages = {
   banner1,
@@ -101,7 +102,8 @@ const staticImages = {
   live_banner,
   location_banner,
   location_bg,
-  bg_pattern1
+  bg_pattern1,
+  giftbox
 };
 
 export default staticImages;

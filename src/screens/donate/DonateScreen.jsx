@@ -36,7 +36,12 @@ const DonateScreen = () => {
             </div>
 
             <div className="rounded-full border-2 shadow border-gray/10 w-20 h-20 flex items-center justify-center mx-auto my-8 bg-white relative after:absolute after:content-[''] after:bottom-full after:w-[2px] after:bg-gray/20 after:h-[34px] after:left-1/2 after:-translate-x-1/2 before:absolute before:content-[''] before:top-full before:w-[2px] before:bg-gray/20 before:h-[33px] before:left-1/2 before:-translate-x-1/2">
-              <img src={staticImages.donate} className="w-16 mx-auto rounded-full" alt="" />
+              <img
+                src={staticImages.donate}
+                className="w-16 mx-auto rounded-full z-10"
+                alt=""
+              />
+              <span className="animate-ping absolute bg-green rounded-full origin-center w-2/3 h-2/3"></span>
             </div>
 
             <div className="section-content grid lg:grid-cols-2 shadow-normal min-h-[500px] max-w-[1000px] rounded-lg overflow-hidden mx-auto">
@@ -118,6 +123,12 @@ const DonateScreen = () => {
               <div className="px-8 py-8 bg-white">
                 <div className="max-w-[240px] mx-auto border-gray/10 border-[1px]">
                   <img src={staticImages.qr_sample} alt="" />
+                </div>
+                <div className="flex items-center justify-center mt-4 flex-wrap gap-x-3">
+                  <img src={staticImages.giftbox} alt="" className="w-8 h-8" />
+                  <p className="text italic text-sm font-semibold text-green">
+                    Be a partaker of the mission & service.
+                  </p>
                 </div>
               </div>
             </div>
