@@ -1,6 +1,6 @@
 import { BaseLayout } from "./components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Articles, Home, PageNotFound, ArticleSingle, About, GalleryAlbum, GAlleryPhotos, Media, Donate, Request, Event, WatchLive } from "./screens";
+import { Articles, Home, PageNotFound, ArticleSingle, About, GalleryAlbum, GAlleryPhotos, Media, Donate, Request, Event, WatchLive, Branch } from "./screens";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -21,6 +21,7 @@ function App() {
             <Route path="/request" element={<Request /> } />
             <Route path="/event" element={<Event /> } />
             <Route path="/watch" element={<WatchLive /> } />
+            <Route path="/branch" element={<Branch /> } />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>

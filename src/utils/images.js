@@ -38,6 +38,7 @@ import donate_banner from "../assets/images/donate_banner.jpg";
 import event_banner from "../assets/images/event_banner.jpg";
 import media_banner from "../assets/images/media_banner.jpg";
 import live_banner from "../assets/images/live_banner.jpg";
+import location_banner from "../assets/images/location_banner.jpg";
 import donate from "../assets/images/donate.jpg";
 import pay_gateway1 from "../assets/images/payment/pay_gateway1.png";
 import pay_gateway2 from "../assets/images/payment/pay_gateway2.jpg";
@@ -46,6 +47,8 @@ import pay_gateway4 from "../assets/images/payment/pay_gateway4.png";
 import pay_gateway5 from "../assets/images/payment/pay_gateway5.png";
 import qr_sample from "../assets/images/payment/qr_sample.png";
 import prayer_bg from "../assets/images/prayer_bg.jpg";
+import location_bg from "../assets/images/location_bg.jpg";
+import bg_pattern1 from "../assets/images/bg_pattern1.jpg";
 
 const staticImages = {
   banner1,
@@ -95,7 +98,10 @@ const staticImages = {
   prayer_bg,
   event_banner, 
   media_banner,
-  live_banner
+  live_banner,
+  location_banner,
+  location_bg,
+  bg_pattern1
 };
 
 export default staticImages;

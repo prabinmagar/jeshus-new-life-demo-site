@@ -11,3 +11,4 @@ export { default as Donate } from "./donate/DonateScreen";
 export { default as Request } from "./forms/RequestScreen";
 export { default as Event } from "./event/EventScreen";
 export { default as WatchLive } from "./watch/WatchLiveScreen";
+export { default as Branch } from "./branch/BranchScreen";

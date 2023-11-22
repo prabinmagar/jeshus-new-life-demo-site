@@ -6,23 +6,14 @@ const DonateScreen = () => {
   return (
     <main className="content-wrapper">
       <div className="pg-gallery-album pb-12 bg-whitesmoke">
-        <div
-          className="mb-8 h-[160px] flex items-center"
-          style={{
-            background: `linear-gradient(rgba(36, 110, 185, 0.4), rgba(0, 0, 0, 0.5)), url(${staticImages.donate_banner}) center/cover no-repeat fixed`,
-          }}
-        >
-          <div className="container">
-            <h2 className="text-3xl lg:text-4xl font-bold text-white drop-shadow-lg mb-2">
-              Contribute
-            </h2>
-          </div>
-        </div>
+        <div className="py-16" style={{
+          background: `url(${staticImages.bg_pattern1}) center/cover no-repeat`
+        }}>
         <div className="container">
-          <div className="section-content mt-10 grid lg:grid-cols-2 shadow-normal min-h-[500px] max-w-[1000px] rounded-lg overflow-hidden mx-auto">
+          <div className="section-content grid lg:grid-cols-2 shadow-normal min-h-[500px] max-w-[1000px] rounded-lg overflow-hidden mx-auto">
             <div className="px-8 py-8 bg-white border-b-[1px] border-b-gray/5 lg:border-r-[1px] lg:border-r-gray/10 lg:border-b-0">
-              <h3 className="text-3xl font-semibold mb-4 text-green">
-                Help us do more
+              <h3 className="text-3xl font-semibold mb-4 text-green flex flex-wrap gap-x-4 items-center">
+                <span>Help us do more!</span> <BiSolidDonateHeart />
               </h3>
               <div className="bg-gray/5 p-6 rounded">
                 <p className="text">
@@ -106,6 +97,7 @@ const DonateScreen = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </main>
