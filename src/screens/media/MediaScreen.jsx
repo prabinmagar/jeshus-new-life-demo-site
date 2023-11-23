@@ -1,4 +1,6 @@
 import staticImages from "../../utils/images";
+import { MdVideoLibrary } from "react-icons/md";
+import { FaRegCirclePlay } from "react-icons/fa6";
 
 const MediaScreen = () => {
   const vidId = "aqz-KE-bpKQ";
@@ -24,6 +26,9 @@ const MediaScreen = () => {
         </div>
         <div className="container">
           <div className="section-content mb-10 mt-10">
+            <div className="mb-6">
+              <h3 className="text-2xl font-bold mb-4">Recent Videos</h3>
+            </div>
             <div className="grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-6 lg:gap-6">
               <div className="block rounded-lg bg-white shadow-lg">
                 <div className="relative overflow-hidden bg-cover bg-no-repeat">
@@ -35,13 +40,27 @@ const MediaScreen = () => {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   ></iframe>
                 </div>
-                <div className="p-6">
-                  <h5 className="mb-3 text-xl font-semibold text-dark">
-                    New released Song 2023
-                  </h5>
+                <div className="px-6 py-4">
+                  <div className="flex flex-col items-start gap-y-3 mb-3">
+                    <h5 className="text-xl font-semibold text-dark flex items-center flex-wrap gap-x-3">
+                      <FaRegCirclePlay size={32} className="text-green" />
+                      <span>New released Song 2023</span>
+                    </h5>
+                  </div>
                   <p className="text text-np">
-                  सही समयमा सही काम गर्ने गरी जीवन योजना बनाउनु पर्छ। मलाई यात्रा गर्न मन पर्छ, त्यसले मलाई नयाँ चीजहरू सिक्न मदत गर्छ। म नेपाली हुँ।
+                    सही समयमा सही काम गर्ने गरी जीवन योजना बनाउनु पर्छ। मलाई
+                    यात्रा गर्न मन पर्छ, त्यसले मलाई नयाँ चीजहरू सिक्न मदत गर्छ।
+                    म नेपाली हुँ।
                   </p>
+                </div>
+                <div className="px-6 py-3 border-t-[1px] border-t-gray/10 flex items-center flex-wrap gap-3 justify-between">
+                  <div className="flex text text-sm items-center flex-wrap gap-x-2">
+                    <MdVideoLibrary /> <span>27th Jan, 2023,</span>
+                  </div>
+                  <div className="bg-green text-white rounded px-3 text-sm py-1 border-[1px] border-green">
+                    <span className="font-medium">Lectures</span> - Watch on
+                    YouTube
+                  </div>
                 </div>
               </div>
 
@@ -55,13 +74,27 @@ const MediaScreen = () => {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   ></iframe>
                 </div>
-                <div className="p-6">
-                  <h5 className="mb-3 text-xl font-semibold text-dark">
-                  मेरो शौक गीत गाउनु हो।
-                  </h5>
+                <div className="px-6 py-4">
+                  <div className="flex flex-col items-start gap-y-3 mb-3">
+                    <h5 className="text-xl font-semibold text-dark flex items-center flex-wrap gap-x-3">
+                      <FaRegCirclePlay size={32} className="text-green" />
+                      <span>New released Song 2023</span>
+                    </h5>
+                  </div>
                   <p className="text text-np">
-                  सही समयमा सही काम गर्ने गरी जीवन योजना बनाउनु पर्छ। मलाई यात्रा गर्न मन पर्छ, त्यसले मलाई नयाँ चीजहरू सिक्न मदत गर्छ। म नेपाली हुँ।
+                    सही समयमा सही काम गर्ने गरी जीवन योजना बनाउनु पर्छ। मलाई
+                    यात्रा गर्न मन पर्छ, त्यसले मलाई नयाँ चीजहरू सिक्न मदत गर्छ।
+                    म नेपाली हुँ।
                   </p>
+                </div>
+                <div className="px-6 py-3 border-t-[1px] border-t-gray/10 flex items-center flex-wrap gap-3 justify-between">
+                  <div className="flex text text-sm items-center flex-wrap gap-x-2">
+                    <MdVideoLibrary /> <span>27th Jan, 2023,</span>
+                  </div>
+                  <div className="bg-green text-white rounded px-3 text-sm py-1 border-[1px] border-green">
+                    <span className="font-medium">Lectures</span> - Watch on
+                    YouTube
+                  </div>
                 </div>
               </div>
 
@@ -75,13 +108,27 @@ const MediaScreen = () => {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   ></iframe>
                 </div>
-                <div className="p-6">
-                  <h5 className="mb-3 text-xl font-semibold text-dark">
-                  नेपाली व्यंजनहरू स्वादिष्ट रहन्छन्।
-                  </h5>
+                <div className="px-6 py-4">
+                  <div className="flex flex-col items-start gap-y-3 mb-3">
+                    <h5 className="text-xl font-semibold text-dark flex items-center flex-wrap gap-x-3">
+                      <FaRegCirclePlay size={32} className="text-green" />
+                      <span>New released Song 2023</span>
+                    </h5>
+                  </div>
                   <p className="text text-np">
-                  काठमाडौं नेपालको राजधानी हो। हामीले नेपालमा बालबालिकाको शिक्षाको अधिकार सुनिश्चित गर्नु पर्छ।
+                    सही समयमा सही काम गर्ने गरी जीवन योजना बनाउनु पर्छ। मलाई
+                    यात्रा गर्न मन पर्छ, त्यसले मलाई नयाँ चीजहरू सिक्न मदत गर्छ।
+                    म नेपाली हुँ।
                   </p>
+                </div>
+                <div className="px-6 py-3 border-t-[1px] border-t-gray/10 flex items-center flex-wrap gap-3 justify-between">
+                  <div className="flex text text-sm items-center flex-wrap gap-x-2">
+                    <MdVideoLibrary /> <span>27th Jan, 2023,</span>
+                  </div>
+                  <div className="bg-green text-white rounded px-3 text-sm py-1 border-[1px] border-green">
+                    <span className="font-medium">Lectures</span> - Watch on
+                    YouTube
+                  </div>
                 </div>
               </div>
 
@@ -95,13 +142,27 @@ const MediaScreen = () => {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   ></iframe>
                 </div>
-                <div className="p-6">
-                  <h5 className="mb-3 text-xl font-semibold text-dark">
-                    New released Song 2023
-                  </h5>
+                <div className="px-6 py-4">
+                  <div className="flex flex-col items-start gap-y-3 mb-3">
+                    <h5 className="text-xl font-semibold text-dark flex items-center flex-wrap gap-x-3">
+                      <FaRegCirclePlay size={32} className="text-green" />
+                      <span>New released Song 2023</span>
+                    </h5>
+                  </div>
                   <p className="text text-np">
-                  सही समयमा सही काम गर्ने गरी जीवन योजना बनाउनु पर्छ। मलाई यात्रा गर्न मन पर्छ, त्यसले मलाई नयाँ चीजहरू सिक्न मदत गर्छ। म नेपाली हुँ।
+                    सही समयमा सही काम गर्ने गरी जीवन योजना बनाउनु पर्छ। मलाई
+                    यात्रा गर्न मन पर्छ, त्यसले मलाई नयाँ चीजहरू सिक्न मदत गर्छ।
+                    म नेपाली हुँ।
                   </p>
+                </div>
+                <div className="px-6 py-3 border-t-[1px] border-t-gray/10 flex items-center flex-wrap gap-3 justify-between">
+                  <div className="flex text text-sm items-center flex-wrap gap-x-2">
+                    <MdVideoLibrary /> <span>27th Jan, 2023,</span>
+                  </div>
+                  <div className="bg-red text-white rounded px-3 text-sm py-1 border-[1px] border-red">
+                    <span className="font-medium">Lectures</span> - Watch on
+                    YouTube
+                  </div>
                 </div>
               </div>
 
@@ -115,13 +176,27 @@ const MediaScreen = () => {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   ></iframe>
                 </div>
-                <div className="p-6">
-                  <h5 className="mb-3 text-xl font-semibold text-dark">
-                    New released Song 2023
-                  </h5>
+                <div className="px-6 py-4">
+                  <div className="flex flex-col items-start gap-y-3 mb-3">
+                    <h5 className="text-xl font-semibold text-dark flex items-center flex-wrap gap-x-3">
+                      <FaRegCirclePlay size={32} className="text-green" />
+                      <span>New released Song 2023</span>
+                    </h5>
+                  </div>
                   <p className="text text-np">
-                  सही समयमा सही काम गर्ने गरी जीवन योजना बनाउनु पर्छ। मलाई यात्रा गर्न मन पर्छ, त्यसले मलाई नयाँ चीजहरू सिक्न मदत गर्छ। म नेपाली हुँ।
+                    सही समयमा सही काम गर्ने गरी जीवन योजना बनाउनु पर्छ। मलाई
+                    यात्रा गर्न मन पर्छ, त्यसले मलाई नयाँ चीजहरू सिक्न मदत गर्छ।
+                    म नेपाली हुँ।
                   </p>
+                </div>
+                <div className="px-6 py-3 border-t-[1px] border-t-gray/10 flex items-center flex-wrap gap-3 justify-between">
+                  <div className="flex text text-sm items-center flex-wrap gap-x-2">
+                    <MdVideoLibrary /> <span>27th Jan, 2023,</span>
+                  </div>
+                  <div className="bg-red text-white rounded px-3 text-sm py-1 border-[1px] border-red">
+                    <span className="font-medium">Lectures</span> - Watch on
+                    YouTube
+                  </div>
                 </div>
               </div>
 
@@ -135,13 +210,27 @@ const MediaScreen = () => {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   ></iframe>
                 </div>
-                <div className="p-6">
-                  <h5 className="mb-3 text-xl font-semibold text-dark">
-                    New released Song 2023
-                  </h5>
+                <div className="px-6 py-4">
+                  <div className="flex flex-col items-start gap-y-3 mb-3">
+                    <h5 className="text-xl font-semibold text-dark flex items-center flex-wrap gap-x-3">
+                      <FaRegCirclePlay size={32} className="text-green" />
+                      <span>New released Song 2023</span>
+                    </h5>
+                  </div>
                   <p className="text text-np">
-                  सही समयमा सही काम गर्ने गरी जीवन योजना बनाउनु पर्छ। मलाई यात्रा गर्न मन पर्छ, त्यसले मलाई नयाँ चीजहरू सिक्न मदत गर्छ। म नेपाली हुँ।
+                    सही समयमा सही काम गर्ने गरी जीवन योजना बनाउनु पर्छ। मलाई
+                    यात्रा गर्न मन पर्छ, त्यसले मलाई नयाँ चीजहरू सिक्न मदत गर्छ।
+                    म नेपाली हुँ।
                   </p>
+                </div>
+                <div className="px-6 py-3 border-t-[1px] border-t-gray/10 flex items-center flex-wrap gap-3 justify-between">
+                  <div className="flex text text-sm items-center flex-wrap gap-x-2">
+                    <MdVideoLibrary /> <span>27th Jan, 2023,</span>
+                  </div>
+                  <div className="bg-red text-white rounded px-3 text-sm py-1 border-[1px] border-red">
+                    <span className="font-medium">Lectures</span> - Watch on
+                    YouTube
+                  </div>
                 </div>
               </div>
             </div>

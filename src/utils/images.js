@@ -53,6 +53,7 @@ import giftbox from "../assets/images/giftbox.jpg";
 import arrow from "../assets/images/shapes/arrow.svg";
 import map from "../assets/images/shapes/map.svg";
 import wave from "../assets/images/shapes/wave.svg";
+import twinkle from "../assets/images/shapes/twinkle.svg";
 
 // shapes
 import bubbles from "../assets/images/shapes/bubbles.svg";
@@ -113,7 +114,8 @@ const staticImages = {
   bubbles,
   arrow,
   map,
-  wave
+  wave,
+  twinkle
 };
 
 export default staticImages;

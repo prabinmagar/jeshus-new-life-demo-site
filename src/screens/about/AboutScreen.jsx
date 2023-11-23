@@ -98,12 +98,13 @@ const AboutScreen = () => {
               </div>
 
               <div className="flex gap-8 flex-col md:flex-row md:items-center">
-                <div className="h-[280px] w-[280px] mx-auto md:ms-0 min-w-[280px] overflow-hidden rounded-full shadow-normal border-4 border-white">
+                <div className="h-[280px] w-[280px] mx-auto md:ms-0 min-w-[280px] rounded-full shadow-normal border-4 border-white relative">
                   <img
                     src={staticImages.member5}
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover object-top rounded-full z-10 relative"
                     alt=""
                   />
+                  <img src={staticImages.twinkle} alt="" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[1.2]" />
                 </div>
                 <div className="shadow-shadow4 px-6 py-8 rounded-lg border-2 border-gray/5 bg-whitesmoke">
                   <h3 className="text-2xl font-bold text-gray-700 md:text-3xl">
