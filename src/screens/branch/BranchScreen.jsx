@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 import staticImages from "../../utils/images";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaBuilding } from "react-icons/fa";
+import { useEffect } from "react";
+import { scrollToTop } from "../../utils/scrollToTop";
 
 const BranchScreen = () => {
+  useEffect(() => scrollToTop(), []);
   return (
     <main className="content-wrapper">
       <div className="pg-gallery-album bg-whitesmoke">

@@ -1,8 +1,11 @@
 import { AiFillCheckCircle } from "react-icons/ai";
 import staticImages from "../../utils/images";
 import { BiSolidDonateHeart } from "react-icons/bi";
+import { useEffect } from "react";
+import { scrollToTop } from "../../utils/scrollToTop";
 
 const DonateScreen = () => {
+  useEffect(() => scrollToTop(), []);
   return (
     <main className="content-wrapper">
       <div className="pg-gallery-album pb-12 bg-whitesmoke">

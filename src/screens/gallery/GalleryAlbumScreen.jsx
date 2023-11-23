@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import staticImages from "../../utils/images";
 import { IoMdPhotos } from "react-icons/io";
+import { useEffect } from "react";
+import { scrollToTop } from "../../utils/scrollToTop";
 
 const GalleryAlbumScreen = () => {
+  useEffect(() => scrollToTop(), []);
   return (
     <main className="content-wrapper">
       <div className="pg-gallery-album pb-12">

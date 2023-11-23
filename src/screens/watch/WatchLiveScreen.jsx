@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import staticImages from "../../utils/images";
+import { scrollToTop } from "../../utils/scrollToTop";
 
 const WatchLiveScreen = () => {
+  useEffect(() => scrollToTop(), []);
+
   return (
     <main className="content-wrapper">
       <div className="pg-watch-live pb-12">

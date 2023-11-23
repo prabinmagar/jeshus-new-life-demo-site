@@ -14,10 +14,7 @@ const Home = () => {
       <Ministries />
       <Gallery />
       <Articles />
-      {/* <Training /> */}
-      {/* <Branches /> */}
       <Members />
-      {/* <Notices /> */}
     </div>
   );
 };

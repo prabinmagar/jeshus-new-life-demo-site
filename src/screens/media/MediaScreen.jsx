@@ -1,9 +1,13 @@
 import staticImages from "../../utils/images";
 import { MdVideoLibrary } from "react-icons/md";
 import { FaRegCirclePlay } from "react-icons/fa6";
+import { useEffect } from "react";
+import { scrollToTop } from "../../utils/scrollToTop";
 
 const MediaScreen = () => {
   const vidId = "aqz-KE-bpKQ";
+
+  useEffect(() => scrollToTop(), []);
 
   return (
     <main className="content-wrapper">

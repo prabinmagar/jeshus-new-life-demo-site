@@ -1,7 +1,9 @@
-import { AiFillCheckCircle } from "react-icons/ai";
+import { useEffect } from "react";
 import staticImages from "../../utils/images";
+import { scrollToTop } from "../../utils/scrollToTop";
 
 const RequestScreen = () => {
+  useEffect(() => scrollToTop(), []);
   return (
     <main className="content-wrapper">
       <div className="pg-gallery-album pb-12 bg-whitesmoke">

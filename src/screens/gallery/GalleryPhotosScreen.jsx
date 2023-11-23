@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom"
 import staticImages from "../../utils/images"
+import { useEffect } from "react";
+import { scrollToTop } from "../../utils/scrollToTop";
 
 const GalleryPhotosScreen = () => {
+  useEffect(() => scrollToTop(), []);
   return (
     <main className="content-wrapper">
       <div className="pg-gallery-album py-16 bg-gray/5">

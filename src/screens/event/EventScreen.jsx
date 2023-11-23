@@ -1,7 +1,8 @@
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { EventDialog } from "../../components/common/EventDialog";
 import staticImages from "../../utils/images";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { scrollToTop } from "../../utils/scrollToTop";
 
 const EventScreen = () => {
   const [eventDialogOpen, setEventDialogOpen] = useState(false);
@@ -11,6 +12,9 @@ const EventScreen = () => {
     e.preventDefault();
     handleEventDialogOpen();
   };
+
+  useEffect(() => scrollToTop(), []);
+
   return (
     <>
       <EventDialog
