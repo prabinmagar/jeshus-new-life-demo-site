@@ -14,6 +14,7 @@ import {
 } from "@material-tailwind/react";
 import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import { BiSolidLeaf } from "react-icons/bi";
 
 const Navbar = () => {
   const location = useLocation();
@@ -148,12 +149,19 @@ const Navbar = () => {
         } fixed top-0 left-0 right-0 z-[999] flex items-center`}
       >
         <div className="container flex items-center justify-between">
-          <Link
+          {/* <Link
             to="/"
             className="text-white font-bold text-xl border-[3px] border-white inline-flex items-stretch rounded navbar-brand"
           >
             <span className="bg-white px-3 py-2 text-dark">Yeshua</span>{" "}
             <span className="px-3 py-2 ">New Life</span>
+          </Link> */}
+          <Link
+            to="/"
+            className="font-bold text-3xl inline-flex items-center gap-x-2"
+          >
+            <BiSolidLeaf className="text-red" />
+            <span className="">YNL.</span>
           </Link>
           <button
             onClick={openDrawerRight}
@@ -274,7 +282,10 @@ const Navbar = () => {
                           </h4>
                         </div>
                       </MenuItem>
-                      <Link to="/branch" className="w-full hover:bg-transparent active:bg-transparent py-0 px-3">
+                      <Link
+                        to="/branch"
+                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-3"
+                      >
                         <div className="px-1 py-1">
                           <h4 className="text-sm font-medium text">See ALL</h4>
                         </div>
@@ -378,7 +389,10 @@ const Navbar = () => {
                           </h4>
                         </div>
                       </Link>
-                      <Link to="/watch" className="w-full hover:bg-transparent active:bg-transparent py-0 px-3">
+                      <Link
+                        to="/watch"
+                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-3"
+                      >
                         <div className="px-1 py-1">
                           <h4 className="text text-sm font-medium">
                             Watch Live

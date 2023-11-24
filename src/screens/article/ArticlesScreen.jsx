@@ -16,16 +16,42 @@ import {
 import { FaShareAlt } from "react-icons/fa";
 import { useEffect } from "react";
 import { scrollToTop } from "../../utils/scrollToTop";
+import { FiSearch } from "react-icons/fi";
 
 const ArticlesScreen = () => {
   useEffect(() => scrollToTop(), []);
   return (
     <main className="content-wrapper">
       <div className="pg-article py-8 bg-whitesmoke">
+        <div>
+          <div className="container">
+            <form className="max-w-[600px] mb-10 mx-auto shadow-md rounded-full">
+              <label className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">
+                Search
+              </label>
+              <div className="relative">
+                <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"></div>
+                <input
+                  type="text"
+                  className="block w-full px-5 py-3 text-gray rounded-full"
+                  placeholder="Search your keyword here ..."
+                  required
+                />
+                <button
+                  type="submit"
+                  className="absolute top-1/2 -translate-y-1/2 right-4 font-medium rounded-full text-base text-dark"
+                >
+                  <FiSearch size={24} />
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
         <div className="container grid lg:grid-cols-[2fr_1fr] gap-10 items-start">
           <div className="w-full">
             <div className="flex items-center justify-between pb-2 mb-6 border-b-[1px] border-dark/10">
-              <h1 className="text-xl font-bold text-gray-700 md:text-2xl">
+              <h1 className="text-xl font-bold text-gray-700">
                 Articles To Read
               </h1>
               <Menu>
@@ -36,14 +62,16 @@ const ArticlesScreen = () => {
                   </div>
                 </MenuHandler>
                 <MenuList>
-                  <MenuItem className="text text-base py-1">Latest</MenuItem>
-                  <MenuItem className="text text-base py-1">Last Week</MenuItem>
-                  <MenuItem className="text text-base py-1">Popular</MenuItem>
+                  <MenuItem className="text text-[14px] py-1">Latest</MenuItem>
+                  <MenuItem className="text text-[14px] py-1">
+                    Last Week
+                  </MenuItem>
+                  <MenuItem className="text text-[14px] py-1">Popular</MenuItem>
                 </MenuList>
               </Menu>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-6">
-              <div className="shadow-md rounded-lg">
+              <div className="shadow-md rounded-lg" data-aos="fade-up">
                 <div className="grid xl:grid-cols-[280px_auto] rounded-lg overflow-hidden">
                   <div className="relative h-[320px] xl:h-auto">
                     <img
@@ -55,7 +83,8 @@ const ArticlesScreen = () => {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex gap-x-4">
                         <div className="flex items-center gap-x-2.5">
-                          <BsFillCalendarCheckFill className="text-gray"
+                          <BsFillCalendarCheckFill
+                            className="text-gray"
                             size={14}
                           />
                           <span className="font-normal text-sm text-dark/50">
@@ -77,7 +106,7 @@ const ArticlesScreen = () => {
                     <div className="mt-2">
                       <Link
                         to="/article/1"
-                        className="text-2xl font-bold text-gray-700 hover:underline"
+                        className="text-xl font-bold text-gray-700 hover:underline"
                       >
                         बाइडेनले भने- इजरायल-हमास युद्ध रोकिनुपर्छ
                       </Link>
@@ -91,9 +120,9 @@ const ArticlesScreen = () => {
                     <div className="flex items-center justify-between mt-4 flex-wrap gap-y-4">
                       <Link
                         to="/article/1"
-                        className="flex focus:outline-none focus:underline items-center cursor-pointer btn capitalize py-[6px] px-4 bg-red"
+                        className="flex focus:outline-none focus:underline items-center cursor-pointer btn capitalize gap-x-2 py-[5px] px-4 bg-white text-red shadow-none  border-[1px] border-red hover:bg-red hover:text-white"
                       >
-                        <p className="pr-2 text-base font-medium">Read More</p>
+                        <p className="text-base font-medium">पुरा पढ्नुहोस्</p>
                         <svg
                           className="fill-stroke"
                           width="16"
@@ -127,7 +156,7 @@ const ArticlesScreen = () => {
                   </div>
                 </div>
               </div>
-              <div className="shadow-md rounded-lg">
+              <div className="shadow-md rounded-lg" data-aos="fade-up">
                 <div className="grid xl:grid-cols-[280px_auto] rounded-lg overflow-hidden">
                   <div className="relative h-[320px] xl:h-auto">
                     <img
@@ -139,7 +168,8 @@ const ArticlesScreen = () => {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex gap-x-4">
                         <div className="flex items-center gap-x-2.5">
-                          <BsFillCalendarCheckFill className="text-gray"
+                          <BsFillCalendarCheckFill
+                            className="text-gray"
                             size={14}
                           />
                           <span className="font-normal text-sm text-dark/50">
@@ -161,7 +191,7 @@ const ArticlesScreen = () => {
                     <div className="mt-2">
                       <Link
                         to="/article/1"
-                        className="text-2xl font-bold text-gray-700 hover:underline"
+                        className="text-xl font-bold text-gray-700 hover:underline"
                       >
                         सञ्चारको पहुँच पुग्न नसकेको एउटा गाउँ
                       </Link>
@@ -175,11 +205,9 @@ const ArticlesScreen = () => {
                     <div className="flex items-center justify-between mt-4 flex-wrap gap-y-4">
                       <Link
                         to="/article/1"
-                        className="flex focus:outline-none focus:underline items-center cursor-pointer btn capitalize py-[6px] px-4 bg-red"
+                        className="flex focus:outline-none focus:underline items-center cursor-pointer btn capitalize gap-x-2 py-[5px] px-4 bg-white text-red shadow-none  border-[1px] border-red hover:bg-red hover:text-white"
                       >
-                        <p className="pr-2 text-base font-medium">
-                          पुरा पढ्नुहोस्
-                        </p>
+                        <p className="text-base font-medium">पुरा पढ्नुहोस्</p>
                         <svg
                           className="fill-stroke"
                           width="16"
@@ -213,7 +241,7 @@ const ArticlesScreen = () => {
                   </div>
                 </div>
               </div>
-              <div className="shadow-md rounded-lg">
+              <div className="shadow-md rounded-lg" data-aos="fade-up">
                 <div className="grid xl:grid-cols-[280px_auto] rounded-lg overflow-hidden">
                   <div className="relative h-[320px] xl:h-auto">
                     <img
@@ -225,7 +253,8 @@ const ArticlesScreen = () => {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex gap-x-4">
                         <div className="flex items-center gap-x-2.5">
-                          <BsFillCalendarCheckFill className="text-gray"
+                          <BsFillCalendarCheckFill
+                            className="text-gray"
                             size={14}
                           />
                           <span className="font-normal text-sm text-dark/50">
@@ -248,7 +277,7 @@ const ArticlesScreen = () => {
                     <div className="mt-2">
                       <Link
                         to="/article/1"
-                        className="text-2xl font-bold text-gray-700 hover:underline"
+                        className="text-xl font-bold text-gray-700 hover:underline"
                       >
                         आफ्नो इ‍च्छाअनुरूप पढ्ने कोठा यसरी सजाउनुस्
                       </Link>
@@ -262,9 +291,9 @@ const ArticlesScreen = () => {
                     <div className="flex items-center justify-between mt-4 flex-wrap gap-y-4">
                       <Link
                         to="/article/1"
-                        className="flex focus:outline-none focus:underline items-center cursor-pointer btn capitalize py-[6px] px-4 bg-red"
+                        className="flex focus:outline-none focus:underline items-center cursor-pointer btn capitalize gap-x-2 py-[5px] px-4 bg-white text-red shadow-none  border-[1px] border-red hover:bg-red hover:text-white"
                       >
-                        <p className="pr-2 text-base font-medium">Read More</p>
+                        <p className="text-base font-medium">पुरा पढ्नुहोस्</p>
                         <svg
                           className="fill-stroke"
                           width="16"
@@ -298,7 +327,7 @@ const ArticlesScreen = () => {
                   </div>
                 </div>
               </div>
-              <div className="shadow-md rounded-lg">
+              <div className="shadow-md rounded-lg" data-aos="fade-up">
                 <div className="grid xl:grid-cols-[280px_auto] rounded-lg overflow-hidden">
                   <div className="relative h-[320px] xl:h-auto">
                     <img
@@ -310,7 +339,8 @@ const ArticlesScreen = () => {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex gap-x-4">
                         <div className="flex items-center gap-x-2.5">
-                          <BsFillCalendarCheckFill className="text-gray"
+                          <BsFillCalendarCheckFill
+                            className="text-gray"
                             size={14}
                           />
                           <span className="font-normal text-sm text-dark/50">
@@ -333,7 +363,7 @@ const ArticlesScreen = () => {
                     <div className="mt-2">
                       <Link
                         to="/article/1"
-                        className="text-2xl font-bold text-gray-700 hover:underline"
+                        className="text-xl font-bold text-gray-700 hover:underline"
                       >
                         What does the natural reveal about its existence?
                       </Link>
@@ -347,9 +377,9 @@ const ArticlesScreen = () => {
                     <div className="flex items-center justify-between mt-4 flex-wrap gap-y-4">
                       <Link
                         to="/article/1"
-                        className="flex focus:outline-none focus:underline items-center cursor-pointer btn capitalize py-[6px] px-4 bg-red"
+                        className="flex focus:outline-none focus:underline items-center cursor-pointer btn capitalize gap-x-2 py-[5px] px-4 bg-white text-red shadow-none  border-[1px] border-red hover:bg-red hover:text-white"
                       >
-                        <p className="pr-2 text-base font-medium">Read More</p>
+                        <p className="text-base font-medium">पुरा पढ्नुहोस्</p>
                         <svg
                           className="fill-stroke"
                           width="16"
@@ -387,7 +417,7 @@ const ArticlesScreen = () => {
           </div>
           <div className="w-full grid gap-6 items-start">
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-1">
-              <div className="">
+              <div data-aos="fade-up">
                 <h1 className="mb-4 text-xl font-bold text-gray-700">
                   Authors
                 </h1>
@@ -405,7 +435,9 @@ const ArticlesScreen = () => {
                           className="font-bold text-gray-700 hover:underline"
                         >
                           David Paul Limbu
-                          <span className="block text-xs font-normal">Founder of YNL</span>
+                          <span className="block text-xs font-normal">
+                            Founder of YNL
+                          </span>
                         </a>
                         <span className="text-xs font-light text bg-blue text-white rounded px-2 py-1 drop-shadow me-3">
                           230 Articles
@@ -424,7 +456,9 @@ const ArticlesScreen = () => {
                           className="font-bold text-gray-700 hover:underline"
                         >
                           John Doe
-                          <span className="block text-xs font-normal">Co-founder of YNL</span>
+                          <span className="block text-xs font-normal">
+                            Co-founder of YNL
+                          </span>
                         </a>
                         <span className="text-xs font-light text bg-blue text-white rounded px-2 py-1 drop-shadow me-3">
                           52 Articles
@@ -443,7 +477,9 @@ const ArticlesScreen = () => {
                           className="font-bold text-gray-700 hover:underline"
                         >
                           Lisa Way
-                          <span className="block text-xs font-normal">Women's leader</span>
+                          <span className="block text-xs font-normal">
+                            Women's leader
+                          </span>
                         </a>
                         <span className="text-xs font-light text bg-blue text-white rounded px-2 py-1 drop-shadow me-3">
                           73 Articles
@@ -462,7 +498,9 @@ const ArticlesScreen = () => {
                           className="font-bold text-gray-700 hover:underline"
                         >
                           Steve Matt
-                          <span className="block text-xs font-normal">Teacher / Preacher</span>
+                          <span className="block text-xs font-normal">
+                            Teacher / Preacher
+                          </span>
                         </a>
                         <span className="text-xs font-light text bg-blue text-white rounded px-2 py-1 drop-shadow me-3">
                           245 Articles
@@ -481,7 +519,9 @@ const ArticlesScreen = () => {
                           className="font-bold text-gray-700 hover:underline"
                         >
                           Rajiv Shrestha
-                          <span className="block text-xs font-normal">Service Leader</span>
+                          <span className="block text-xs font-normal">
+                            Service Leader
+                          </span>
                         </a>
                         <span className="text-xs font-light text bg-blue text-white rounded px-2 py-1 drop-shadow me-3">
                           332 Articles
@@ -492,8 +532,10 @@ const ArticlesScreen = () => {
                 </div>
               </div>
 
-              <div className="">
-                <h1 className="mb-4 text-xl font-bold text-gray-700">Popular Topics / Tags</h1>
+              <div data-aos="fade-up">
+                <h1 className="mb-4 text-xl font-bold text-gray-700">
+                  Popular Topics / Tags
+                </h1>
                 <div className="flex flex-col px-4 py-6 mx-auto bg-white rounded-lg shadow-md">
                   <ul className="flex flex-wrap gap-2">
                     <li>
@@ -541,7 +583,7 @@ const ArticlesScreen = () => {
               </div>
             </div>
 
-            <div className="">
+            <div data-aos="fade-up">
               <h1 className="mb-4 text-xl font-bold text-gray-700">
                 Recent Post
               </h1>

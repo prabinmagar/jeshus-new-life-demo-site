@@ -33,7 +33,7 @@ const BranchScreen = () => {
           <div className="container">
             <div className="section-content max-w-[1200px] mx-auto py-10">
               <section className="flex flex-col justify-center">
-                <div className="grid md:grid-cols-2 border border-gray/10 rounded-lg shadow-md mb-8 blue-gradient">
+                <div className="grid md:grid-cols-2 border border-gray/10 rounded-lg shadow-md mb-8 blue-gradient" data-aos="fade-up">
                   <div className="text-white px-6 md:py-6 py-4 lg:border-r-[1px] lg:border-r-white/10">
                     <div className="block mb-6 text-xl font-semibold border-l-4 border-l-white ps-3">
                       Yeshua New Life
@@ -98,7 +98,7 @@ const BranchScreen = () => {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-1">
-                  <div className="p-4 flex flex-col justify-between border border-gray/10 rounded-lg shadow-md bg-white">
+                  <div className="p-4 flex flex-col justify-between border border-gray/10 rounded-lg shadow-md bg-white" data-aos="fade-right">
                     <div className="block mb-6 text-xl font-semibold border-l-4 border-l-red ps-3">
                       Yeshua New Life
                     </div>
@@ -122,7 +122,7 @@ const BranchScreen = () => {
                     </p>
                   </div>
 
-                  <div className="p-4 flex flex-col justify-between border border-gray/10 rounded-lg shadow-md bg-white">
+                  <div className="p-4 flex flex-col justify-between border border-gray/10 rounded-lg shadow-md bg-white" data-aos="fade-left">
                     <div className="block mb-6 text-xl font-semibold border-l-4 border-l-red ps-3">
                       Yeshua New Life
                     </div>
@@ -145,7 +145,8 @@ const BranchScreen = () => {
                       working with other branches for fellowship.
                     </p>
                   </div>
-                  <div className="p-4 flex flex-col justify-between border border-gray/10 rounded-lg shadow-md bg-white">
+
+                  <div className="p-4 flex flex-col justify-between border border-gray/10 rounded-lg shadow-md bg-white" data-aos="fade-right">
                     <div className="block mb-6 text-xl font-semibold border-l-4 border-l-red ps-3">
                       Yeshua New Life
                     </div>
@@ -168,7 +169,8 @@ const BranchScreen = () => {
                       working with other branches for fellowship.
                     </p>
                   </div>
-                  <div className="p-4 flex flex-col justify-between border border-gray/10 rounded-lg shadow-md bg-white">
+
+                  <div className="p-4 flex flex-col justify-between border border-gray/10 rounded-lg shadow-md bg-white" data-aos="fade-left">
                     <div className="block mb-6 text-xl font-semibold border-l-4 border-l-red ps-3">
                       Yeshua New Life
                     </div>

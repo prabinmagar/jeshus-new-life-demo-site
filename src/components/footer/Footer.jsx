@@ -119,7 +119,7 @@ const Footer = () => {
                   >
                     <FaMapMarkerAlt />
                     <address className="flex-1 text-gray hover:text-dark not-italic">
-                      213 Lane, London, United Kingdom
+                      Lamachaur Marg, Lalitpur
                     </address>
                   </a>
                 </li>

@@ -15,7 +15,7 @@
 }
 
 .btn {
-  @apply shadow-normal text-center inline-flex items-center justify-center uppercase font-medium text-base rounded-full px-6 py-1.5 text-white;
+  @apply shadow-shadow1 text-center inline-flex items-center justify-center uppercase font-medium text-base rounded-full px-6 py-1.5 text-white;
 }
 .btn-lg {
   @apply h-[52px] min-w-[180px] text-lg;

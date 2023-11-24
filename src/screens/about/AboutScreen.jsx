@@ -12,7 +12,7 @@ const AboutScreen = () => {
         <div className="bg-white">
           <div className="container">
             <div className="max-w-[1200px] min-h-[240px] mx-auto grid lg:grid-cols-2 gap-10 py-12">
-              <div className="text-justify">
+              <div className="text-justify" data-aos="fade-right">
                 <h2 className="mb-5 text-3xl font-bold text-dark sm:text-[40px]/[48px]">
                   YNL Community
                 </h2>
@@ -28,7 +28,7 @@ const AboutScreen = () => {
                   matches your business.
                 </p>
               </div>
-              <div className="h-[320px] overflow-hidden rounded-lg shadow-normal z-10">
+              <div className="h-[320px] overflow-hidden rounded-lg shadow-normal z-10" data-aos="fade-left">
                 <img
                   src={staticImages.temp2}
                   className="w-full h-full object-cover object-center"
@@ -47,14 +47,14 @@ const AboutScreen = () => {
           <div className="container">
             <div className="grid max-w-[1200px] mx-auto gap-y-8">
               <div className="flex gap-8 flex-col md:flex-row md:items-center">
-                <div className="h-[280px] w-[280px] mx-auto md:ms-0 min-w-[280px] rounded-full shadow-normal border-4 border-white relative after:absolute after:content-[''] after:w-[60px] after:h-[60px] after:bg-white after:right-2 after:bottom-3 after:rounded-full">
+                <div className="h-[280px] w-[280px] mx-auto md:ms-0 min-w-[280px] rounded-full shadow-normal border-4 border-white relative after:absolute after:content-[''] after:w-[60px] after:h-[60px] after:bg-white after:right-2 after:bottom-3 after:rounded-full" data-aos="fade-right">
                   <img
                     src={staticImages.member1}
                     className="w-full h-full object-cover object-top rounded-full"
                     alt=""
                   />
                 </div>
-                <div className="shadow-shadow4 px-6 py-8 rounded-lg border-2 border-gray/5 bg-whitesmoke">
+                <div className="shadow-shadow4 px-6 py-8 rounded-lg border-2 border-gray/5 bg-whitesmoke" data-aos="fade-left">
                   <h3 className="text-2xl font-bold text-gray-700 md:text-3xl">
                     John Hagee
                   </h3>
@@ -72,14 +72,14 @@ const AboutScreen = () => {
               </div>
 
               <div className="flex gap-8 flex-col md:flex-row-reverse md:items-center">
-                <div className="h-[280px] w-[280px] mx-auto md:ms-0 min-w-[280px] overflow-hidden rounded-full shadow-normal border-4 border-white">
+                <div className="h-[280px] w-[280px] mx-auto md:ms-0 min-w-[280px] overflow-hidden rounded-full shadow-normal border-4 border-white" data-aos="fade-left">
                   <img
                     src={staticImages.member4}
                     className="w-full h-full object-cover object-top"
                     alt=""
                   />
                 </div>
-                <div className="text-white">
+                <div className="text-white" data-aos="fade-right">
                   <h3 className="text-3xl font-bold text-gray-700 md:text-4xl">
                     Matt Hagee
                   </h3>
@@ -98,7 +98,7 @@ const AboutScreen = () => {
               </div>
 
               <div className="flex gap-8 flex-col md:flex-row md:items-center">
-                <div className="h-[280px] w-[280px] mx-auto md:ms-0 min-w-[280px] rounded-full shadow-normal border-4 border-white relative">
+                <div className="h-[280px] w-[280px] mx-auto md:ms-0 min-w-[280px] rounded-full shadow-normal border-4 border-white relative" data-aos="fade-right">
                   <img
                     src={staticImages.member5}
                     className="w-full h-full object-cover object-top rounded-full z-10 relative"
@@ -106,7 +106,7 @@ const AboutScreen = () => {
                   />
                   <img src={staticImages.twinkle} alt="" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[1.2]" />
                 </div>
-                <div className="shadow-shadow4 px-6 py-8 rounded-lg border-2 border-gray/5 bg-whitesmoke">
+                <div className="shadow-shadow4 px-6 py-8 rounded-lg border-2 border-gray/5 bg-whitesmoke" data-aos="fade-left">
                   <h3 className="text-2xl font-bold text-gray-700 md:text-3xl">
                     John Hagee
                   </h3>

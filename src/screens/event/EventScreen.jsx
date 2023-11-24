@@ -44,6 +44,7 @@ const EventScreen = () => {
               <div
                 className="notice-card group relative flex w-full md:max-w-[26rem] mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-normal font-cera cursor-pointer"
                 onClick={onEventDialogOpen}
+                data-aos="fade-up"
               >
                 <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 h-[220px] red-overlay">
                   <img
@@ -90,7 +91,7 @@ const EventScreen = () => {
                 </div>
               </div>
 
-              <div className="notice-card group relative flex w-full md:max-w-[26rem] mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-normal font-cera cursor-pointer">
+              <div className="notice-card group relative flex w-full md:max-w-[26rem] mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-normal font-cera cursor-pointer" data-aos="fade-up">
                 <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 h-[220px] red-overlay">
                   <img
                     src={staticImages.notice2}
@@ -128,7 +129,7 @@ const EventScreen = () => {
                 </div>
               </div>
 
-              <div className="notice-card group relative flex w-full md:max-w-[26rem] mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-normal font-cera">
+              <div className="notice-card group relative flex w-full md:max-w-[26rem] mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-normal font-cera" data-aos="fade-up">
                 <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 h-[220px] red-overlay">
                   <img
                     src={staticImages.notice3}
@@ -166,7 +167,7 @@ const EventScreen = () => {
                 </div>
               </div>
 
-              <div className="notice-card group relative flex w-full md:max-w-[26rem] mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-normal font-cera">
+              <div className="notice-card group relative flex w-full md:max-w-[26rem] mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-normal font-cera" data-aos="fade-up">
                 <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 h-[220px] red-overlay">
                   <img
                     src={staticImages.notice4}
