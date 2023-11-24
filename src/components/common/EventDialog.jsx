@@ -1,4 +1,4 @@
-import { Button, IconButton, Typography } from "@material-tailwind/react";
+import { IconButton, Typography } from "@material-tailwind/react";
 import PropTypes from "prop-types";
 import staticImages from "../../utils/images";
 import { FaCalendarAlt, FaMapMarkerAlt, FaTimes } from "react-icons/fa";

@@ -25,7 +25,7 @@ const EventScreen = () => {
       <main className="content-wrapper">
         <div className="pg-events pb-16 bg-gray/5">
           <div
-            className="mb-8 h-[200px] flex items-center"
+            className="mb-8 h-[400px] flex items-start pt-10"
             style={{
               background: `linear-gradient(rgba(36, 110, 185, 0.4), rgba(0, 0, 0, 0.5)), url(${staticImages.event_banner}) center/cover no-repeat fixed`,
             }}
@@ -41,13 +41,13 @@ const EventScreen = () => {
             </div>
           </div>
           <div className="container">
-            <div className="section-content grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mb-10">
+            <div className="section-content grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mb-10 -mt-[250px]">
               <div
                 className="notice-card group relative flex w-full mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-normal font-cera cursor-pointer"
                 onClick={onEventDialogOpen}
                 data-aos="fade-up"
               >
-                <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-dark/20 h-[220px]">
+                <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-dark/20 h-[220px] border-4 border-white">
                   <img
                     src={staticImages.notice1}
                     className="w-full h-full object-cover group-hover:scale-110 default-transition"
@@ -115,7 +115,7 @@ const EventScreen = () => {
                 data-aos="fade-up"
                 onClick={onEventDialogOpen}
               >
-                <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-dark/20 h-[220px]">
+                <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-dark/20 h-[220px] border-4 border-white">
                   <img
                     src={staticImages.notice2}
                     className="w-full h-full object-cover"
@@ -177,7 +177,7 @@ const EventScreen = () => {
                 data-aos="fade-up"
                 onClick={onEventDialogOpen}
               >
-                <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-dark/20 h-[220px]">
+                <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-dark/20 h-[220px] border-4 border-white">
                   <img
                     src={staticImages.notice3}
                     className="w-full h-full object-cover"
@@ -245,7 +245,7 @@ const EventScreen = () => {
                 data-aos="fade-up"
                 onClick={onEventDialogOpen}
               >
-                <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-dark/20 h-[220px]">
+                <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-dark/20 h-[220px] border-4 border-white">
                   <img
                     src={staticImages.notice4}
                     className="w-full h-full object-cover"
@@ -313,7 +313,7 @@ const EventScreen = () => {
                 onClick={onEventDialogOpen}
                 data-aos="fade-up"
               >
-                <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-dark/20 h-[220px]">
+                <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-dark/20 h-[220px] border-4 border-white">
                   <img
                     src={staticImages.temp3}
                     className="w-full h-full object-cover group-hover:scale-110 default-transition"
@@ -375,7 +375,7 @@ const EventScreen = () => {
                 data-aos="fade-up"
                 onClick={onEventDialogOpen}
               >
-                <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-dark/20 h-[220px]">
+                <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-dark/20 h-[220px] border-4 border-white">
                   <img
                     src={staticImages.article2}
                     className="w-full h-full object-cover"
@@ -437,7 +437,7 @@ const EventScreen = () => {
                 data-aos="fade-up"
                 onClick={onEventDialogOpen}
               >
-                <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-dark/20 h-[220px]">
+                <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-dark/20 h-[220px]  border-4 border-white">
                   <img
                     src={staticImages.temp2}
                     className="w-full h-full object-cover"
@@ -499,7 +499,7 @@ const EventScreen = () => {
                 data-aos="fade-up"
                 onClick={onEventDialogOpen}
               >
-                <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-dark/20 h-[220px]">
+                <div className="relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-dark/20 h-[220px] border-4 border-white">
                   <img
                     src={staticImages.temp1}
                     className="w-full h-full object-cover"
