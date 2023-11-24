@@ -71,23 +71,26 @@ const WatchLiveScreen = () => {
                     </div>
                   </div>
                 </div>
-                <div className="p-6">
-                  <h5 className="mb-3 text-2xl font-semibold text-dark border-b-[1px] border-b-gray/10 pb-1">
-                    Saturday Live Watch
-                  </h5>
+                <div>
+                  <div className="p-6">
+                    <h5 className="mb-3 text-2xl font-semibold text-dark border-b-[1px] border-b-gray/10 pb-1">
+                      Saturday Live Watch
+                    </h5>
+                    <div className="flex flex-center gap-x-6 flex-wrap">
+                      <div className="inline-flex items-center flex-wrap gap-x-2 text">
+                        <FaRegClock />
+                        <span className="text-sm font-medium">
+                          11:00 AM | Saturday
+                        </span>
+                      </div>
 
-                  <div className="flex flex-center gap-x-6 flex-wrap mb-5">
-                    <div className="inline-flex items-center flex-wrap gap-x-2 text-dark">
-                      <FaRegClock />
-                      <span className="text-sm font-medium">11:00 AM | Saturday</span>
+                      <Button className="bg-green py-1.5 px-2.5 rounded inline-flex gap-x-2 items-center">
+                        {" "}
+                        <FaShareAlt /> Share
+                      </Button>
                     </div>
-
-                    <Button className="bg-green py-1.5 px-2.5 rounded inline-flex gap-x-2 items-center">
-                      {" "}
-                      <FaShareAlt /> Share
-                    </Button>
                   </div>
-                  <div className="text-justify">
+                  <div className="text-justify bg-gray/5 p-6 border-t-[1px] border-t-gray/10">
                     <p className="text">
                       Generating random paragraphs can be an excellent way for
                       writers to get their creative flow going at the beginning
