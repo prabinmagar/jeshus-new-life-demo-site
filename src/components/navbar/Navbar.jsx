@@ -158,10 +158,10 @@ const Navbar = () => {
           </Link> */}
           <Link
             to="/"
-            className="font-bold text-3xl inline-flex items-center gap-x-2"
+            className="font-bold text-3xl inline-flex items-center gap-x-2 nav-brand"
           >
             <BiSolidLeaf className="text-red" />
-            <span className="">YNL.</span>
+            <span className={`${location.pathname === "/" ? 'text-white' : 'text-dark'}`}>YNL.</span>
           </Link>
           <button
             onClick={openDrawerRight}

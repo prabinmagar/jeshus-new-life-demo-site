@@ -31,12 +31,16 @@ const WatchLiveScreen = () => {
               <div className="block rounded-lg bg-white shadow-lg">
                 <div className="relative overflow-hidden bg-cover bg-no-repeat">
                   <iframe
-                    className="w-full aspect-video rounded-lg shadow-lg"
+                    className="w-full aspect-video rounded-lg shadow-lg relative"
                     title="YouTube Video"
                     // src={`https://www.youtube.com/embed/Hhw5676RCco`}
                     allowFullScreen
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  ></iframe>
+                  >
+                    <div className="absolute top-0 left-0 w-full h-full">
+                      <img src={staticImages.watch_live} />
+                    </div>
+                  </iframe>
 
                   <div className="inline-flex items-center gap-x-3 bg-red text-white px-4 py-2 rounded absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                     <FaPlay />

@@ -5,7 +5,7 @@ const BaseLayout = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="overflow-y-hidden">
         <Outlet />
       </main>
       <Footer />

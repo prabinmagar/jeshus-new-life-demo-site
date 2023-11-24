@@ -1,6 +1,3 @@
-import staticImages from "../../utils/images";
-import Slider from "react-slick";
-import { CustomNextArrow, CustomPrevArrow } from "../";
 import { Link } from "react-router-dom";
 import { bannerclip } from "../../utils/videos";
 import { FaVideo } from "react-icons/fa";
