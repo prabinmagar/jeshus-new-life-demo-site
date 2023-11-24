@@ -22,7 +22,7 @@ const GalleryAlbumScreen = () => {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xxl:grid-cols-4 grid-cols-1 gap-4 lg:gap-6">
               <Link
                 to="/gallery/1"
-                className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group"
+                className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up"
               >
                 <img
                   className="h-full w-full object-cover group-hover:scale-110 default-transition"
@@ -39,7 +39,7 @@ const GalleryAlbumScreen = () => {
               </Link>
               <Link
                 to="/gallery/1"
-                className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group"
+                className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up"
               >
                 <img
                   className="h-full w-full object-cover group-hover:scale-110 default-transition"
@@ -56,7 +56,7 @@ const GalleryAlbumScreen = () => {
               </Link>
               <Link
                 to="/gallery/1"
-                className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group"
+                className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up"
               >
                 <img
                   className="h-full w-full object-cover group-hover:scale-110 default-transition"
@@ -73,7 +73,7 @@ const GalleryAlbumScreen = () => {
               </Link>
               <Link
                 to="/gallery/1"
-                className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group"
+                className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up"
               >
                 <img
                   className="h-full w-full object-cover group-hover:scale-110 default-transition"
@@ -90,7 +90,7 @@ const GalleryAlbumScreen = () => {
               </Link>
               <Link
                 to="/gallery/1"
-                className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group"
+                className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up"
               >
                 <img
                   className="h-full w-full object-cover group-hover:scale-110 default-transition"
@@ -107,7 +107,7 @@ const GalleryAlbumScreen = () => {
               </Link>
               <Link
                 to="/gallery/1"
-                className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group"
+                className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up"
               >
                 <img
                   className="h-full w-full object-cover group-hover:scale-110 default-transition"
@@ -124,7 +124,7 @@ const GalleryAlbumScreen = () => {
               </Link>
               <Link
                 to="/gallery/1"
-                className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group"
+                className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up"
               >
                 <img
                   className="h-full w-full object-cover group-hover:scale-110 default-transition"
@@ -141,7 +141,7 @@ const GalleryAlbumScreen = () => {
               </Link>
               <Link
                 to="/gallery/1"
-                className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group"
+                className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up"
               >
                 <img
                   className="h-full w-full object-cover group-hover:scale-110 default-transition"

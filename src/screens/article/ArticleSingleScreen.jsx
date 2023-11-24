@@ -192,13 +192,13 @@ const ArticleSingleScreen = () => {
               </div>
             </div>
             <div>
-              <div className="sticky top-0 left-0 py-8 lg:pl-4">
-                <h2 className="text-lg text-dark font-medium mb-4">
+              <div className="sticky top-0 left-0 overflow-hidden bg-whitesmoke rounded-lg">
+                <h2 className="text-lg font-medium px-4 py-3 blue-gradient text-white">
                   More articles to read
                 </h2>
-                <div className="space-y-3">
+                <div className="space-y-3 px-4 py-6 border-[1px] border-gray/10">
                   <a
-                    className="group flex items-center gap-x-2 border-[1px] border-gray/10 rounded-lg p-2"
+                    className="group flex items-center gap-x-2 border-[1px] border-gray/10 rounded-lg p-2 hover:bg-white bg-blue/5"
                     href="#"
                   >
                     <div className="grow px-2">
@@ -216,7 +216,7 @@ const ArticleSingleScreen = () => {
                     </div>
                   </a>
                   <a
-                    className="group flex items-center gap-x-2 border-[1px] border-gray/10 rounded-lg p-2"
+                    className="group flex items-center gap-x-2 border-[1px] border-gray/10 rounded-lg p-2 hover:bg-white bg-blue/5"
                     href="#"
                   >
                     <div className="grow px-2">
@@ -234,7 +234,7 @@ const ArticleSingleScreen = () => {
                     </div>
                   </a>
                   <a
-                    className="group flex items-center gap-x-2 border-[1px] border-gray/10 rounded-lg p-2"
+                    className="group flex items-center gap-x-2 border-[1px] border-gray/10 rounded-lg p-2 hover:bg-white bg-blue/5"
                     href="#"
                   >
                     <div className="grow px-2">

@@ -17,7 +17,7 @@ const About = () => {
         {/* <Title /> */}
         <div className="section-content">
           <div className="flex flex-wrap">
-            <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12 z-10 lg:py-12">
+            <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12 z-10 lg:py-12" data-aos="fade-right">
               <div className="flex h-full lg:-mr-10 rounded-lg overflow-hidden max-h-[500px]">
                 <img
                   src={staticImages.about}
@@ -26,7 +26,7 @@ const About = () => {
                 />
               </div>
             </div>
-            <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 bg-white text-dark rounded-lg">
+            <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 bg-white text-dark rounded-lg" data-aos="fade-left">
               <div className="flex h-full items-start rounded-lg bg-primary px-6 py-10 text-center lg:pl-12 lg:text-left min-h-[400px]">
                 <div className="lg:pl-12">
                   <h2 className="mb-6 text-3xl font-bold">

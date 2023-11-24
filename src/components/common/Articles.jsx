@@ -16,7 +16,7 @@ const Articles = () => {
         />
 
         <div className="grid xxl:grid-cols-2 gap-4">
-          <div className="relative flex flex-col md:flex-row md:space-x-2 space-y-3 md:space-y-0 rounded-xl shadow-lg p-2 border border-white bg-white">
+          <div className="relative flex flex-col md:flex-row md:space-x-2 space-y-3 md:space-y-0 rounded-xl shadow-lg p-2 border border-white bg-white" data-aos="fade-right">
             <div className="relative w-full md:w-1/3 bg-white grid place-items-center h-[320px] lg:h-auto">
               <img
                 src="https://images.pexels.com/photos/4381392/pexels-photo-4381392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -76,7 +76,7 @@ const Articles = () => {
             </div>
           </div>
 
-          <div className="relative flex flex-col md:flex-row md:space-x-2 space-y-3 md:space-y-0 rounded-xl shadow-lg p-2 border border-white bg-white">
+          <div className="relative flex flex-col md:flex-row md:space-x-2 space-y-3 md:space-y-0 rounded-xl shadow-lg p-2 border border-white bg-white" data-aos="fade-left">
             <div className="relative w-full md:w-1/3 bg-white grid place-items-center h-[320px] lg:h-auto">
               <img
                 src={staticImages.temp1}
@@ -136,7 +136,7 @@ const Articles = () => {
             </div>
           </div>
 
-          <div className="relative flex flex-col md:flex-row md:space-x-2 space-y-3 md:space-y-0 rounded-xl shadow-lg p-2 border border-white bg-white">
+          <div className="relative flex flex-col md:flex-row md:space-x-2 space-y-3 md:space-y-0 rounded-xl shadow-lg p-2 border border-white bg-white" data-aos="fade-right">
             <div className="relative w-full md:w-1/3 bg-white grid place-items-center h-[320px] lg:h-auto">
               <img
                 src={staticImages.temp2}
@@ -196,7 +196,7 @@ const Articles = () => {
             </div>
           </div>
 
-          <div className="relative flex flex-col md:flex-row md:space-x-2 space-y-3 md:space-y-0 rounded-xl shadow-lg p-2 border border-white bg-white">
+          <div className="relative flex flex-col md:flex-row md:space-x-2 space-y-3 md:space-y-0 rounded-xl shadow-lg p-2 border border-white bg-white" data-aos="fade-left">
             <div className="relative w-full md:w-1/3 bg-white grid place-items-center h-[320px] lg:h-auto">
               <img
                 src={staticImages.temp1}

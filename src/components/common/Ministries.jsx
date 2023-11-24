@@ -29,7 +29,7 @@ const Ministries = () => {
           <div className="section-content mb-10 grid xl:grid-cols-4 md:grid-cols-2 gap-4">
             <div
               className="shadow-normal rounded-xl"
-              onClick={onVideoDialogOpen}
+              onClick={onVideoDialogOpen} data-aos="fade-up"
             >
               <div className="h-[380px] relative rounded-xl overflow-hidden cursor-pointer group">
                 <img
@@ -48,7 +48,7 @@ const Ministries = () => {
               </div>
             </div>
 
-            <div className="shadow-normal rounded-xl">
+            <div className="shadow-normal rounded-xl" data-aos="fade-up">
               <div className="h-[380px] relative rounded-xl overflow-hidden cursor-pointer group">
                 <img
                   src={staticImages.ministry2}
@@ -67,7 +67,7 @@ const Ministries = () => {
               </div>
             </div>
 
-            <div className="shadow-normal rounded-xl">
+            <div className="shadow-normal rounded-xl" data-aos="fade-up">
               <div className="h-[380px] relative rounded-xl overflow-hidden cursor-pointer group">
                 <img
                   src={staticImages.ministry3}
@@ -86,7 +86,7 @@ const Ministries = () => {
               </div>
             </div>
 
-            <div className="shadow-normal rounded-xl">
+            <div className="shadow-normal rounded-xl" data-aos="fade-up">
               <div className="h-[380px] relative rounded-xl overflow-hidden cursor-pointer group">
                 <img
                   src={staticImages.ministry4}

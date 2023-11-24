@@ -18,7 +18,7 @@ const Banner = () => {
           Your browser does not support the video tag.
         </video>
         <div className="text-white flex items-center justify-center pt-[80px] absolute top-0 bottom-0 left-0 right-0 z-50">
-          <div className="container py-12">
+          <div className="container py-12" data-aos="fade-up">
             <h1 className="uppercase text-center xxl:text-7xl lg:6xl text-5xl font-semibold drop-shadow-lg">
               Welcome to Our{" "}
             </h1>

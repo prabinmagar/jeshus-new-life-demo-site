@@ -14,7 +14,7 @@ const Gallery = () => {
         />
         <div className="section-content mb-10">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 lg:gap-6">
-            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
+            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up">
               <img
                 className="h-full w-full object-cover group-hover:scale-110 default-transition"
                 src={staticImages.gallery1}
@@ -24,7 +24,7 @@ const Gallery = () => {
                 current events
               </div>
             </Link>
-            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
+            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up">
               <img
                 className="h-full w-full object-cover group-hover:scale-110 default-transition"
                 src={staticImages.gallery2}
@@ -34,7 +34,7 @@ const Gallery = () => {
                 current events
               </div>
             </Link>
-            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
+            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up">
               <img
                 className="h-full w-full object-cover group-hover:scale-110 default-transition"
                 src={staticImages.gallery3}
@@ -44,7 +44,7 @@ const Gallery = () => {
                 current events
               </div>
             </Link>
-            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
+            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up">
               <img
                 className="h-full w-full object-cover group-hover:scale-110 default-transition"
                 src={staticImages.gallery4}
@@ -54,7 +54,7 @@ const Gallery = () => {
                 current events
               </div>
             </Link>
-            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
+            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up">
               <img
                 className="h-full w-full object-cover group-hover:scale-110 default-transition"
                 src={staticImages.gallery5}
@@ -64,7 +64,7 @@ const Gallery = () => {
                 current events
               </div>
             </Link>
-            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group">
+            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up">
               <img
                 className="h-full w-full object-cover group-hover:scale-110 default-transition"
                 src={staticImages.gallery6}

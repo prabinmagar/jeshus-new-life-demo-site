@@ -9,7 +9,7 @@ const Intro = () => {
       <div className="container">
         <div className="block rounded-lg bg-white shadow-normal">
           <div className="grid items-center lg:grid-cols-[auto_400px] xl:grid-cols-[auto_600px]">
-            <div className="p-8 lg:self-center">
+            <div className="p-8 lg:self-center" data-aos="fade-right">
               <div>
                 <h2 className="mb-6 text-3xl font-bold">
                   Our Vision and Beliefs
@@ -66,7 +66,7 @@ const Intro = () => {
                 </ul>
               </div>
             </div>
-            <div className="p-5 h-[400px] md:h-[500px] relative">
+            <div className="p-5 h-[400px] md:h-[500px] relative" data-aos="fade-left">
               <img
                 src={staticImages.intro}
                 className="w-full h-full object-cover rounded-lg"

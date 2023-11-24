@@ -11,7 +11,7 @@ const Members = () => {
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, quod!"
           }
         />
-        <div className="section-content flex justify-center flex-wrap gap-8 mb-8">
+        <div className="section-content flex justify-center flex-wrap gap-8 mb-8" data-aos="fade-up">
           <div className="shadow-normal rounded-full">
             <div className="block bg-white rounded-full overflow-hidden group">
               <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full">

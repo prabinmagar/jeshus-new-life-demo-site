@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { About, Banner, Branches, Events, Gallery, Intro, Members, Ministries, Notices, Training } from "../../components";
+import { About, Banner, Events, Gallery, Intro, Members, Ministries } from "../../components";
 import Articles from "../../components/common/Articles";
 import { scrollToTop } from "../../utils/scrollToTop";
 

@@ -17,15 +17,16 @@ import { FaShareAlt } from "react-icons/fa";
 import { useEffect } from "react";
 import { scrollToTop } from "../../utils/scrollToTop";
 import { FiSearch } from "react-icons/fi";
+import { FaCalendarAlt } from "react-icons/fa";
 
 const ArticlesScreen = () => {
   useEffect(() => scrollToTop(), []);
   return (
     <main className="content-wrapper">
-      <div className="pg-article py-8 bg-whitesmoke">
+      <div className="pg-article py-8 bg-white">
         <div>
           <div className="container">
-            <form className="max-w-[600px] mb-10 mx-auto shadow-md rounded-full">
+            <form className="max-w-[600px] mb-10 mx-auto border-2 border-gray/10 rounded-full">
               <label className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">
                 Search
               </label>
@@ -70,30 +71,30 @@ const ArticlesScreen = () => {
                 </MenuList>
               </Menu>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-6">
-              <div className="shadow-md rounded-lg" data-aos="fade-up">
-                <div className="grid xl:grid-cols-[280px_auto] rounded-lg overflow-hidden">
+            <div className="grid md:grid-cols-2 lg:grid-cols-1">
+              <div className="border-b-[1px] border-b-gray/20 py-6" data-aos="fade-up">
+                <div className="grid xl:grid-cols-[280px_auto] overflow-hidden">
                   <div className="relative h-[320px] xl:h-auto">
                     <img
                       src={staticImages.temp1}
                       className="w-full h-full object-cover absolute"
                     />
                   </div>
-                  <div className="max-w-4xl p-6 mx-auto bg-white shadow-md lg:py-8">
+                  <div className="max-w-4xl mt-4 xl:mt-0 px-6 mx-auto bg-white">
                     <div className="flex items-center justify-between mb-4">
-                      <div className="flex gap-x-4">
-                        <div className="flex items-center gap-x-2.5">
-                          <BsFillCalendarCheckFill
-                            className="text-gray"
-                            size={14}
+                      <div className="flex gap-x-6">
+                        <div className="flex items-center gap-x-1.5">
+                          <FaCalendarAlt 
+                            className="text-blue"
+                            size={12}
                           />
-                          <span className="font-normal text-sm text-dark/50">
+                          <span className="text-[13px] text-dark font-medium">
                             10th Dec, 2023
                           </span>
                         </div>
-                        <div className="flex items-center gap-x-2.5">
-                          <BsFillEyeFill className="text-gray" size={17} />
-                          <span className="font-normal text-sm text-dark/50">
+                        <div className="flex items-center gap-x-1.5">
+                          <BsFillEyeFill className="text-red" size={14} />
+                          <span className="text-[13px] text-dark font-medium">
                             245
                           </span>
                         </div>
@@ -106,7 +107,7 @@ const ArticlesScreen = () => {
                     <div className="mt-2">
                       <Link
                         to="/article/1"
-                        className="text-xl font-bold text-gray-700 hover:underline"
+                        className="text-xl font-bold text-dark hover:text-red hover:underline"
                       >
                         बाइडेनले भने- इजरायल-हमास युद्ध रोकिनुपर्छ
                       </Link>
@@ -118,36 +119,14 @@ const ArticlesScreen = () => {
                       </p>
                     </div>
                     <div className="flex items-center justify-between mt-4 flex-wrap gap-y-4">
-                      <Link
-                        to="/article/1"
-                        className="flex focus:outline-none focus:underline items-center cursor-pointer btn capitalize gap-x-2 py-[5px] px-4 bg-white text-red shadow-none  border-[1px] border-red hover:bg-red hover:text-white"
-                      >
-                        <p className="text-base font-medium">पुरा पढ्नुहोस्</p>
-                        <svg
-                          className="fill-stroke"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M5.75 12.5L10.25 8L5.75 3.5"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </Link>
                       <div>
                         <a href="#" className="flex items-center">
                           <img
                             src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
                             alt="avatar"
-                            className="hidden object-cover w-8 h-8 me-3 rounded-full sm:block"
+                            className="object-cover w-8 h-8 me-3 rounded-full"
                           />
-                          <h1 className="font-normal text-[15px] text-gray">
+                          <h1 className="font-semibold text-sm text-[15px] text-dark">
                             David Paul Limbu
                           </h1>
                         </a>
@@ -156,29 +135,29 @@ const ArticlesScreen = () => {
                   </div>
                 </div>
               </div>
-              <div className="shadow-md rounded-lg" data-aos="fade-up">
-                <div className="grid xl:grid-cols-[280px_auto] rounded-lg overflow-hidden">
+              <div className="border-b-[1px] border-b-gray/20 py-6" data-aos="fade-up">
+                <div className="grid xl:grid-cols-[280px_auto] overflow-hidden">
                   <div className="relative h-[320px] xl:h-auto">
                     <img
                       src={staticImages.temp2}
                       className="w-full h-full object-cover absolute"
                     />
                   </div>
-                  <div className="max-w-4xl p-6 mx-auto bg-white shadow-md lg:py-8">
+                  <div className="max-w-4xl mt-4 xl:mt-0 px-6 mx-auto bg-white">
                     <div className="flex items-center justify-between mb-4">
-                      <div className="flex gap-x-4">
-                        <div className="flex items-center gap-x-2.5">
-                          <BsFillCalendarCheckFill
-                            className="text-gray"
-                            size={14}
+                    <div className="flex gap-x-6">
+                        <div className="flex items-center gap-x-1.5">
+                          <FaCalendarAlt 
+                            className="text-blue"
+                            size={12}
                           />
-                          <span className="font-normal text-sm text-dark/50">
+                          <span className="text-[13px] text-dark font-medium">
                             10th Dec, 2023
                           </span>
                         </div>
-                        <div className="flex items-center gap-x-2.5">
-                          <BsFillEyeFill className="text-gray" size={17} />
-                          <span className="font-normal text-sm text-dark/50">
+                        <div className="flex items-center gap-x-1.5">
+                          <BsFillEyeFill className="text-red" size={14} />
+                          <span className="text-[13px] text-dark font-medium">
                             245
                           </span>
                         </div>
@@ -191,7 +170,7 @@ const ArticlesScreen = () => {
                     <div className="mt-2">
                       <Link
                         to="/article/1"
-                        className="text-xl font-bold text-gray-700 hover:underline"
+                        className="text-xl font-bold text-dark hover:text-red hover:underline"
                       >
                         सञ्चारको पहुँच पुग्न नसकेको एउटा गाउँ
                       </Link>
@@ -203,36 +182,14 @@ const ArticlesScreen = () => {
                       </p>
                     </div>
                     <div className="flex items-center justify-between mt-4 flex-wrap gap-y-4">
-                      <Link
-                        to="/article/1"
-                        className="flex focus:outline-none focus:underline items-center cursor-pointer btn capitalize gap-x-2 py-[5px] px-4 bg-white text-red shadow-none  border-[1px] border-red hover:bg-red hover:text-white"
-                      >
-                        <p className="text-base font-medium">पुरा पढ्नुहोस्</p>
-                        <svg
-                          className="fill-stroke"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M5.75 12.5L10.25 8L5.75 3.5"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </Link>
                       <div>
                         <a href="#" className="flex items-center">
                           <img
                             src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
                             alt="avatar"
-                            className="hidden object-cover w-8 h-8 me-3 rounded-full sm:block"
+                            className="object-cover w-8 h-8 me-3 rounded-full"
                           />
-                          <h1 className="font-normal text-[15px] text-gray">
+                          <h1 className="font-semibold text-sm text-[15px] text-dark">
                             डेविङ पावल लिम्बु
                           </h1>
                         </a>
@@ -241,43 +198,38 @@ const ArticlesScreen = () => {
                   </div>
                 </div>
               </div>
-              <div className="shadow-md rounded-lg" data-aos="fade-up">
-                <div className="grid xl:grid-cols-[280px_auto] rounded-lg overflow-hidden">
+              <div className="border-b-[1px] border-b-gray/20 py-6" data-aos="fade-up">
+                <div className="grid xl:grid-cols-[280px_auto] overflow-hidden">
                   <div className="relative h-[320px] xl:h-auto">
                     <img
                       src={staticImages.temp3}
                       className="w-full h-full object-cover absolute"
                     />
                   </div>
-                  <div className="max-w-4xl p-6 mx-auto bg-white shadow-md lg:py-8">
+                  <div className="max-w-4xl mt-4 xl:mt-0 px-6 mx-auto bg-white">
                     <div className="flex items-center justify-between mb-4">
-                      <div className="flex gap-x-4">
-                        <div className="flex items-center gap-x-2.5">
-                          <BsFillCalendarCheckFill
-                            className="text-gray"
-                            size={14}
+                    <div className="flex gap-x-6">
+                        <div className="flex items-center gap-x-1.5">
+                          <FaCalendarAlt 
+                            className="text-blue"
+                            size={12}
                           />
-                          <span className="font-normal text-sm text-dark/50">
+                          <span className="text-[13px] text-dark font-medium">
                             10th Dec, 2023
                           </span>
                         </div>
-                        <div className="flex items-center gap-x-2.5">
-                          <BsFillEyeFill className="text-gray" size={17} />
-                          <span className="font-normal text-sm text-dark/50">
+                        <div className="flex items-center gap-x-1.5">
+                          <BsFillEyeFill className="text-red" size={14} />
+                          <span className="text-[13px] text-dark font-medium">
                             245
                           </span>
                         </div>
                       </div>
-                      {/* <span
-                        className="px-2 py-1 font-normal text-[13px] text-dark/70"
-                      >
-                        History & Archaeology
-                      </span> */}
                     </div>
                     <div className="mt-2">
                       <Link
                         to="/article/1"
-                        className="text-xl font-bold text-gray-700 hover:underline"
+                        className="text-xl font-bold text-dark hover:text-red hover:underline"
                       >
                         आफ्नो इ‍च्छाअनुरूप पढ्ने कोठा यसरी सजाउनुस्
                       </Link>
@@ -289,36 +241,14 @@ const ArticlesScreen = () => {
                       </p>
                     </div>
                     <div className="flex items-center justify-between mt-4 flex-wrap gap-y-4">
-                      <Link
-                        to="/article/1"
-                        className="flex focus:outline-none focus:underline items-center cursor-pointer btn capitalize gap-x-2 py-[5px] px-4 bg-white text-red shadow-none  border-[1px] border-red hover:bg-red hover:text-white"
-                      >
-                        <p className="text-base font-medium">पुरा पढ्नुहोस्</p>
-                        <svg
-                          className="fill-stroke"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M5.75 12.5L10.25 8L5.75 3.5"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </Link>
                       <div>
                         <a href="#" className="flex items-center">
                           <img
                             src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
                             alt="avatar"
-                            className="hidden object-cover w-8 h-8 me-3 rounded-full sm:block"
+                            className="object-cover w-8 h-8 me-3 rounded-full"
                           />
-                          <h1 className="font-normal text-[15px] text-gray">
+                          <h1 className="font-semibold text-sm text-[15px] text-dark">
                             David Paul Limbu
                           </h1>
                         </a>
@@ -327,43 +257,38 @@ const ArticlesScreen = () => {
                   </div>
                 </div>
               </div>
-              <div className="shadow-md rounded-lg" data-aos="fade-up">
-                <div className="grid xl:grid-cols-[280px_auto] rounded-lg overflow-hidden">
+              <div className="border-b-[1px] border-b-gray/20 py-6" data-aos="fade-up">
+                <div className="grid xl:grid-cols-[280px_auto] overflow-hidden">
                   <div className="relative h-[320px] xl:h-auto">
                     <img
                       src={staticImages.article4}
                       className="w-full h-full object-cover absolute"
                     />
                   </div>
-                  <div className="max-w-4xl p-6 mx-auto bg-white shadow-md lg:py-8">
+                  <div className="max-w-4xl mt-4 xl:mt-0 px-6 mx-auto bg-white">
                     <div className="flex items-center justify-between mb-4">
-                      <div className="flex gap-x-4">
-                        <div className="flex items-center gap-x-2.5">
-                          <BsFillCalendarCheckFill
-                            className="text-gray"
-                            size={14}
+                    <div className="flex gap-x-6">
+                        <div className="flex items-center gap-x-1.5">
+                          <FaCalendarAlt 
+                            className="text-blue"
+                            size={12}
                           />
-                          <span className="font-normal text-sm text-dark/50">
+                          <span className="text-[13px] text-dark font-medium">
                             10th Dec, 2023
                           </span>
                         </div>
-                        <div className="flex items-center gap-x-2.5">
-                          <BsFillEyeFill className="text-gray" size={17} />
-                          <span className="font-normal text-sm text-dark/50">
+                        <div className="flex items-center gap-x-1.5">
+                          <BsFillEyeFill className="text-red" size={14} />
+                          <span className="text-[13px] text-dark font-medium">
                             245
                           </span>
                         </div>
                       </div>
-                      {/* <span
-                        className="px-2 py-1 font-normal text-[13px] text-dark/70"
-                      >
-                        History & Archaeology
-                      </span> */}
                     </div>
                     <div className="mt-2">
                       <Link
                         to="/article/1"
-                        className="text-xl font-bold text-gray-700 hover:underline"
+                        className="text-xl font-bold text-dark hover:text-red hover:underline"
                       >
                         What does the natural reveal about its existence?
                       </Link>
@@ -375,36 +300,14 @@ const ArticlesScreen = () => {
                       </p>
                     </div>
                     <div className="flex items-center justify-between mt-4 flex-wrap gap-y-4">
-                      <Link
-                        to="/article/1"
-                        className="flex focus:outline-none focus:underline items-center cursor-pointer btn capitalize gap-x-2 py-[5px] px-4 bg-white text-red shadow-none  border-[1px] border-red hover:bg-red hover:text-white"
-                      >
-                        <p className="text-base font-medium">पुरा पढ्नुहोस्</p>
-                        <svg
-                          className="fill-stroke"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M5.75 12.5L10.25 8L5.75 3.5"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </Link>
                       <div>
                         <a href="#" className="flex items-center">
                           <img
                             src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
                             alt="avatar"
-                            className="hidden object-cover w-8 h-8 me-3 rounded-full sm:block"
+                            className="object-cover w-8 h-8 me-3 rounded-full"
                           />
-                          <h1 className="font-normal text-[15px] text-gray">
+                          <h1 className="font-semibold text-sm text-[15px] text-dark">
                             David Paul Limbu
                           </h1>
                         </a>
