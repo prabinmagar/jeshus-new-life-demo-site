@@ -10,10 +10,10 @@ const BranchScreen = () => {
   return (
     <main className="content-wrapper">
       <div className="pg-gallery-album bg-whitesmoke">
-        <div
+        {/* <div
           className="mb-8 h-[200px] flex items-center"
           style={{
-            background: `linear-gradient(rgba(36, 110, 185, 0.4), rgba(0, 0, 0, 0.5)), url(${staticImages.location_banner}) center/cover no-repeat fixed`,
+            background: `linear-gradient(rgba(179, 25, 1, 1), rgba(0, 0, 0, 0.5)), url(${staticImages.location_banner}) center/cover no-repeat fixed`,
           }}
         >
           <div className="container">
@@ -24,60 +24,66 @@ const BranchScreen = () => {
               The photo albums of all the events and celebrations.
             </p>
           </div>
-        </div>
-        <div style={{
-          background: `url(${staticImages.map}) no-repeat`,
-          backgroundSize: "1000px",
-          backgroundPosition: "bottom"
-        }}>
+        </div> */}
+        <div
+          style={{
+            background: `url(${staticImages.map}) no-repeat`,
+            backgroundSize: "1000px",
+            backgroundPosition: "bottom",
+          }}
+        >
           <div className="container">
             <div className="section-content max-w-[1200px] mx-auto py-10">
               <section className="flex flex-col justify-center">
-                <div className="grid md:grid-cols-2 border border-gray/10 rounded-lg shadow-md mb-8 blue-gradient" data-aos="fade-up">
-                  <div className="text-white px-6 md:py-6 py-4 lg:border-r-[1px] lg:border-r-white/10">
-                    <div className="block mb-6 text-xl font-semibold border-l-4 border-l-white ps-3">
+                <div
+                  className="grid md:grid-cols-2 border border-gray/10 rounded-lg shadow-md mb-8 bg-white"
+                  data-aos="fade-up"
+                >
+                  <div className="px-6 md:py-6 py-4 lg:border-r-[1px] lg:border-r-white/10">
+                    <div className="block mb-6 text-xl font-semibold border-l-4 border-l-red ps-3 font-lora font-lora">
                       Yeshua New Life
                     </div>
+
                     <div className="flex flex-wrap gap-2 text-sm text-gray-600">
-                      <div className="px-3 py-1 rounded-full bg-white/10 flex items-center flex-wrap text-white gap-x-2">
+                      <div className="px-3 py-1 rounded-full bg-gray/5 flex items-center flex-wrap text-dark/70 gap-x-2">
                         <FaLocationDot />
                         <span>Lamachour Marg, Jhamsikhel, Lalitpur</span>
                       </div>
-                      <div className="px-3 py-1 rounded-full bg-white/10 flex items-center flex-wrap text-white gap-x-2">
+                      <div className="px-3 py-1 rounded-full bg-gray/5 flex items-center flex-wrap text-dark/70 gap-x-2">
                         <FaBuilding />
                         <span>Main branch</span>
                       </div>
                     </div>
 
-                    <p className="mt-4 text text-white">
+                    <p className="mt-4 text">
                       YNL is located in the Lamachour Marga of Lalitpur city and
                       is serving as the home or mother branch since 1990. The
                       YNL consists of about 300 members and has been continously
                       working with other branches for fellowship.
                     </p>
-                    <div className="bg-white rounded shadow-normal mt-6 relative p-2">
+                    <div className="red-gradient rounded shadow-normal mt-6 relative p-2">
                       <div className="px-3">
-                        <h2 className="font-semibold text-dark mt-3 text-lg">
+                        <h2 className="font-semibold text-white mt-3 text-lg font-lora">
                           Contact Details:
                         </h2>
-                        <p className="mt-1 text">
+                        <p className="mt-1 text text-white">
                           You can contact us at any time within or outside the
                           service time. YNL will reachout to you as soon as
                           possible.
                         </p>
                       </div>
-                      <div className="px-3 mt-4 grid gap-4 md:grid-cols-2 md:py-2">
+                      <div className="px-3 mt-4 grid gap-4 lg:grid-cols-2 md:py-2">
                         <div>
-                          <h2 className="font-semibold text-dark">
+                          <h2 className="font-semibold text-white">
                             Email Address
                           </h2>
-                          <a className="text-gray">ynlcom@email.com</a>
+                          <a className="text-white/70">ynlcom@email.com</a>
                         </div>
                         <div>
-                          <h2 className="font-semibold text-dark">
+                          <h2 className="font-semibold text-white">
                             Phone Number
                           </h2>
-                          <a className="text-gray">+977-9855667840</a>
+                          <a className="text-white/70">+977-9855667840</a>
                         </div>
                       </div>
                     </div>
@@ -98,8 +104,11 @@ const BranchScreen = () => {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-1">
-                  <div className="p-4 flex flex-col justify-between border border-gray/10 rounded-lg shadow-md bg-white" data-aos="fade-right">
-                    <div className="block mb-6 text-xl font-semibold border-l-4 border-l-red ps-3">
+                  <div
+                    className="p-4 flex flex-col justify-between border border-gray/10 rounded-lg shadow-md bg-white"
+                    data-aos="fade-right"
+                  >
+                    <div className="block mb-6 text-xl font-semibold border-l-4 border-l-red ps-3 font-lora">
                       Yeshua New Life
                     </div>
 
@@ -122,8 +131,11 @@ const BranchScreen = () => {
                     </p>
                   </div>
 
-                  <div className="p-4 flex flex-col justify-between border border-gray/10 rounded-lg shadow-md bg-white" data-aos="fade-left">
-                    <div className="block mb-6 text-xl font-semibold border-l-4 border-l-red ps-3">
+                  <div
+                    className="p-4 flex flex-col justify-between border border-gray/10 rounded-lg shadow-md bg-white"
+                    data-aos="fade-left"
+                  >
+                    <div className="block mb-6 text-xl font-semibold border-l-4 border-l-red ps-3 font-lora">
                       Yeshua New Life
                     </div>
 
@@ -146,8 +158,11 @@ const BranchScreen = () => {
                     </p>
                   </div>
 
-                  <div className="p-4 flex flex-col justify-between border border-gray/10 rounded-lg shadow-md bg-white" data-aos="fade-right">
-                    <div className="block mb-6 text-xl font-semibold border-l-4 border-l-red ps-3">
+                  <div
+                    className="p-4 flex flex-col justify-between border border-gray/10 rounded-lg shadow-md bg-white"
+                    data-aos="fade-right"
+                  >
+                    <div className="block mb-6 text-xl font-semibold border-l-4 border-l-red ps-3 font-lora">
                       Yeshua New Life
                     </div>
 
@@ -170,8 +185,11 @@ const BranchScreen = () => {
                     </p>
                   </div>
 
-                  <div className="p-4 flex flex-col justify-between border border-gray/10 rounded-lg shadow-md bg-white" data-aos="fade-left">
-                    <div className="block mb-6 text-xl font-semibold border-l-4 border-l-red ps-3">
+                  <div
+                    className="p-4 flex flex-col justify-between border border-gray/10 rounded-lg shadow-md bg-white"
+                    data-aos="fade-left"
+                  >
+                    <div className="block mb-6 text-xl font-semibold border-l-4 border-l-red ps-3 font-lora">
                       Yeshua New Life
                     </div>
 

@@ -45,7 +45,7 @@ export function VideoDialog({ videoDialogOpen, handleVideoDialogOpen }) {
               id="youtube-iframe"
               className="w-full aspect-video rounded-lg shadow-lg"
               title="YouTube Video"
-              src={`https://www.youtube.com/embed/${vidId}?autoplay=1`}
+              src={`https://www.youtube.com/embed/${vidId}`}
               allowFullScreen
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>

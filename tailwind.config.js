@@ -19,7 +19,8 @@ export default withMT({
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
-        cera: ["Cera Pro"]
+        cera: ["Cera Pro"],
+        lora: ['Lora', 'serif']
       },
       screens: {
         xs: "420px",

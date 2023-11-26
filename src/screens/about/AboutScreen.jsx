@@ -14,7 +14,7 @@ const AboutScreen = () => {
           <div className="container">
             <div className="max-w-[1200px] min-h-[240px] mx-auto grid lg:grid-cols-2 gap-10 py-12">
               <div className="text-justify" data-aos="fade-right">
-                <h2 className="mb-5 text-3xl font-bold text-dark sm:text-[40px]/[48px]">
+                <h2 className="mb-5 text-3xl font-bold text-dark sm:text-[40px]/[48px] font-lora">
                   YESHUA NEW LIFE
                 </h2>
                 <p className="text">
@@ -66,16 +66,16 @@ const AboutScreen = () => {
                   className="shadow-shadow4 px-6 py-8 rounded-lg border-2 border-gray/5 bg-white"
                   data-aos="fade-left"
                 >
-                  <div className="grid sm:grid-cols-2 items-start gap-x-4 border-b-[1px] border-whitesmoke">
+                  <div className="grid lg:grid-cols-2 items-start gap-x-4 border-b-[1px] border-whitesmoke">
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-700 md:text-3xl">
+                      <h3 className="text-2xl font-bold text-gray-700 font-lora">
                         David Paul Limbu
                       </h3>
                       <h5 className="text text-sm opacity-90 mt-1 mb-1.5">
                         Founder & Senior Chariman
                       </h5>
                     </div>
-                    <div className="flex gap-x-2 mt-1.5 sm:justify-end">
+                    <div className="flex gap-x-2 mt-1.5 lg:justify-end mb-3">
                       <SocialIcon
                         className="shadow-lg rounded-full"
                         url="www.facebook.com"
@@ -131,16 +131,16 @@ const AboutScreen = () => {
                   className="shadow-shadow4 px-6 py-8 rounded-lg border-2 border-gray/5 bg-white"
                   data-aos="fade-left"
                 >
-                  <div className="grid sm:grid-cols-2 items-start gap-x-4 border-b-[1px] border-whitesmoke">
+                  <div className="grid lg:grid-cols-2 items-start gap-x-4 border-b-[1px] border-whitesmoke">
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-700 md:text-3xl">
+                      <h3 className="text-2xl font-bold text-gray-700 font-lora">
                         Ramesh Thapa
                       </h3>
                       <h5 className="text text-sm opacity-90 mt-1 mb-1.5">
                         Elder
                       </h5>
                     </div>
-                    <div className="flex gap-x-2 mt-1.5 sm:justify-end">
+                    <div className="flex gap-x-2 mt-1.5 lg:justify-end mb-3">
                       <SocialIcon
                         className="shadow-lg rounded-full"
                         url="www.facebook.com"
@@ -203,16 +203,16 @@ const AboutScreen = () => {
                   className="shadow-shadow4 px-6 py-8 rounded-lg border-2 border-gray/5 bg-white"
                   data-aos="fade-left"
                 >
-                  <div className="grid sm:grid-cols-2 items-start gap-x-4 border-b-[1px] border-whitesmoke">
+                  <div className="grid lg:grid-cols-2 items-start gap-x-4 border-b-[1px] border-whitesmoke">
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-700 md:text-3xl">
+                      <h3 className="text-2xl font-bold text-gray-700 font-lora">
                         Abhisek Rai
                       </h3>
                       <h5 className="text text-sm opacity-90 mt-1 mb-1.5">
                         Deacon
                       </h5>
                     </div>
-                    <div className="flex gap-x-2 mt-1.5 sm:justify-end">
+                    <div className="flex gap-x-2 mt-1.5 lg:justify-end mb-3">
                       <SocialIcon
                         className="shadow-lg rounded-full"
                         url="www.facebook.com"
@@ -265,13 +265,93 @@ const AboutScreen = () => {
           }}
         >
           <div className="container">
-            <h2 className="text-red text-3xl lg:text-4xl xxl:text-5xl font-semibold shadow-lg mb-4">
+            <h2 className="text-[#e02529] text-3xl lg:text-4xl xxl:text-5xl font-semibold shadow-lg mb-4 font-lora">
               Our Mission
             </h2>
-            <h1 className="text-white text-4xl lg:text-5xl xxl:text-6xl font-semibold max-w-[800px] hero-text">
+            <h1 className="text-white text-4xl lg:text-5xl xxl:text-6xl font-semibold max-w-[800px] hero-text shadow-lg">
               Delivering all the gospel, to all the world, and to all
               generations.
             </h1>
+          </div>
+        </div>
+        <div className="py-10">
+          <div className="container">
+            <h3 className="text-dark text-3xl font-bold font-lora">Our beliefs</h3>
+            <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="overflow-hidden">
+                <div className="h-[200px] overflow-hidden shadow-lg">
+                  <img
+                    className="w-full h-full object-cover object-top"
+                    src={staticImages.belief1}
+                    alt="Sunset in the mountains"
+                  />
+                </div>
+                <div className="py-4">
+                  <div className="font-bold text-xl mb-2 font-lora">
+                    Faith in Jesus Christ
+                  </div>
+                  <p className="text">
+                    We believe in Jesus as the Son of God, the way to salvation
+                    and eternal life through faith. John 14:6
+                  </p>
+                </div>
+              </div>
+              <div className="overflow-hidden">
+                <div className="h-[200px] overflow-hidden shadow-lg">
+                  <img
+                    className="w-full h-full object-cover object-top"
+                    src={staticImages.belief2}
+                    alt="Sunset in the mountains"
+                  />
+                </div>
+                <div className="py-4">
+                  <div className="font-bold text-xl mb-2 font-lora">
+                    Faith in Jesus Christ
+                  </div>
+                  <p className="text">
+                    Salvation is a gift of God's grace, received through faith
+                    in Jesus Christ. (Ephesians 2:8-9)
+                  </p>
+                </div>
+              </div>
+              <div className="overflow-hidden">
+                <div className="h-[200px] overflow-hidden shadow-lg">
+                  <img
+                    className="w-full h-full object-cover object-top"
+                    src={staticImages.belief3}
+                    alt="Sunset in the mountains"
+                  />
+                </div>
+                <div className="py-4">
+                  <div className="font-bold text-xl mb-2 font-lora">
+                    Faith in Jesus Christ
+                  </div>
+                  <p className="text">
+                    We honor the fivefold ministry, including apostolic,
+                    prophetic, evangelistic, pastoral, and teaching roles, for
+                    equipping and building the church (Ephesians 4:11).
+                  </p>
+                </div>
+              </div>
+              <div className="overflow-hidden">
+                <div className="h-[200px] overflow-hidden shadow-lg">
+                  <img
+                    className="w-full h-full object-cover object-top"
+                    src={staticImages.belief4}
+                    alt="Sunset in the mountains"
+                  />
+                </div>
+                <div className="py-4">
+                  <div className="font-bold text-xl mb-2 font-lora">
+                    Faith in Jesus Christ
+                  </div>
+                  <p className="text">
+                    We embrace the active presence and empowering work of the
+                    Holy Spirit (Acts 1:8).
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <img src={staticImages.wave} className="lg:-mt-[100px]" />

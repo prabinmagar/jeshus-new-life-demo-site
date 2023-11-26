@@ -27,7 +27,7 @@ const About = () => {
               </div>
             </div>
             <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 bg-white text-dark rounded-lg" data-aos="fade-left">
-              <div className="flex h-full items-start rounded-lg bg-primary px-6 py-10 text-center lg:pl-12 lg:text-left min-h-[400px]">
+              <div className="flex h-full items-center rounded-lg bg-primary px-6 py-10 text-center lg:pl-12 lg:text-left min-h-[400px]">
                 <div className="lg:pl-12">
                   <h2 className="mb-6 text-3xl font-bold">
                     Our Pastor - David Paul Limbu

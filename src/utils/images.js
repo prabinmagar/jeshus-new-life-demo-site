@@ -57,6 +57,10 @@ import twinkle from "../assets/images/shapes/twinkle.svg";
 import watch_live from "../assets/images/watch_live.jpg";
 import media_bg from "../assets/images/media_bg.jpg";
 import mission from "../assets/images/mission.jpg";
+import belief1 from "../assets/images/belief1.jpeg";
+import belief2 from "../assets/images/belief2.jpg";
+import belief3 from "../assets/images/belief3.jpg";
+import belief4 from "../assets/images/belief4.jpg";
 // shapes
 import bubbles from "../assets/images/shapes/bubbles.svg";
 
@@ -120,7 +124,8 @@ const staticImages = {
   twinkle,
   watch_live,
   media_bg,
-  mission
+  mission,
+  belief1, belief2, belief3, belief4
 };
 
 export default staticImages;
