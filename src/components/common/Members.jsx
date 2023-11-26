@@ -3,7 +3,7 @@ import Title from "./Title";
 
 const Members = () => {
   return (
-    <section className="py-8">
+    <section className="py-8" id="members">
       <div className="container">
         <Title
           title={"Yeshua New Life's frontiers"}

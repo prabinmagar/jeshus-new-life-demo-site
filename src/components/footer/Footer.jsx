@@ -4,12 +4,10 @@ import {
   FaMapMarkerAlt,
   FaPhone,
 } from "react-icons/fa";
-import { TbBrandYoutubeFilled } from "react-icons/tb";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-whitesmoke">
+    <footer className="bg-whitesmoke" id="map">
       <div className="container">
         <div className="footer-content py-14 grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>

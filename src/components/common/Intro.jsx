@@ -5,16 +5,16 @@ import { BsBookmarkStarFill } from "react-icons/bs";
 
 const Intro = () => {
   return (
-    <section className="py-8">
+    <section className="py-12" id="intro">
       <div className="container">
-        <div className="block rounded-lg bg-white shadow-normal">
+        <div className="block rounded-lg bg-white shadow-lg">
           <div className="grid items-center lg:grid-cols-[auto_400px] xl:grid-cols-[auto_600px]">
             <div className="p-8 lg:self-center" data-aos="fade-right">
               <div>
                 <h2 className="mb-6 text-3xl font-bold">
                   Our Vision and Beliefs
                 </h2>
-                <p className="text mb-3 text-justify">
+                <p className="text mb-3 text-justify bg-gray/5 p-3 border-[1px] border-gray/10 rounded">
                   At Yeshua New Life, we aspire to be a Apostolic Yeshua
                   community where people discover the life-changing power of
                   Jesus. We're committed to nurturing a strong, inclusive
@@ -25,7 +25,7 @@ const Intro = () => {
                   Our Beliefs
                 </h4>
                 <ul className="text grid sm:grid-cols-2 sm:gap-x-4 md:gap-x-6 items-stretch">
-                  <li className="mb-3 rounded-lg overflow-hidden">
+                  <li className="mb-3 rounded-lg overflow-hidden" data-aos="fade-right">
                     <div className="font-semibold blue-gradient text-white py-2 px-3 flex items-center gap-x-2 ">
                       <BsBookmarkStarFill /> <span>Faith in Jesus Christ</span>
                     </div>
@@ -34,7 +34,7 @@ const Intro = () => {
                       salvation and eternal life through faith. John 14:6
                     </p>
                   </li>
-                  <li className="mb-3 rounded-lg overflow-hidden">
+                  <li className="mb-3 rounded-lg overflow-hidden" data-aos="fade-right">
                     <div className="font-semibold red-gradient text-white py-2 px-3 flex items-center gap-x-2">
                       <BsBookmarkStarFill /> <span>Salvation by Grace</span>
                     </div>
@@ -43,7 +43,7 @@ const Intro = () => {
                       in Jesus Christ. (Ephesians 2:8-9)
                     </p>
                   </li>
-                  <li className="mb-3 rounded-lg overflow-hidden">
+                  <li className="mb-3 rounded-lg overflow-hidden" data-aos="fade-right">
                     <div className="font-semibold green-gradient text-white py-2 px-3 flex items-center gap-x-2">
                       <BsBookmarkStarFill /> <span>Fivefold Ministry</span>
                     </div>
@@ -53,7 +53,7 @@ const Intro = () => {
                       equipping and building the church (Ephesians 4:11).
                     </p>
                   </li>
-                  <li className="mb-3 rounded-lg overflow-hidden">
+                  <li className="mb-3 rounded-lg overflow-hidden" data-aos="fade-right">
                     <div className="font-semibold vanilla-gradient text-white py-2 px-3 flex items-center gap-x-2">
                       <BsBookmarkStarFill />{" "}
                       <span>Empowered by the Holy Spirit</span>
@@ -66,12 +66,12 @@ const Intro = () => {
                 </ul>
               </div>
             </div>
-            <div className="p-5 h-[400px] md:h-[500px] relative" data-aos="fade-left">
+            <div className="p-8 h-[400px] md:h-[500px] relative">
               <img
                 src={staticImages.intro}
                 className="w-full h-full object-cover rounded-lg"
               />
-              <div className="text mb-5 text-justify bg-blue-gray-50 rounded px-5 py-4 border-[1px] border-blue-gray-50 absolute left-0 bottom-5 right-0 mx-10">
+              <div className="text mb-5 text-justify bg-blue-gray-50 rounded px-5 py-4 border-[1px] border-blue-gray-50 absolute left-0 bottom-5 right-0 mx-10" data-aos="fade-left">
                 <span className="inline-block me-1 text-dark">
                   <BiSolidQuoteAltLeft />
                 </span>
@@ -84,7 +84,7 @@ const Intro = () => {
                 <span className="inline-block ms-1 text-dark">
                   <BiSolidQuoteAltRight />
                 </span>
-                <div className="flex items-center gap-x-2 font-semibold justify-end">
+                <div className="flex items-center gap-x-2 font-semibold justify-end mt-3">
                   <FaBible className="text-red" />{" "}
                   <span className="text-red">John 4:23-24</span>
                 </div>

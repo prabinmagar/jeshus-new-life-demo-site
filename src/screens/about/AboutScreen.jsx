@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { scrollToTop } from "../../utils/scrollToTop";
 import staticImages from "../../utils/images";
 import { Intro } from "../../components";
+import { SocialIcon } from "react-social-icons";
 
 const AboutScreen = () => {
   useEffect(() => scrollToTop(), []);
@@ -14,21 +15,25 @@ const AboutScreen = () => {
             <div className="max-w-[1200px] min-h-[240px] mx-auto grid lg:grid-cols-2 gap-10 py-12">
               <div className="text-justify" data-aos="fade-right">
                 <h2 className="mb-5 text-3xl font-bold text-dark sm:text-[40px]/[48px]">
-                  YNL Community
+                  YESHUA NEW LIFE
                 </h2>
                 <p className="text">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less.
+                  As a community, we are dedicated to spreading the
+                  transformative power of the gospel, sharing the good news with
+                  passion and purpose, and inviting all to experience the
+                  life-changing grace that emanates from our belief in Jesus
+                  Christ.
                 </p>
                 <br />
                 <p className="text">
-                  A domain name is one of the first steps to establishing your
-                  brand. Secure a consistent brand image with a domain name that
-                  matches your business.
+                  Join us in a journey of faith, fellowship, and discovering the
+                  abundant life found in Yeshua, the source of our new life.
                 </p>
               </div>
-              <div className="h-[320px] overflow-hidden rounded-lg shadow-normal z-10" data-aos="fade-left">
+              <div
+                className="h-[320px] overflow-hidden rounded-lg shadow-normal z-10"
+                data-aos="fade-left"
+              >
                 <img
                   src={staticImages.temp2}
                   className="w-full h-full object-cover object-center"
@@ -47,85 +52,228 @@ const AboutScreen = () => {
           <div className="container">
             <div className="grid max-w-[1200px] mx-auto gap-y-8">
               <div className="flex gap-8 flex-col md:flex-row md:items-center">
-                <div className="h-[280px] w-[280px] mx-auto md:ms-0 min-w-[280px] rounded-full shadow-normal border-4 border-white relative after:absolute after:content-[''] after:w-[60px] after:h-[60px] after:bg-white after:right-2 after:bottom-3 after:rounded-full" data-aos="fade-right">
+                <div
+                  className="h-[280px] w-[280px] mx-auto md:ms-0 min-w-[280px] rounded-full shadow-normal border-4 border-white relative after:absolute after:content-[''] after:w-[60px] after:h-[60px] after:bg-white after:right-2 after:bottom-3 after:rounded-full"
+                  data-aos="fade-right"
+                >
                   <img
                     src={staticImages.member1}
                     className="w-full h-full object-cover object-top rounded-full"
                     alt=""
                   />
                 </div>
-                <div className="shadow-shadow4 px-6 py-8 rounded-lg border-2 border-gray/5 bg-whitesmoke" data-aos="fade-left">
-                  <h3 className="text-2xl font-bold text-gray-700 md:text-3xl">
-                    John Hagee
-                  </h3>
-                  <h5 className="font-bold text mt-3 mb-1">
-                    Founder & Senior Chariman
-                  </h5>
-                  <p className="text mt-3">
-                    Pastor John C. Hagee is the founder and Senior Pastor of
-                    Cornerstone Foundation in San Antonio, Texas, a
-                    non-denominational evangelical society with more than 22,000
-                    active members. Pastor Hagee has served the Lord in the
-                    gospel ministry for over 60 years.
-                  </p>
+                <div
+                  className="shadow-shadow4 px-6 py-8 rounded-lg border-2 border-gray/5 bg-white"
+                  data-aos="fade-left"
+                >
+                  <div className="grid sm:grid-cols-2 items-start gap-x-4 border-b-[1px] border-whitesmoke">
+                    <div>
+                      <h3 className="text-2xl font-bold text-gray-700 md:text-3xl">
+                        David Paul Limbu
+                      </h3>
+                      <h5 className="text text-sm opacity-90 mt-1 mb-1.5">
+                        Founder & Senior Chariman
+                      </h5>
+                    </div>
+                    <div className="flex gap-x-2 mt-1.5 sm:justify-end">
+                      <SocialIcon
+                        className="shadow-lg rounded-full"
+                        url="www.facebook.com"
+                        target="_blank"
+                        style={{ width: "28px", height: "28px" }}
+                      />
+                      <SocialIcon
+                        className="shadow-lg rounded-full"
+                        url="www.gmai.com"
+                        target="_blank"
+                        style={{ width: "28px", height: "28px" }}
+                      />
+                      <SocialIcon
+                        className="shadow-lg rounded-full"
+                        url="www.linkedin.com"
+                        target="_blank"
+                        style={{ width: "28px", height: "28px" }}
+                      />
+                      <SocialIcon
+                        className="shadow-lg rounded-full"
+                        url="www.instagram.com"
+                        target="_blank"
+                        style={{ width: "28px", height: "28px" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="mt-2 opacity-90">
+                    <p className="text">
+                      Pastor David Paul Limbu, with two decades of dedication to
+                      serving the Lord, leads our church with humility, a gospel
+                      driven life, unwavering commitment and faithfulness. His
+                      profound sermons, prayer, and Christ centered life enrich
+                      our spiritual journey and foster togetherness within our
+                      congregation. We are truly blessed to have him as our
+                      spiritual shepherd.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               <div className="flex gap-8 flex-col md:flex-row-reverse md:items-center">
-                <div className="h-[280px] w-[280px] mx-auto md:ms-0 min-w-[280px] overflow-hidden rounded-full shadow-normal border-4 border-white" data-aos="fade-left">
+                <div
+                  className="h-[280px] w-[280px] mx-auto md:ms-0 min-w-[280px] overflow-hidden rounded-full shadow-normal border-4 border-white"
+                  data-aos="fade-left"
+                >
                   <img
                     src={staticImages.member4}
                     className="w-full h-full object-cover object-top"
                     alt=""
                   />
                 </div>
-                <div className="text-white" data-aos="fade-right">
-                  <h3 className="text-3xl font-bold text-gray-700 md:text-4xl">
-                    Matt Hagee
-                  </h3>
-                  <h5 className="font-bold text text-white mt-3 mb-1">
-                    Founder & Senior Chariman
-                  </h5>
-                  <p className="text bg-white/10 p-6 mt-3 text-white">
-                    Pastor Matt Hagee is the Lead Pastor of the 22,000-member
-                    Cornerstone community in San Antonio, Texas where he
-                    partners with his father, founder Pastor John Hagee. Pastor
-                    Matt and his wife Kendal are committed to sharing the Gospel
-                    of Jesus Christ with the nations of the world and committed
-                    to building bridges between generations.
-                  </p>
+                <div
+                  className="shadow-shadow4 px-6 py-8 rounded-lg border-2 border-gray/5 bg-white"
+                  data-aos="fade-left"
+                >
+                  <div className="grid sm:grid-cols-2 items-start gap-x-4 border-b-[1px] border-whitesmoke">
+                    <div>
+                      <h3 className="text-2xl font-bold text-gray-700 md:text-3xl">
+                        Ramesh Thapa
+                      </h3>
+                      <h5 className="text text-sm opacity-90 mt-1 mb-1.5">
+                        Elder
+                      </h5>
+                    </div>
+                    <div className="flex gap-x-2 mt-1.5 sm:justify-end">
+                      <SocialIcon
+                        className="shadow-lg rounded-full"
+                        url="www.facebook.com"
+                        target="_blank"
+                        style={{ width: "28px", height: "28px" }}
+                      />
+                      <SocialIcon
+                        className="shadow-lg rounded-full"
+                        url="www.gmai.com"
+                        target="_blank"
+                        style={{ width: "28px", height: "28px" }}
+                      />
+                      <SocialIcon
+                        className="shadow-lg rounded-full"
+                        url="www.linkedin.com"
+                        target="_blank"
+                        style={{ width: "28px", height: "28px" }}
+                      />
+                      <SocialIcon
+                        className="shadow-lg rounded-full"
+                        url="www.instagram.com"
+                        target="_blank"
+                        style={{ width: "28px", height: "28px" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="mt-2 opacity-90">
+                    <p className="text">
+                      Ramesh Thapa, a devoted Elder in our community, brings a
+                      wealth of wisdom and spiritual insight to our church
+                      family. With a steadfast commitment to the gospel, Ramesh
+                      plays a vital role in guiding and supporting our
+                      congregation. His warm presence and compassionate spirit
+                      create an atmosphere of care and understanding, fostering
+                      a sense of unity and belonging among our members. We are
+                      truly grateful for Ramesh's dedication to serving the Lord
+                      and leading by example.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               <div className="flex gap-8 flex-col md:flex-row md:items-center">
-                <div className="h-[280px] w-[280px] mx-auto md:ms-0 min-w-[280px] rounded-full shadow-normal border-4 border-white relative" data-aos="fade-right">
+                <div
+                  className="h-[280px] w-[280px] mx-auto md:ms-0 min-w-[280px] rounded-full shadow-normal border-4 border-white relative"
+                  data-aos="fade-right"
+                >
                   <img
                     src={staticImages.member5}
                     className="w-full h-full object-cover object-top rounded-full z-10 relative"
                     alt=""
                   />
-                  <img src={staticImages.twinkle} alt="" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[1.2]" />
+                  <img
+                    src={staticImages.twinkle}
+                    alt=""
+                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[1.2]"
+                  />
                 </div>
-                <div className="shadow-shadow4 px-6 py-8 rounded-lg border-2 border-gray/5 bg-whitesmoke" data-aos="fade-left">
-                  <h3 className="text-2xl font-bold text-gray-700 md:text-3xl">
-                    John Hagee
-                  </h3>
-                  <h5 className="font-bold text mt-3 mb-1">
-                    Founder & Senior Chariman
-                  </h5>
-                  <p className="text mt-3">
-                    Pastor John C. Hagee is the founder and Senior Pastor of
-                    Cornerstone Foundation in San Antonio, Texas, a
-                    non-denominational evangelical society with more than 22,000
-                    active members. Pastor Hagee has served the Lord in the
-                    gospel ministry for over 60 years.
-                  </p>
+                <div
+                  className="shadow-shadow4 px-6 py-8 rounded-lg border-2 border-gray/5 bg-white"
+                  data-aos="fade-left"
+                >
+                  <div className="grid sm:grid-cols-2 items-start gap-x-4 border-b-[1px] border-whitesmoke">
+                    <div>
+                      <h3 className="text-2xl font-bold text-gray-700 md:text-3xl">
+                        Abhisek Rai
+                      </h3>
+                      <h5 className="text text-sm opacity-90 mt-1 mb-1.5">
+                        Deacon
+                      </h5>
+                    </div>
+                    <div className="flex gap-x-2 mt-1.5 sm:justify-end">
+                      <SocialIcon
+                        className="shadow-lg rounded-full"
+                        url="www.facebook.com"
+                        target="_blank"
+                        style={{ width: "28px", height: "28px" }}
+                      />
+                      <SocialIcon
+                        className="shadow-lg rounded-full"
+                        url="www.gmai.com"
+                        target="_blank"
+                        style={{ width: "28px", height: "28px" }}
+                      />
+                      <SocialIcon
+                        className="shadow-lg rounded-full"
+                        url="www.linkedin.com"
+                        target="_blank"
+                        style={{ width: "28px", height: "28px" }}
+                      />
+                      <SocialIcon
+                        className="shadow-lg rounded-full"
+                        url="www.instagram.com"
+                        target="_blank"
+                        style={{ width: "28px", height: "28px" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="mt-2 opacity-90">
+                    <p className="text">
+                      Abhisek Rai, a faithful Deacon in our fellowship, is a
+                      beacon of enthusiasm and service within our church. With a
+                      heart dedicated to Christ and a passion for community
+                      outreach, Abhisek actively contributes to the spiritual
+                      and practical needs of our congregation. His commitment to
+                      fostering a welcoming environment and assisting in various
+                      ministries reflects the love of Christ in action. We are
+                      blessed to have Abhisek as a devoted member and servant
+                      leader in our Yeshua New Life family.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <Intro />
+
+        <div
+          className="lg:min-h-[70vh] min-h-[50vh] flex items-center"
+          style={{
+            background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${staticImages.mission}) center/cover no-repeat`,
+          }}
+        >
+          <div className="container">
+            <h2 className="text-red text-3xl lg:text-4xl xxl:text-5xl font-semibold shadow-lg mb-4">
+              Our Mission
+            </h2>
+            <h1 className="text-white text-4xl lg:text-5xl xxl:text-6xl font-semibold max-w-[800px] hero-text">
+              Delivering all the gospel, to all the world, and to all
+              generations.
+            </h1>
+          </div>
+        </div>
         <img src={staticImages.wave} className="lg:-mt-[100px]" />
       </div>
     </main>

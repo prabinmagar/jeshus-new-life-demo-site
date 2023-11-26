@@ -60,7 +60,7 @@ export function EventDialog({ eventDialogOpen, handleEventDialogOpen }) {
                       </div>
                     </div>
                   </div>
-                  <div className="flex items-center flex-wrap gap-x-3 mb-1 mt-5 bg-whitesmoke p-3 w-full rounded border-[1px] border-gray/10">
+                  <div className="flex items-center flex-wrap gap-x-3 mb-1 mt-5 bg-whitesmoke p-3 w-full rounded-md border-[1px] border-gray/10 border-r-[6px] border-r-green">
                     <span className="w-[42px] h-[40px] green-gradient inline-flex items-center justify-center text-white rounded text-3xl font-semibold">
                       10
                     </span>

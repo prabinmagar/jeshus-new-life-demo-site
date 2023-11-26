@@ -95,13 +95,13 @@ const EventScreen = () => {
                   </div>
                   <div className="flex items-center gap-x-3 mt-3">
                     <button
-                      className="btn bg-red capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
                       type="button"
                     >
                       Register Now!
                     </button>
                     <button
-                      className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-blue capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
                       type="button"
                     >
                       See Details
@@ -163,7 +163,7 @@ const EventScreen = () => {
                   </div>
                   <div className="flex items-center gap-x-3 mt-3">
                     <button
-                      className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-blue capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
                       type="button"
                     >
                       See Details
@@ -225,13 +225,13 @@ const EventScreen = () => {
                   </div>
                   <div className="flex items-center gap-x-3 mt-3">
                     <button
-                      className="btn bg-red capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
                       type="button"
                     >
                       Register Now!
                     </button>
                     <button
-                      className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-blue capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
                       type="button"
                     >
                       See Details
@@ -293,13 +293,13 @@ const EventScreen = () => {
                   </div>
                   <div className="flex items-center gap-x-3 mt-3">
                     <button
-                      className="btn bg-red capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
                       type="button"
                     >
                       Register Now!
                     </button>
                     <button
-                      className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition border-[1px]"
+                      className="btn bg-blue capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition border-[1px]"
                       type="button"
                     >
                       See Details
@@ -361,7 +361,7 @@ const EventScreen = () => {
                   </div>
                   <div className="flex items-center gap-x-3 mt-3">
                     <button
-                      className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-blue capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
                       type="button"
                     >
                       See Details
@@ -423,7 +423,7 @@ const EventScreen = () => {
                   </div>
                   <div className="flex items-center gap-x-3 mt-3">
                     <button
-                      className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-blue capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
                       type="button"
                     >
                       See Details
@@ -485,7 +485,7 @@ const EventScreen = () => {
                   </div>
                   <div className="flex items-center gap-x-3 mt-3">
                     <button
-                      className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-blue capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
                       type="button"
                     >
                       See Details
@@ -547,13 +547,13 @@ const EventScreen = () => {
                   </div>
                   <div className="flex items-center gap-x-3 mt-3">
                     <button
-                      className="btn bg-red capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
                       type="button"
                     >
                       Register Now!
                     </button>
                     <button
-                      className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition border-[1px]"
+                      className="btn bg-blue capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition border-[1px]"
                       type="button"
                     >
                       See Details

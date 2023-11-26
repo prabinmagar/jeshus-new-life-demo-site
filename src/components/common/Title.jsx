@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const Title = ({ title, description, classes }) => {
   return (
-    <div className={`section-title lg:py-10 py-8 relative z-10 ${classes}`}>
+    <div className={`section-title pt-8 pb-4 relative z-10 ${classes}`}>
       <h2 className="uppercase drop-shadow-sm lg:text-4xl text-3xl text-center font-semibold">
         {title}
       </h2>

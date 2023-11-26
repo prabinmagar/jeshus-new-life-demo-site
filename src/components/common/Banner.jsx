@@ -20,14 +20,14 @@ const Banner = () => {
               Welcome to Our{" "}
             </h1>
             <h3 className="xxl:text-5xl lg:text-4xl text-3xl drop-shadow-lg mt-4 uppercase font-medium mb-10 text-center">
-              House of Worship
+              Yeshua new life
             </h3>
             <p className="text-xl max-w-[620px] text-center opacity-90 mx-auto drop-shadow">
               We gather each Saturday at 11:30 in our church and would love for
               you to join us!
             </p>
             <div className="flex items-center justify-center">
-              <Link to="" className="btn btn-lg bg-red mt-8 gap-x-3">
+              <Link to="" className="btn btn-lg bg-red mt-8 gap-x-3 hover:scale-105">
                 <span>Watch Live</span>
                 <FaVideo size={22} />
               </Link>

@@ -8,70 +8,150 @@ const Gallery = () => {
       <div className="container">
         <Title
           title={"our gallery"}
-          description={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla ad esse sunt est corporis error ipsam consequuntur dicta."
-          }
         />
         <div className="section-content mb-10">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 lg:gap-6">
-            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xxl:grid-cols-4 grid-cols-1 gap-4 lg:gap-6">
+            <Link
+              to="/gallery/1"
+              className="h-[280px] w-[90%] mx-auto rounded-lg shadow-normal relative dark-overlay cursor-pointer group stack block hover:scale-110"
+              data-aos="fade-up"
+            >
               <img
-                className="h-full w-full object-cover group-hover:scale-110 default-transition"
+                className="h-full w-full object-cover default-transition"
                 src={staticImages.gallery1}
                 alt=""
               />
-              <div className="absolute bottom-4 left-0 px-6 py-2.5 text-white z-10 uppercase text-xl font-semibold shadow-normal red-gradient -translate-x-full group-hover:translate-x-0 default-transition">
-                current events
+              <div className="absolute top-1 left-0 px-3 py-2.5 text-white z-10">
+                <div className=" uppercase text-sm drop-shadow-lg font-semibold">
+                  Worship 2022, Summer
+                </div>
+                <span className="text-sm">10 Photos</span>
               </div>
             </Link>
-            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up">
+
+            <Link
+              to="/gallery/1"
+              className="h-[280px] w-[90%] mx-auto rounded-lg shadow-normal relative dark-overlay cursor-pointer group stack"
+              data-aos="fade-up"
+            >
               <img
-                className="h-full w-full object-cover group-hover:scale-110 default-transition"
+                className="h-full w-full object-cover default-transition"
                 src={staticImages.gallery2}
                 alt=""
               />
-              <div className="absolute bottom-4 left-0 px-6 py-2.5 text-white z-10 uppercase text-xl font-semibold shadow-normal red-gradient -translate-x-full group-hover:translate-x-0 default-transition">
-                current events
+              <div className="absolute top-1 left-0 px-3 py-2.5 text-white z-10">
+                <div className=" uppercase text-sm drop-shadow-lg font-semibold">
+                  Worship 2022, Summer
+                </div>
+                <span className="text-sm">10 Photos</span>
               </div>
             </Link>
-            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up">
+
+            <Link
+              to="/gallery/1"
+              className="h-[280px] w-[90%] mx-auto rounded-lg shadow-normal relative dark-overlay cursor-pointer group stack"
+              data-aos="fade-up"
+            >
               <img
-                className="h-full w-full object-cover group-hover:scale-110 default-transition"
+                className="h-full w-full object-cover default-transition"
                 src={staticImages.gallery3}
                 alt=""
               />
-              <div className="absolute bottom-4 left-0 px-6 py-2.5 text-white z-10 uppercase text-xl font-semibold shadow-normal red-gradient -translate-x-full group-hover:translate-x-0 default-transition">
-                current events
+              <div className="absolute top-1 left-0 px-3 py-2.5 text-white z-10">
+                <div className=" uppercase text-sm drop-shadow-lg font-semibold">
+                  Worship 2022, Summer
+                </div>
+                <span className="text-sm">10 Photos</span>
               </div>
             </Link>
-            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up">
+
+            <Link
+              to="/gallery/1"
+              className="h-[280px] w-[90%] mx-auto rounded-lg shadow-normal relative dark-overlay cursor-pointer group stack"
+              data-aos="fade-up"
+            >
               <img
-                className="h-full w-full object-cover group-hover:scale-110 default-transition"
+                className="h-full w-full object-cover default-transition"
                 src={staticImages.gallery4}
                 alt=""
               />
-              <div className="absolute bottom-4 left-0 px-6 py-2.5 text-white z-10 uppercase text-xl font-semibold shadow-normal red-gradient -translate-x-full group-hover:translate-x-0 default-transition">
-                current events
+              <div className="absolute top-1 left-0 px-3 py-2.5 text-white z-10">
+                <div className=" uppercase text-sm drop-shadow-lg font-semibold">
+                  Worship 2022, Summer
+                </div>
+                <span className="text-sm">10 Photos</span>
               </div>
             </Link>
-            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up">
+
+            <Link
+              to="/gallery/1"
+              className="h-[280px] w-[90%] mx-auto rounded-lg shadow-normal relative dark-overlay cursor-pointer group stack"
+              data-aos="fade-up"
+            >
               <img
-                className="h-full w-full object-cover group-hover:scale-110 default-transition"
+                className="h-full w-full object-cover default-transition"
                 src={staticImages.gallery5}
                 alt=""
               />
-              <div className="absolute bottom-4 left-0 px-6 py-2.5 text-white z-10 uppercase text-xl font-semibold shadow-normal red-gradient -translate-x-full group-hover:translate-x-0 default-transition">
-                current events
+              <div className="absolute top-1 left-0 px-3 py-2.5 text-white z-10">
+                <div className=" uppercase text-sm drop-shadow-lg font-semibold">
+                  Worship 2022, Summer
+                </div>
+                <span className="text-sm">10 Photos</span>
               </div>
             </Link>
-            <Link to="/gallery" className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group" data-aos="fade-up">
+
+            <Link
+              to="/gallery/1"
+              className="h-[280px] w-[90%] mx-auto rounded-lg shadow-normal relative dark-overlay cursor-pointer group stack"
+              data-aos="fade-up"
+            >
               <img
-                className="h-full w-full object-cover group-hover:scale-110 default-transition"
+                className="h-full w-full object-cover default-transition"
                 src={staticImages.gallery6}
                 alt=""
               />
-              <div className="absolute bottom-4 left-0 px-6 py-2.5 text-white z-10 uppercase text-xl font-semibold shadow-normal red-gradient -translate-x-full group-hover:translate-x-0 default-transition">
-                current events
+              <div className="absolute top-1 left-0 px-3 py-2.5 text-white z-10">
+                <div className=" uppercase text-sm drop-shadow-lg font-semibold">
+                  Worship 2022, Summer
+                </div>
+                <span className="text-sm">10 Photos</span>
+              </div>
+            </Link>
+
+            <Link
+              to="/gallery/1"
+              className="h-[280px] w-[90%] mx-auto rounded-lg shadow-normal relative dark-overlay cursor-pointer group stack"
+              data-aos="fade-up"
+            >
+              <img
+                className="h-full w-full object-cover default-transition"
+                src={staticImages.temp1}
+                alt=""
+              />
+              <div className="absolute top-1 left-0 px-3 py-2.5 text-white z-10">
+                <div className=" uppercase text-sm drop-shadow-lg font-semibold">
+                  Worship 2022, Summer
+                </div>
+                <span className="text-sm">10 Photos</span>
+              </div>
+            </Link>
+
+            <Link
+              to="/gallery/1"
+              className="h-[280px] w-[90%] mx-auto rounded-lg shadow-normal relative dark-overlay cursor-pointer group stack"
+              data-aos="fade-up"
+            >
+              <img
+                className="h-full w-full object-cover default-transition"
+                src={staticImages.temp2}
+                alt=""
+              />
+              <div className="absolute top-1 left-0 px-3 py-2.5 text-white z-10">
+                <div className=" uppercase text-sm drop-shadow-lg font-semibold">
+                  Worship 2022, Summer
+                </div>
+                <span className="text-sm">10 Photos</span>
               </div>
             </Link>
           </div>

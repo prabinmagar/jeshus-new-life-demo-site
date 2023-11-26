@@ -11,32 +11,35 @@ const Ministries = () => {
     e.preventDefault();
     handleVideoDialogOpen();
   };
-  
+
   return (
     <>
       <VideoDialog
         videoDialogOpen={videoDialogOpen}
         handleVideoDialogOpen={handleVideoDialogOpen}
       />
-      <section className="py-8 min-h-[80vh] flex items-center">
+      <section className="py-8 min-h-[80vh] flex items-center" id="ministries">
         <div className="container relative z-10">
           <Title
-            title={"Our Ministries"}
+            title={"Our Ministries"}z
             description={
               "Yeshua New Life is a focused group with a clear mission, serving both the congregation and the wider community."
             }
           />
-          <div className="section-content mb-10 grid xl:grid-cols-4 md:grid-cols-2 gap-4">
-            <div
-              className="shadow-normal rounded-xl"
-              onClick={onVideoDialogOpen} data-aos="fade-up"
-            >
+          <div className="section-content mb-10 grid xl:grid-cols-4 sm:grid-cols-2 gap-4">
+            <div className="shadow-normal rounded-xl" data-aos="fade-up">
               <div className="h-[380px] relative rounded-xl overflow-hidden cursor-pointer group">
                 <img
                   src={staticImages.ministry1}
                   alt=""
                   className="w-full h-full object-cover"
                 />
+                <button
+                  onClick={onVideoDialogOpen}
+                  className="absolute top-1/3 left-1/2 -translate-x-1/2 bg-red text-white font-semibold px-3 py-2 rounded shadow-xl opacity-0 group-hover:opacity-100 default-transition"
+                >
+                  Watch Intro Video
+                </button>
                 <div className="absolute bottom-2 left-1/2 text-center bg-white/90 rounded -translate-x-1/2 w-[92%] py-3 px-2">
                   <h3 className="text-xl font-semibold capitalize text-red mb-1">
                     Children’s Ministry
@@ -55,6 +58,12 @@ const Ministries = () => {
                   alt=""
                   className="w-full h-full object-cover"
                 />
+                <button
+                  onClick={onVideoDialogOpen}
+                  className="absolute top-1/3 left-1/2 -translate-x-1/2 bg-red text-white font-semibold px-3 py-2 rounded shadow-xl opacity-0 group-hover:opacity-100 default-transition"
+                >
+                  Watch Intro Video
+                </button>
                 <div className="absolute bottom-2 left-1/2 text-center bg-white/90 rounded -translate-x-1/2 w-[92%] py-3 px-2">
                   <h3 className="text-xl font-semibold capitalize text-blue mb-1">
                     Youth Ministry
@@ -74,6 +83,12 @@ const Ministries = () => {
                   alt=""
                   className="w-full h-full object-cover"
                 />
+                <button
+                  onClick={onVideoDialogOpen}
+                  className="absolute top-1/3 left-1/2 -translate-x-1/2 bg-red text-white font-semibold px-3 py-2 rounded shadow-xl opacity-0 group-hover:opacity-100 default-transition"
+                >
+                  Watch Intro Video
+                </button>
                 <div className="absolute bottom-2 left-1/2 text-center bg-white/90 rounded -translate-x-1/2 w-[92%] py-3 px-2">
                   <h3 className="text-xl font-semibold capitalize text-green mb-1">
                     Women’s ministry
@@ -93,6 +108,12 @@ const Ministries = () => {
                   alt=""
                   className="w-full h-full object-cover"
                 />
+                <button
+                  onClick={onVideoDialogOpen}
+                  className="absolute top-1/3 left-1/2 -translate-x-1/2 bg-red text-white font-semibold px-3 py-2 rounded shadow-xl opacity-0 group-hover:opacity-100 default-transition"
+                >
+                  Watch Intro Video
+                </button>
                 <div className="absolute bottom-2 left-1/2 text-center bg-white/90 rounded -translate-x-1/2 w-[92%] py-3 px-2">
                   <h3 className="text-xl font-semibold capitalize text-gray mb-1">
                     Mission and Outreach

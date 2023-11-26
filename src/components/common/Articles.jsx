@@ -10,11 +10,7 @@ const Articles = () => {
       <div className="container">
         <Title
           title={"Latest articles to read"}
-          description={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odit aliquid quaerat. Aut, quas optio?"
-          }
         />
-
         <div className="grid xxl:grid-cols-2 gap-4">
           <div className="relative flex flex-col md:flex-row md:space-x-2 space-y-3 md:space-y-0 rounded-xl shadow-lg p-2 border border-white bg-white" data-aos="fade-right">
             <div className="relative w-full md:w-1/3 bg-white grid place-items-center h-[320px] lg:h-auto">

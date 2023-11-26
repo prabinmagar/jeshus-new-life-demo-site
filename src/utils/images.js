@@ -56,7 +56,7 @@ import wave from "../assets/images/shapes/wave.svg";
 import twinkle from "../assets/images/shapes/twinkle.svg";
 import watch_live from "../assets/images/watch_live.jpg";
 import media_bg from "../assets/images/media_bg.jpg";
-
+import mission from "../assets/images/mission.jpg";
 // shapes
 import bubbles from "../assets/images/shapes/bubbles.svg";
 
@@ -119,7 +119,8 @@ const staticImages = {
   wave,
   twinkle,
   watch_live,
-  media_bg
+  media_bg,
+  mission
 };
 
 export default staticImages;

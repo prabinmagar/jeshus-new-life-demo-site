@@ -12,9 +12,17 @@ import {
   MenuItem,
   MenuList,
 } from "@material-tailwind/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import { FaInstagram } from "react-icons/fa";
 import { BiSolidLeaf } from "react-icons/bi";
+import {
+  Link as ScrollLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scroller,
+} from "react-scroll";
 
 const Navbar = () => {
   const location = useLocation();
@@ -32,6 +40,20 @@ const Navbar = () => {
   const [openMenu4, setOpenMenu4] = useState(false);
   const openDrawerRight = () => setOpenRight(true);
   const closeDrawerRight = () => setOpenRight(false);
+
+  // smooth scroll on link click
+  useEffect(() => {
+    Events.scrollEvent.register("begin", (to, element) => {
+      // console.log("begin");
+    });
+    Events.scrollEvent.register("end", (to, element) => {
+      // console.log("end");
+    });
+    return () => {
+      Events.scrollEvent.remove("begin");
+      Events.scrollEvent.remove("end");
+    };
+  }, []);
 
   return (
     <>
@@ -161,7 +183,13 @@ const Navbar = () => {
             className="font-bold text-3xl inline-flex items-center gap-x-2 nav-brand"
           >
             <BiSolidLeaf className="text-red" />
-            <span className={`${location.pathname === "/" ? 'text-white' : 'text-dark'}`}>YNL.</span>
+            <span
+              className={`${
+                location.pathname === "/" ? "text-white" : "text-dark"
+              }`}
+            >
+              YNL.
+            </span>
           </Link>
           <button
             onClick={openDrawerRight}
@@ -180,21 +208,23 @@ const Navbar = () => {
                   allowHover
                 >
                   <MenuHandler>
-                    <Link className="text-white capitalize py-1 xl:mx-3 mx-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2 outline-none">
-                      <span>About</span>
+                    <Link className="text-white capitalize py-1 xl:mx-3 mx-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2 outline-none group">
+                      <span className="">
+                        About
+                      </span>
                       <ChevronDownIcon
                         strokeWidth={2.5}
-                        className={`h-3.5 w-3.5 transition-transform ${
+                        className={`h-3.5 w-3.5 transition-transform  ${
                           openMenu3 ? "rotate-180" : ""
                         }`}
                       />
                     </Link>
                   </MenuHandler>
-                  <MenuList className="hidden min-w-[auto] w-12rem grid-cols-7 lg:grid p-0 m-0  border-none bg-white">
+                  <MenuList className="hidden min-w-[auto] w-12rem grid-cols-7 lg:grid p-0 px-2 m-0  border-none bg-white">
                     <ul className="col-span-7 flex w-full flex-col gap-1 py-2 outline-none border-0">
                       <Link
                         to="/about"
-                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-3"
+                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
                       >
                         <div className="px-1 py-1">
                           <h4 className="text-sm font-medium text">
@@ -202,27 +232,45 @@ const Navbar = () => {
                           </h4>
                         </div>
                       </Link>
-                      <MenuItem className="w-full hover:bg-transparent active:bg-transparent py-0">
+                      <ScrollLink
+                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
+                        to="intro"
+                        smooth={true}
+                        duration={400}
+                        offset={-40}
+                      >
                         <div className="px-1 py-1">
                           <h4 className="text-sm font-medium text">
                             Our beliefs
                           </h4>
                         </div>
-                      </MenuItem>
-                      <MenuItem className="w-full hover:bg-transparent active:bg-transparent py-0">
+                      </ScrollLink>
+                      <ScrollLink
+                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
+                        to="members"
+                        smooth={true}
+                        duration={400}
+                        offset={-40}
+                      >
                         <div className="px-1 py-1">
                           <h4 className="text-sm font-medium text">
                             Leadership
                           </h4>
                         </div>
-                      </MenuItem>
-                      <MenuItem className="w-full hover:bg-transparent active:bg-transparent py-0">
+                      </ScrollLink>
+                      <ScrollLink
+                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
+                        to="ministries"
+                        smooth={true}
+                        duration={400}
+                        offset={-40}
+                      >
                         <div className="px-1 py-1">
                           <h4 className="text-sm font-medium text">
                             Ministries
                           </h4>
                         </div>
-                      </MenuItem>
+                      </ScrollLink>
                     </ul>
                   </MenuList>
                 </Menu>
@@ -235,47 +283,55 @@ const Navbar = () => {
                   allowHover
                 >
                   <MenuHandler>
-                    <Link className="text-white capitalize py-1 xl:mx-3 mx-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2 outline-none">
-                      <span>Locations</span>
+                    <Link className="text-white capitalize py-1 xl:mx-3 mx-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2 outline-none group">
+                      <span className="">
+                        Locations
+                      </span>
                       <ChevronDownIcon
                         strokeWidth={2.5}
-                        className={`h-3.5 w-3.5 transition-transform ${
+                        className={`h-3.5 w-3.5 transition-transform  ${
                           openMenu ? "rotate-180" : ""
                         }`}
                       />
                     </Link>
                   </MenuHandler>
-                  <MenuList className="hidden w-[10rem] grid-cols-7 lg:grid p-0 m-0  border-none">
+                  <MenuList className="hidden w-[10rem] grid-cols-7 lg:grid p-0 px-2 m-0 border-none">
                     <ul className="col-span-7 flex w-full flex-col gap-1 py-2 outline-none border-0">
-                      <MenuItem className="w-full hover:bg-transparent active:bg-transparent py-0">
+                      <ScrollLink
+                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
+                        to="map"
+                        smooth={true}
+                        duration={400}
+                        offset={-40}
+                      >
                         <div className="px-1 py-1">
                           <h4 className="text-sm font-medium text">
                             Lamachour Marg, Jhamsikhel, Lalitpur
                           </h4>
                         </div>
-                      </MenuItem>
-                      <MenuItem className="w-full hover:bg-transparent active:bg-transparent py-0">
+                      </ScrollLink>
+                      <MenuItem className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5">
                         <div className="px-1 py-1">
                           <h4 className="text-sm font-medium text">
                             Damak, Jhapa
                           </h4>
                         </div>
                       </MenuItem>
-                      <MenuItem className="w-full hover:bg-transparent active:bg-transparent py-0">
+                      <MenuItem className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5">
                         <div className="px-1 py-1">
                           <h4 className="text-sm font-medium text">
                             Surunga, Jhapa
                           </h4>
                         </div>
                       </MenuItem>
-                      <MenuItem className="w-full hover:bg-transparent active:bg-transparent py-0">
+                      <MenuItem className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5">
                         <div className="px-1 py-1">
                           <h4 className="text-sm font-medium text">
                             Birtamod, Jhapa
                           </h4>
                         </div>
                       </MenuItem>
-                      <MenuItem className="w-full hover:bg-transparent active:bg-transparent py-0">
+                      <MenuItem className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5">
                         <div className="px-1 py-1">
                           <h4 className="text-sm font-medium text">
                             Urlabari, Morang
@@ -284,7 +340,7 @@ const Navbar = () => {
                       </MenuItem>
                       <Link
                         to="/branch"
-                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-3"
+                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
                       >
                         <div className="px-1 py-1">
                           <h4 className="text-sm font-medium text">See ALL</h4>
@@ -302,28 +358,33 @@ const Navbar = () => {
                   allowHover
                 >
                   <MenuHandler>
-                    <Link className="text-white capitalize py-1 xl:mx-3 mx-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2 outline-none">
-                      <span>Services</span>
+                    <Link className="text-white capitalize py-1 xl:mx-3 mx-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2 outline-none group">
+                      <span className="">
+                        Services
+                      </span>
                       <ChevronDownIcon
                         strokeWidth={2.5}
-                        className={`h-3.5 w-3.5 transition-transform ${
+                        className={`h-3.5 w-3.5 transition-transform  ${
                           openMenu2 ? "rotate-180" : ""
                         }`}
                       />
                     </Link>
                   </MenuHandler>
-                  <MenuList className="hidden min-w-[auto] w-12rem grid-cols-7 lg:grid p-0 m-0  border-none bg-white">
+                  <MenuList className="hidden min-w-[auto] w-12rem grid-cols-7 lg:grid p-0 px-2 m-0  border-none bg-white">
                     <ul className="col-span-7 flex w-full flex-col gap-1 py-2 outline-none border-0">
-                      <MenuItem className="w-full hover:bg-transparent active:bg-transparent py-0">
+                      <Link
+                        to="/watch"
+                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
+                      >
                         <div className="px-1 py-1">
                           <h4 className="text text-sm font-medium">
                             Worship Service
                           </h4>
                         </div>
-                      </MenuItem>
+                      </Link>
                       <Link
                         to="/event"
-                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-3"
+                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
                       >
                         <div className="px-1 py-1">
                           <h4 className="text text-sm font-medium">Events</h4>
@@ -331,7 +392,7 @@ const Navbar = () => {
                       </Link>
                       <Link
                         to="/request"
-                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-3"
+                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
                       >
                         <div className="px-1 py-1">
                           <h4 className="text text-sm font-medium">
@@ -351,21 +412,23 @@ const Navbar = () => {
                   allowHover
                 >
                   <MenuHandler>
-                    <Link className="text-white capitalize py-1 xl:mx-3 mx-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2 outline-none">
-                      <span>Media</span>
+                    <Link className="text-white capitalize py-1 xl:mx-3 mx-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2 outline-none group">
+                      <span className="">
+                        Media
+                      </span>
                       <ChevronDownIcon
                         strokeWidth={2.5}
-                        className={`h-3.5 w-3.5 transition-transform ${
+                        className={`h-3.5 w-3.5 transition-transform  ${
                           openMenu4 ? "rotate-180" : ""
                         }`}
                       />
                     </Link>
                   </MenuHandler>
-                  <MenuList className="hidden min-w-[auto] w-12rem grid-cols-7 lg:grid p-0 m-0 border-none bg-white">
+                  <MenuList className="hidden min-w-[auto] w-12rem grid-cols-7 lg:grid p-0 px-2 m-0 border-none bg-white">
                     <ul className="col-span-7 flex w-full flex-col gap-1 py-2 outline-none border-0">
                       <Link
                         to="/gallery"
-                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-3"
+                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
                       >
                         <div className="px-1 py-1">
                           <h4 className="text text-sm font-medium">Photos</h4>
@@ -373,15 +436,15 @@ const Navbar = () => {
                       </Link>
                       <Link
                         to="/media"
-                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-3"
+                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
                       >
                         <div className="px-1 py-1">
                           <h4 className="text text-sm font-medium">Sermons</h4>
                         </div>
                       </Link>
                       <Link
-                        to="/media"
-                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-3"
+                        to="/media2"
+                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
                       >
                         <div className="px-1 py-1">
                           <h4 className="text text-sm font-medium">
@@ -391,7 +454,7 @@ const Navbar = () => {
                       </Link>
                       <Link
                         to="/watch"
-                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-3"
+                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
                       >
                         <div className="px-1 py-1">
                           <h4 className="text text-sm font-medium">
@@ -404,33 +467,42 @@ const Navbar = () => {
                 </Menu>
               </li>
               <li>
-                <Link
-                  to="/event"
-                  className="text-white capitalize py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium"
+                <ScrollLink
+                  className="text-white capitalize py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium cursor-pointer group"
+                  to="events"
+                  smooth={true}
+                  duration={400}
+                  offset={-40}
                 >
-                  Events
-                </Link>
+                  <span className="">
+                    Events
+                  </span>
+                </ScrollLink>
               </li>
               <li>
                 <Link
                   to="/article"
-                  className="text-white capitalize py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium"
+                  className="text-white capitalize py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium group"
                 >
-                  Articles
+                  <span className="">
+                    Articles
+                  </span>
                 </Link>
               </li>
               <li>
                 <Link
                   to="/donate"
-                  className="text-white capitalize py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium inline-flex items-center gap-x-2"
+                  className="text-white capitalize py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium inline-flex items-center gap-x-2 group"
                 >
-                  <span>Contribute</span>
-                  <FaHandHoldingHeart />
+                  <span className="">
+                    Contribute
+                  </span>
+                  <FaHandHoldingHeart className="" />
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="social-links hidden xxl:block">
+          <div className="social-links hidden xl:block">
             <ul className="flex items-center gap-x-4">
               <li>
                 <Link
@@ -446,9 +518,9 @@ const Navbar = () => {
               <li>
                 <Link
                   to=""
-                  className="text-white w-[38px] h-[36px] shadow-md inline-flex items-center justify-center rounded-full bg-green group"
+                  className="text-white w-[38px] h-[36px] shadow-md inline-flex items-center justify-center rounded-full instagram group"
                 >
-                  <FaEnvelope
+                  <FaInstagram 
                     size={20}
                     className="group-hover:scale-90 default-transition"
                   />
