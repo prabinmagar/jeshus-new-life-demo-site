@@ -3,6 +3,7 @@ import staticImages from "../../utils/images";
 import { IoMdPhotos } from "react-icons/io";
 import { useEffect } from "react";
 import { scrollToTop } from "../../utils/scrollToTop";
+import { FaLongArrowAltLeft } from "react-icons/fa";
 
 const GalleryAlbumScreen = () => {
   useEffect(() => scrollToTop(), []);
@@ -171,6 +172,15 @@ const GalleryAlbumScreen = () => {
                 </div>
               </Link>
             </div>
+          </div>
+          <div className="flex items-center justify-center mt-10">
+            <Link
+              to="/article"
+              className="relative inline-flex items-center gap-1 rounded border border-red bg-red px-3 py-2 pl-4 text-base text-white font-medium text-gray-500 hover:border-red hover:bg-white hover:text-red"
+              href="/archive"
+            >
+              <span>Lore More</span>
+            </Link>
           </div>
         </div>
       </div>

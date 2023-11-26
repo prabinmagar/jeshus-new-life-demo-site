@@ -40,18 +40,16 @@ const RequestScreen = () => {
                 <blockquote className="relative border-s-4 ps-4 sm:ps-6 border-red mt-8">
                   <p className="text">
                     <em>
-                      I just wanted to say that I'm very happy with my purchase
-                      so far. The documentation is outstanding - clear and
-                      detailed.
+                    “Again, truly I tell you that if two of you on earth agree about anything they ask for, it will be done for them by my Father in heaven. For where two or three gather in my name, there am I with them.”
                     </em>
                   </p>
                   <footer className="mt-3">
                     <div className="flex items-center">
                       <div>
                         <div className="text-base font-semibold text-dark">
-                          Quoted part
+                        Matthew 18:19-20
                         </div>
-                        <div className="text-sm text">Source title</div>
+                        {/* <div className="text-sm text">Source title</div> */}
                       </div>
                     </div>
                   </footer>

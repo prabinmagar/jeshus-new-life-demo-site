@@ -12,7 +12,7 @@ const Gallery = () => {
         <div className="section-content mb-10">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xxl:grid-cols-4 grid-cols-1 gap-4 lg:gap-6">
             <Link
-              to="/gallery/1"
+              to="/gallery"
               className="h-[280px] w-[90%] mx-auto rounded-lg shadow-normal relative dark-overlay cursor-pointer group stack block hover:scale-110"
               data-aos="fade-up"
             >
@@ -30,7 +30,7 @@ const Gallery = () => {
             </Link>
 
             <Link
-              to="/gallery/1"
+              to="/gallery"
               className="h-[280px] w-[90%] mx-auto rounded-lg shadow-normal relative dark-overlay cursor-pointer group stack"
               data-aos="fade-up"
             >
@@ -48,7 +48,7 @@ const Gallery = () => {
             </Link>
 
             <Link
-              to="/gallery/1"
+              to="/gallery"
               className="h-[280px] w-[90%] mx-auto rounded-lg shadow-normal relative dark-overlay cursor-pointer group stack"
               data-aos="fade-up"
             >
@@ -66,7 +66,7 @@ const Gallery = () => {
             </Link>
 
             <Link
-              to="/gallery/1"
+              to="/gallery"
               className="h-[280px] w-[90%] mx-auto rounded-lg shadow-normal relative dark-overlay cursor-pointer group stack"
               data-aos="fade-up"
             >
@@ -84,7 +84,7 @@ const Gallery = () => {
             </Link>
 
             <Link
-              to="/gallery/1"
+              to="/gallery"
               className="h-[280px] w-[90%] mx-auto rounded-lg shadow-normal relative dark-overlay cursor-pointer group stack"
               data-aos="fade-up"
             >
@@ -102,7 +102,7 @@ const Gallery = () => {
             </Link>
 
             <Link
-              to="/gallery/1"
+              to="/gallery"
               className="h-[280px] w-[90%] mx-auto rounded-lg shadow-normal relative dark-overlay cursor-pointer group stack"
               data-aos="fade-up"
             >
@@ -120,7 +120,7 @@ const Gallery = () => {
             </Link>
 
             <Link
-              to="/gallery/1"
+              to="/gallery"
               className="h-[280px] w-[90%] mx-auto rounded-lg shadow-normal relative dark-overlay cursor-pointer group stack"
               data-aos="fade-up"
             >
@@ -138,7 +138,7 @@ const Gallery = () => {
             </Link>
 
             <Link
-              to="/gallery/1"
+              to="/gallery"
               className="h-[280px] w-[90%] mx-auto rounded-lg shadow-normal relative dark-overlay cursor-pointer group stack"
               data-aos="fade-up"
             >
@@ -153,6 +153,15 @@ const Gallery = () => {
                 </div>
                 <span className="text-sm">10 Photos</span>
               </div>
+            </Link>
+          </div>
+          <div className="flex items-center justify-center mt-10">
+            <Link
+              to="/article"
+              className="relative inline-flex items-center gap-1 rounded border border-red bg-red px-3 py-2 pl-4 text-base text-white font-medium text-gray-500 hover:border-red hover:bg-white hover:text-red"
+              href="/archive"
+            >
+              <span>See All Albums</span>
             </Link>
           </div>
         </div>
