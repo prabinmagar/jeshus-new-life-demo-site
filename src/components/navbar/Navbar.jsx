@@ -121,7 +121,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to=""
+                to="/media2"
                 className="text-black text-base capitalize py-1 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none"
               >
                 Testimonials
@@ -467,17 +467,14 @@ const Navbar = () => {
                 </Menu>
               </li>
               <li>
-                <ScrollLink
+                <Link
                   className="text-white capitalize py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium cursor-pointer group"
-                  to="events"
-                  smooth={true}
-                  duration={400}
-                  offset={-40}
+                  to="/event"
                 >
                   <span className="">
                     Events
                   </span>
-                </ScrollLink>
+                </Link>
               </li>
               <li>
                 <Link

@@ -33,7 +33,7 @@ const WatchLiveScreen = () => {
                       <FaPlay />
                       <span className="font-medium">Watch Now</span>
                     </div>
-                    <h3 className="text-white font-semibold text-2xl mt-6 drop-shadow-lg">
+                    <h3 className="text-white font-semibold text-2xl mt-6 drop-shadow-lg font-lora">
                       New Southern Music Band
                     </h3>
 
@@ -73,7 +73,7 @@ const WatchLiveScreen = () => {
                 </div>
                 <div>
                   <div className="p-6">
-                    <h5 className="mb-3 text-2xl font-semibold text-dark border-b-[1px] border-b-gray/10 pb-1">
+                    <h5 className="mb-3 text-2xl font-semibold text-dark border-b-[1px] border-b-gray/10 pb-1 font-lora">
                       Saturday Live Watch
                     </h5>
                     <div className="flex flex-center gap-x-6 flex-wrap">

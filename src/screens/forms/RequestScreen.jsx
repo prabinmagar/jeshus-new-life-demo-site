@@ -21,7 +21,7 @@ const RequestScreen = () => {
                   background: `url(${staticImages.bubbles}) center/cover no-repeat`,
                 }}
               >
-                <h3 className="text-2xl font-semibold mb-4">
+                <h3 className="text-2xl font-semibold mb-4 font-lora">
                   Express your request to us!
                 </h3>
                 <div className="bg-green/5 p-6 rounded relative after:absolute after:bg-green/20 after:content-[''] after:w-full after:h-full after:-bottom-2 after:-right-2 after:top-2 after:left-2 after:rounded">
@@ -57,7 +57,7 @@ const RequestScreen = () => {
                 <img src={staticImages.arrow} alt="" />
               </div>
               <div className="px-8 py-8 bg-white/10">
-                <h3 className="text-xl font-semibold mb-3 text-white py-3">
+                <h3 className="text-xl font-semibold mb-3 text-white py-3 font-lora">
                   Fill out the form below and share your requests.
                 </h3>
                 <form>

@@ -157,9 +157,8 @@ const Gallery = () => {
           </div>
           <div className="flex items-center justify-center mt-10">
             <Link
-              to="/article"
+              to="/gallery"
               className="relative inline-flex items-center gap-1 rounded border border-red bg-red px-3 py-2 pl-4 text-base text-white font-medium text-gray-500 hover:border-red hover:bg-white hover:text-red"
-              href="/archive"
             >
               <span>See All Albums</span>
             </Link>

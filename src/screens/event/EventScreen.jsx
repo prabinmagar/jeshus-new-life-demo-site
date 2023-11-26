@@ -31,7 +31,7 @@ const EventScreen = () => {
             }}
           >
             <div className="container">
-              <h2 className="text-3xl lg:text-4xl font-bold text-white drop-shadow-lg mb-2">
+              <h2 className="text-3xl lg:text-4xl font-bold text-white drop-shadow-lg mb-2 font-lora">
                 Upcoming Events
               </h2>
               <p className="text text-white drop-shadow-lg">

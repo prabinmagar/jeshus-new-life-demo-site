@@ -52,7 +52,7 @@ const ArticlesScreen = () => {
         <div className="container grid lg:grid-cols-[2fr_1fr] gap-10 items-start">
           <div className="w-full">
             <div className="flex items-center justify-between pb-2 mb-6 border-b-[1px] border-dark/10">
-              <h1 className="text-xl font-bold text-gray-700">
+              <h1 className="text-xl font-bold text-gray-700 font-lora">
                 Articles To Read
               </h1>
               <Menu>
@@ -321,7 +321,7 @@ const ArticlesScreen = () => {
           <div className="w-full grid gap-6 items-start">
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-1">
               <div data-aos="fade-up">
-                <h1 className="mb-4 text-xl font-bold text-gray-700">
+                <h1 className="mb-4 text-xl font-bold text-gray-700 font-lora">
                   Authors
                 </h1>
                 <div className="flex flex-col px-6 py-4 bg-white rounded-lg shadow-md">
@@ -436,7 +436,7 @@ const ArticlesScreen = () => {
               </div>
 
               <div data-aos="fade-up">
-                <h1 className="mb-4 text-xl font-bold text-gray-700">
+                <h1 className="mb-4 text-xl font-bold text-gray-700 font-lora">
                   Popular Topics / Tags
                 </h1>
                 <div className="flex flex-col px-4 py-6 mx-auto bg-white rounded-lg shadow-md">
@@ -487,7 +487,7 @@ const ArticlesScreen = () => {
             </div>
 
             <div data-aos="fade-up">
-              <h1 className="mb-4 text-xl font-bold text-gray-700">
+              <h1 className="mb-4 text-xl font-bold text-gray-700 font-lora">
                 Recent Post
               </h1>
               <div className="grid gap-4">

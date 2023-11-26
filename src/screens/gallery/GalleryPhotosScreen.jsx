@@ -14,7 +14,7 @@ const GalleryPhotosScreen = () => {
             <div className="border-b border-b-gray/20 mb-5 flex justify-between text-sm">
               <div className="text text-dark flex items-center pb-2 pr-2 uppercase">
                 <p>
-                  <span className="font-bold text-red">Posted On:</span> 16th July,
+                  <span className="font-bold text-red font-lora">Posted On:</span> 16th July,
                   2023
                 </p>
               </div>
@@ -27,7 +27,7 @@ const GalleryPhotosScreen = () => {
               </button>
             </div>
             <div className="mt-6 mb-10">
-              <h3 className="text-2xl lg:text-3xl font-semibold mb-2">
+              <h3 className="text-2xl lg:text-3xl font-semibold mb-2 font-lora">
                 2023 Youth Revival Meeting
               </h3>
             </div>

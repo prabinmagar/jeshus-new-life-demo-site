@@ -4,6 +4,7 @@ import { Button } from "@material-tailwind/react";
 import { FaShareAlt } from "react-icons/fa";
 import { useEffect } from "react";
 import { scrollToTop } from "../../utils/scrollToTop";
+import { BsFillEyeFill } from "react-icons/bs";
 
 const ArticleSingleScreen = () => {
   useEffect(() => scrollToTop(), []);
@@ -39,11 +40,13 @@ const ArticleSingleScreen = () => {
                     <div className="flex flex-col items-start md:flex-row md:justify-between md:items-center gap-5">
                       <address className="flex items-center not-italic">
                         <div className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
-                          <div className="w-14 h-14 mr-4"><img
-                            className="w-full h-full object-cover object-top rounded-full"
-                            src={staticImages.member1}
-                            alt=""
-                          /></div>
+                          <div className="w-14 h-14 mr-4">
+                            <img
+                              className="w-full h-full object-cover object-top rounded-full"
+                              src={staticImages.member1}
+                              alt=""
+                            />
+                          </div>
                           <div className="flex flex-col">
                             <a
                               href="#"
@@ -274,10 +277,11 @@ const ArticleSingleScreen = () => {
                       About David Paul
                     </h3>
                   </div>
-                  <div className="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Odio ad, quaerat labore sunt aut cum adipisci et earum
-                    reprehenderit alias.
+                  <div className="text text-sm">
+                    पास्टर डेभिड पौल लिम्बु, प्रभुको सेवा गर्दै दुई दशक अघिदेखि,
+                    विनम्रतामा, एक परमेश्वरका लागि प्रेरित जीवनमा, अचल
+                    आत्मसमर्पण र विश्वासयोग्यताका साथ हाम्रो चर्चलाई अगाडि
+                    बढाउँदैछन्।
                   </div>
                   <div className="mt-3">
                     <Link
@@ -301,49 +305,13 @@ const ArticleSingleScreen = () => {
                     type="button"
                     className="hs-tooltip-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                   >
-                    <svg
-                      className="w-4 h-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                    </svg>
+                    <BsFillEyeFill size={16} />
                     875
                     <span
                       className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded-md shadow-sm dark:bg-black"
                       role="tooltip"
                     >
                       Like
-                    </span>
-                  </button>
-                </div>
-
-                <div className="block h-3 border-r border-gray-300 mx-3 dark:border-gray-600"></div>
-
-                <div className="hs-tooltip inline-block">
-                  <button
-                    type="button"
-                    className="hs-tooltip-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                  >
-                    <svg
-                      className="w-4 h-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
-                    </svg>
-                    16
-                    <span
-                      className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded-md shadow-sm dark:bg-black"
-                      role="tooltip"
-                    >
-                      Comment
                     </span>
                   </button>
                 </div>

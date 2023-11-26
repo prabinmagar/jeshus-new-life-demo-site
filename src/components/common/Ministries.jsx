@@ -21,7 +21,7 @@ const Ministries = () => {
       <section className="py-8 min-h-[80vh] flex items-center" id="ministries">
         <div className="container relative z-10">
           <Title
-            title={"Our Ministries"}z
+            title={"Our Ministries"}
             description={
               "Yeshua New Life is a focused group with a clear mission, serving both the congregation and the wider community."
             }

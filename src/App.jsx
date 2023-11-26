@@ -14,6 +14,7 @@ import {
   Event,
   WatchLive,
   Branch,
+  Media2
 } from "./screens";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -45,6 +46,7 @@ function App() {
             <Route path="/event" element={<Event />} />
             <Route path="/watch" element={<WatchLive />} />
             <Route path="/branch" element={<Branch />} />
+            <Route path="/media2" element={<Media2 /> } />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>

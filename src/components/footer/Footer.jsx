@@ -1,6 +1,5 @@
 import {
   FaEnvelope,
-  FaFacebookSquare,
   FaMapMarkerAlt,
   FaPhone,
 } from "react-icons/fa";
@@ -11,7 +10,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content py-14 grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
-            <div className="uppercase font-bold text-3xl sm:text-start text-center mb-4">
+            <div className="uppercase font-bold text-3xl sm:text-start text-center mb-4 font-lora">
               Yeshua New Life
             </div>
             <iframe
@@ -28,7 +27,7 @@ const Footer = () => {
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
             <div className="text-center sm:text-left">
-              <p className="text-lg text-dark uppercase font-semibold">
+              <p className="text-lg text-dark uppercase font-semibold font-lora">
                 The Yeshua Church
               </p>
               <ul className="mt-4 space-y-4 font-normal">
@@ -56,7 +55,7 @@ const Footer = () => {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg text-dark uppercase font-semibold">
+              <p className="text-lg text-dark uppercase font-semibold font-lora">
                 Ministries
               </p>
               <ul className="mt-4 space-y-4 font-normal">
@@ -84,7 +83,7 @@ const Footer = () => {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg text-dark uppercase font-semibold">
+              <p className="text-lg text-dark uppercase font-semibold font-lora">
                 Contact Us
               </p>
               <ul className="mt-4 space-y-4 font-normal flex items-center flex-col sm:items-start">
@@ -125,7 +124,7 @@ const Footer = () => {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg text-dark uppercase font-semibold">
+              <p className="text-lg text-dark uppercase font-semibold font-lora">
                 Our Fellowship
               </p>
               <ul className="mt-4 space-y-4 font-normal">

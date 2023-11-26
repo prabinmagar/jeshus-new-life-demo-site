@@ -6,7 +6,7 @@ import { scrollToTop } from "../../utils/scrollToTop";
 import { Link } from "react-router-dom";
 import { MediaDialog } from "../../components/common/MediaDialog";
 
-const MediaScreen = () => {
+const MediaScreen2 = () => {
   const vidId = "aqz-KE-bpKQ";
   const [mediaDialogOpen, setMediaDialogOpen] = useState(false);
   const handleMediaDialogOpen = () => setMediaDialogOpen((cur) => !cur);
@@ -29,7 +29,7 @@ const MediaScreen = () => {
         <div className="container">
           <div className="section-content px-3">
             <div className="mb-6">
-              <h3 className="text-3xl font-bold mb-4 drop-shadow-lg font-lora">Sermons</h3>
+              <h3 className="text-3xl font-bold mb-4 drop-shadow-lg font-lora">Testimonials</h3>
             </div>
             <div className="grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-6 lg:gap-8">
               <div
@@ -313,4 +313,4 @@ const MediaScreen = () => {
   );
 };
 
-export default MediaScreen;
+export default MediaScreen2;

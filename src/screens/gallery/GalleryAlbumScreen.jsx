@@ -17,7 +17,7 @@ const GalleryAlbumScreen = () => {
           }}
         >
           <div className="container">
-            <h2 className="text-3xl lg:text-4xl font-bold text-white drop-shadow-lg mb-2">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white drop-shadow-lg mb-2 font-lora">
               Our Photo Albums
             </h2>
             <p className="text text-white drop-shadow-lg">
@@ -175,7 +175,7 @@ const GalleryAlbumScreen = () => {
           </div>
           <div className="flex items-center justify-center mt-10">
             <Link
-              to="/article"
+              to="/"
               className="relative inline-flex items-center gap-1 rounded border border-red bg-red px-3 py-2 pl-4 text-base text-white font-medium text-gray-500 hover:border-red hover:bg-white hover:text-red"
               href="/archive"
             >

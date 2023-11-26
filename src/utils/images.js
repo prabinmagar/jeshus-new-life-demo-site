@@ -63,6 +63,8 @@ import belief3 from "../assets/images/belief3.jpg";
 import belief4 from "../assets/images/belief4.jpg";
 // shapes
 import bubbles from "../assets/images/shapes/bubbles.svg";
+import youtube from "../assets/images/youtube.png";
+import donate_bg from "../assets/images/donate_bg.jpg";
 
 const staticImages = {
   banner1,
@@ -125,7 +127,9 @@ const staticImages = {
   watch_live,
   media_bg,
   mission,
-  belief1, belief2, belief3, belief4
+  belief1, belief2, belief3, belief4,
+  youtube,
+  donate_bg
 };
 
 export default staticImages;
