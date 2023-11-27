@@ -102,7 +102,7 @@ const AboutScreen = () => {
                       />
                     </div>
                   </div>
-                  <div className="mt-2 opacity-90">
+                  <div className="mt-4 opacity-90">
                     <p className="text">
                       Pastor David Paul Limbu, with two decades of dedication to
                       serving the Lord, leads our church with humility, a gospel
@@ -167,7 +167,7 @@ const AboutScreen = () => {
                       />
                     </div>
                   </div>
-                  <div className="mt-2 opacity-90">
+                  <div className="mt-4 opacity-90">
                     <p className="text">
                       Ramesh Thapa, a devoted Elder in our community, brings a
                       wealth of wisdom and spiritual insight to our church
@@ -239,7 +239,7 @@ const AboutScreen = () => {
                       />
                     </div>
                   </div>
-                  <div className="mt-2 opacity-90">
+                  <div className="mt-4 opacity-90">
                     <p className="text">
                       Abhisek Rai, a faithful Deacon in our fellowship, is a
                       beacon of enthusiasm and service within our church. With a

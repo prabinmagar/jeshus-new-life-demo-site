@@ -29,68 +29,79 @@ const WatchLiveScreen = () => {
                   </div>
 
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center">
-                    <div className="inline-flex items-center gap-x-3 bg-red text-white px-4 py-2 rounded">
+                    <div className="inline-flex items-center gap-x-3 bg-red text-white px-3 sm:px-4 sm:py-2 py-1.5 rounded">
                       <FaPlay />
-                      <span className="font-medium">Watch Now</span>
+                      <span className="font-medium sm:text-base text-sm">Watch Now</span>
                     </div>
-                    <h3 className="text-white font-semibold text-2xl mt-6 drop-shadow-lg font-lora">
+                    <h3 className="text-white font-semibold text-base sm:text-xl md:text-2xl md:mt-6 mt-3 drop-shadow-lg font-lora text-center">
                       New Southern Music Band
                     </h3>
 
-                    <div className="text-6xl text-center flex w-full items-center justify-center mt-8">
-                      <div className="text-2xl mr-1 font-extralight text-white uppercase">
+                    <div className="xl:text-6xl lg:text-4xl md:text-4xl sm:text-3xl text-center flex w-full items-center justify-center md:mt-8 mt-4 lg:gap-x-2.5">
+                      <div className="lg:text-2xl md:text-xl sm:text-lg xs:text-base text-sm mr-1 font-extralight text-white uppercase sm:block hidden">
                         in
                       </div>
-                      <div className="w-24 mx-1 p-2 bg-white text-red rounded-lg font-bold">
+                      <div className="w-12 sm:w-24 sm:h-24 flex flex-col items-center justify-center mx-1 p-2 bg-white text-red lg:rounded-lg rounded font-bold countdown-block">
                         <div className="font-mono leading-none">00</div>
-                        <div className="font-mono uppercase text-sm leading-none">
+                        <div className="font-mono uppercase sm:text-sm text-xs leading-none hidden sm:block">
                           Days
                         </div>
+                        <div className="font-mono uppercase text-[10px] leading-none sm:hidden">
+                          Day
+                        </div>
                       </div>
-                      <div className="w-24 mx-1 p-2 bg-white text-red rounded-lg font-bold">
+                      <div className="w-12 sm:w-24 sm:h-24 flex flex-col items-center justify-center mx-1 p-2 bg-white text-red lg:rounded-lg rounded font-bold countdown-block">
                         <div className="font-mono leading-none">00</div>
-                        <div className="font-mono uppercase text-sm leading-none">
+                        <div className="font-mono uppercase sm:text-sm text-xs leading-none hidden sm:block">
                           Hours
                         </div>
-                      </div>
-                      <div className="w-24 mx-1 p-2 bg-white text-red rounded-lg font-bold">
-                        <div className="font-mono leading-none">00</div>
-                        <div className="font-mono uppercase text-sm leading-none">
-                          Minutes
+                        <div className="font-mono uppercase text-[10px] leading-none sm:hidden">
+                          HRS.
                         </div>
                       </div>
-                      <div className="text-2xl mx-1 font-extralight text-white uppercase">
+                      <div className="w-12 sm:w-24 sm:h-24 flex flex-col items-center justify-center mx-1 p-2 bg-white text-red lg:rounded-lg rounded font-bold countdown-block">
+                        <div className="font-mono leading-none">00</div>
+                        <div className="font-mono uppercase sm:text-sm text-xs leading-none hidden sm:block">
+                          Minutes
+                        </div>
+                        <div className="font-mono uppercase text-[10px] leading-none sm:hidden">
+                          MIN
+                        </div>
+                      </div>
+                      <div className="lg:text-2xl md:text-xl sm:text-lg xs:text-base text-sm mx-1 font-extralight text-white uppercase sm:block hidden">
                         and
                       </div>
-                      <div className="w-24 mx-1 p-2 bg-white text-red rounded-lg font-bold">
+                      <div className="w-12 sm:w-24 sm:h-24 flex flex-col items-center justify-center mx-1 p-2 bg-white text-red lg:rounded-lg rounded font-bold countdown-block">
                         <div className="font-mono leading-none">00</div>
-                        <div className="font-mono uppercase text-sm leading-none">
+                        <div className="font-mono uppercase sm:text-sm text-xs leading-none sm:block hidden">
                           Seconds
+                        </div>
+                        <div className="font-mono uppercase text-[10px] leading-none sm:hidden">
+                          Secs.
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <div className="p-6">
-                    <h5 className="mb-3 text-2xl font-semibold text-dark border-b-[1px] border-b-gray/10 pb-1 font-lora">
+                <div className="mt-4">
+                  <div className="sm:p-6 p-3">
+                    <h5 className="mb-3 text-lg sm:text-xl lg:text-2xl font-semibold text-dark border-b-[1px] border-b-gray/10 pb-1 font-lora">
                       Saturday Live Watch
                     </h5>
-                    <div className="flex flex-center gap-x-6 flex-wrap">
+                    <div className="flex flex-center gap-x-6 flex-wrap gap-y-3">
                       <div className="inline-flex items-center flex-wrap gap-x-2 text">
                         <FaRegClock />
                         <span className="text-sm font-medium">
                           11:00 AM | Saturday
                         </span>
                       </div>
-
                       <Button className="bg-green py-1.5 px-2.5 rounded inline-flex gap-x-2 items-center">
                         {" "}
                         <FaShareAlt /> Share
                       </Button>
                     </div>
                   </div>
-                  <div className="text-justify bg-gray/5 p-6 border-t-[1px] border-t-gray/10">
+                  <div className="text-justify bg-gray/5 sm:p-6 p-3 border-t-[1px] border-t-gray/10">
                     <p className="text">
                       Generating random paragraphs can be an excellent way for
                       writers to get their creative flow going at the beginning

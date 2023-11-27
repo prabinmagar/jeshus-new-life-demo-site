@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content py-14 grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
-            <div className="uppercase font-bold text-3xl sm:text-start text-center mb-4 font-lora">
+            <div className="uppercase font-bold text-xl sm:text-2xl lg:text-3xl sm:text-start text-center mb-4 font-lora">
               Yeshua New Life
             </div>
             <iframe
