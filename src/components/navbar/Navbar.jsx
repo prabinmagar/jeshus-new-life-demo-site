@@ -146,7 +146,7 @@ const Navbar = () => {
                       ) : (
                         <Link
                           className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
-                          to="/#intro"
+                          to="/"
                         >
                           <div className="px-1 py-1">
                             <h4 className="text-sm font-medium text">
@@ -156,32 +156,58 @@ const Navbar = () => {
                         </Link>
                       )}
 
-                      <ScrollLink
-                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
-                        to="members"
-                        smooth={true}
-                        duration={400}
-                        offset={-40}
-                      >
-                        <div className="px-1 py-1">
-                          <h4 className="text-sm font-medium text">
-                            Leadership
-                          </h4>
-                        </div>
-                      </ScrollLink>
-                      <ScrollLink
-                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
-                        to="ministries"
-                        smooth={true}
-                        duration={400}
-                        offset={-40}
-                      >
-                        <div className="px-1 py-1">
-                          <h4 className="text-sm font-medium text">
-                            Ministries
-                          </h4>
-                        </div>
-                      </ScrollLink>
+                      {location.pathname === "/" ? (
+                        <ScrollLink
+                          className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
+                          to="members"
+                          smooth={true}
+                          duration={400}
+                          offset={-40}
+                        >
+                          <div className="px-1 py-1">
+                            <h4 className="text-sm font-medium text">
+                              Leadership
+                            </h4>
+                          </div>
+                        </ScrollLink>
+                      ) : (
+                        <Link
+                          className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
+                          to="/"
+                        >
+                          <div className="px-1 py-1">
+                            <h4 className="text-sm font-medium text">
+                              Leadership
+                            </h4>
+                          </div>
+                        </Link>
+                      )}
+                      {location.pathname === "/" ? (
+                        <ScrollLink
+                          className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
+                          to="ministries"
+                          smooth={true}
+                          duration={400}
+                          offset={-40}
+                        >
+                          <div className="px-1 py-1">
+                            <h4 className="text-sm font-medium text">
+                              Ministries
+                            </h4>
+                          </div>
+                        </ScrollLink>
+                      ) : (
+                        <Link
+                          className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
+                          to="/"
+                        >
+                          <div className="px-1 py-1">
+                            <h4 className="text-sm font-medium text">
+                              Ministries
+                            </h4>
+                          </div>
+                        </Link>
+                      )}
                     </ul>
                   </MenuList>
                 </Menu>

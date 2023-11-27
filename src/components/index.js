@@ -18,6 +18,7 @@ export { default as Footer } from "./footer/Footer";
 // navbar
 export { default as Navbar } from "./navbar/Navbar";
 export { default as Events} from "./common/Events";
-
+// social media 
+export { default as SideMediaLinks } from "./sidebar/SideMediaLinks";
 // layout
 export { default as BaseLayout } from "./layout/BaseLayout";
