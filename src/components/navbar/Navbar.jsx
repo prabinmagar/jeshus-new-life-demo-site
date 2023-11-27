@@ -1,12 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
-import { FaEnvelope, FaFacebookSquare } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 import useNavbarBackground from "../../hooks/useNavbarBackground";
 import { BiMenu } from "react-icons/bi";
 import { FaHandHoldingHeart } from "react-icons/fa";
 import {
-  Drawer,
-  IconButton,
   Menu,
   MenuHandler,
   MenuItem,
@@ -23,6 +21,7 @@ import {
   animateScroll as scroll,
   scroller,
 } from "react-scroll";
+import Sidebar from "../sidebar/Sidebar";
 
 const Navbar = () => {
   const location = useLocation();
@@ -57,137 +56,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Drawer
-        placement="right"
-        open={openRight}
-        onClose={closeDrawerRight}
-        className="py-4 px-2 sidebar-drawer red-gradient shadow-shadow3 border-l-[3px] border-l-white"
-      >
-        <div className="mb-6 flex items-center justify-between absolute right-3 top-3">
-          <IconButton
-            variant="text"
-            className="bg-white rounded w-[34px] h-[34px] ms-auto hover:opacity-90 default-transition"
-            onClick={closeDrawerRight}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="#000"
-              className="h-5 w-5"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </IconButton>
-        </div>
-        <div className="grid gap-y-6">
-          <div className="px-3 flex items-center gap-x-2 text-2xl text-white font-bold border-b-[1px] border-b-white/30 pb-3">
-            <BiSolidLeaf className="text-red" />
-            <span
-              className="text-white">
-              YNL.
-            </span>
-          </div>
-          <ul className="flex flex-col gap-y-2">
-          <li>
-              <Link
-                to="/"
-                className="text-white text-base capitalize py-2 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none px-3 hover:bg-white/10 hover:rounded"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/event"
-                className="text-white text-base capitalize py-2 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none px-3 hover:bg-white/10 hover:rounded"
-              >
-                Events
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/branch"
-                className="text-white text-base capitalize py-2 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none px-3 hover:bg-white/10 hover:rounded"
-              >
-                Locations
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/gallery"
-                className="text-white text-base capitalize py-2 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none px-3 hover:bg-white/10 hover:rounded"
-              >
-                Gallery
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/article"
-                className="text-white text-base capitalize py-2 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none px-3 hover:bg-white/10 hover:rounded"
-              >
-                Articles
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/about"
-                className="text-white text-base capitalize py-2 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none px-3 hover:bg-white/10 hover:rounded"
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/media"
-                className="text-white text-base capitalize py-2 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none px-3 hover:bg-white/10 hover:rounded"
-              >
-                Sermons
-              </Link>
-            </li>
-          </ul>
-          <ul className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-3 px-3">
-            <li>
-              <Link
-                to=""
-                className="text-white w-[38px] h-[36px] shadow-md inline-flex items-center justify-center rounded-full bg-blue group border-[1px] border-white hover:border-transparent"
-              >
-                <FaFacebookSquare
-                  size={20}
-                  className="group-hover:scale-90 default-transition"
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                to=""
-                className="text-white w-[38px] h-[36px] shadow-md inline-flex items-center justify-center rounded-full instagram group border-[1px] border-white hover:border-transparent"
-              >
-                <FaInstagram
-                  size={20}
-                  className="group-hover:scale-90 default-transition"
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                to=""
-                className="text-white w-[38px] h-[36px] shadow-md inline-flex items-center justify-center rounded-full bg-red group border-[1px] border-white hover:border-transparent"
-              >
-                <TbBrandYoutubeFilled
-                  size={23}
-                  className="me-[1px] group-hover:scale-90 default-transition"
-                />
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </Drawer>
+      <Sidebar openDrawerRight = {openDrawerRight} closeDrawerRight = {closeDrawerRight} openRight = { openRight } />
 
       <nav
         className={`${navbarStyle} ${
@@ -195,13 +64,6 @@ const Navbar = () => {
         } fixed top-0 left-0 right-0 z-[999] flex items-center`}
       >
         <div className="container flex items-center justify-between">
-          {/* <Link
-            to="/"
-            className="text-white font-bold text-xl border-[3px] border-white inline-flex items-stretch rounded navbar-brand"
-          >
-            <span className="bg-white px-3 py-2 text-dark">Yeshua</span>{" "}
-            <span className="px-3 py-2 ">New Life</span>
-          </Link> */}
           <Link
             to="/"
             className="font-bold text-3xl inline-flex items-center gap-x-2 nav-brand"

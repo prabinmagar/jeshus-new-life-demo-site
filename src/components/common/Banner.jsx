@@ -27,7 +27,10 @@ const Banner = () => {
               you to join us!
             </p>
             <div className="flex items-center justify-center">
-              <Link to="" className="btn btn-lg bg-red mt-8 gap-x-3 hover:scale-105">
+              <Link
+                to=""
+                className="btn btn-lg bg-red mt-8 gap-x-3 hover:scale-105"
+              >
                 <span>Watch Live</span>
                 <FaVideo size={22} />
               </Link>

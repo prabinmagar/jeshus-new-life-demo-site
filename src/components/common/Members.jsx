@@ -13,13 +13,13 @@ const Members = () => {
         />
         <div className="section-content flex justify-center flex-wrap gap-8 mb-8" data-aos="fade-up">
           <div className="shadow-normal rounded-full">
-            <div className="block bg-white rounded-full overflow-hidden group">
-              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full">
+            <div className="block bg-white rounded-full overflow-hidden group relative after:absolute after:content-[''] after:left-0 after:top-0 after:w-full after:h-1/2 after:border-tr-[100%] after:border-br-[100%] after:bg-blue">
+              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full border-[6px] border-red/80">
                 <img
                   src={staticImages.member1}
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover object-top relative z-10"
                 />
-                <div className="px-6 py-2 bg-black/40 w-full text-center h-full flex items-center justify-center flex-col text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pt-20 opacity-0 group-hover:opacity-100 default-transition">
+                <div className="px-6 py-2 bg-black/40 w-full text-center h-full flex items-center justify-center flex-col text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pt-20 opacity-0 group-hover:opacity-100 default-transition z-20">
                   <h5 className="text-lg font-bold">Paul David Limbu</h5>
                   <p className="mb-4 text-neutral-500 dark:text-neutral-300">
                     Pastor of YNL
@@ -31,7 +31,7 @@ const Members = () => {
 
           <div className="shadow-normal rounded-full">
             <div className="block bg-white rounded-full overflow-hidden group">
-              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full">
+              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full border-[6px] border-white">
                 <img
                   src={staticImages.member2}
                   className="w-full h-full object-cover object-top"
@@ -48,7 +48,7 @@ const Members = () => {
 
           <div className="shadow-normal rounded-full">
             <div className="block bg-white rounded-full overflow-hidden group">
-              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full">
+              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full border-[6px] border-white">
                 <img
                   src={staticImages.member3}
                   className="w-full h-full object-cover object-top"
@@ -65,7 +65,7 @@ const Members = () => {
 
           <div className="shadow-normal rounded-full">
             <div className="block bg-white rounded-full overflow-hidden group">
-              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full">
+              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full border-[6px] border-white">
                 <img
                   src={staticImages.member4}
                   className="w-full h-full object-cover object-top"
@@ -82,7 +82,7 @@ const Members = () => {
 
           <div className="shadow-normal rounded-full">
             <div className="block bg-white rounded-full overflow-hidden group">
-              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full">
+              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full border-[6px] border-white">
                 <img
                   src={staticImages.member1}
                   className="w-full h-full object-cover object-top"
@@ -99,7 +99,7 @@ const Members = () => {
 
           <div className="shadow-normal rounded-full">
             <div className="block bg-white rounded-full overflow-hidden group">
-              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full">
+              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full border-[6px] border-white">
                 <img
                   src={staticImages.member2}
                   className="w-full h-full object-cover object-top"
@@ -116,7 +116,7 @@ const Members = () => {
 
           <div className="shadow-normal rounded-full">
             <div className="block bg-white rounded-full overflow-hidden group">
-              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full">
+              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full border-[6px] border-white">
                 <img
                   src={staticImages.member3}
                   className="w-full h-full object-cover object-top"
@@ -133,7 +133,7 @@ const Members = () => {
 
           <div className="shadow-normal rounded-full">
             <div className="block bg-white rounded-full overflow-hidden group">
-              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full">
+              <div className="relative overflow-hidden bg-cover bg-no-repeat h-[240px] w-[240px] rounded-full border-[6px] border-white">
                 <img
                   src={staticImages.member4}
                   className="w-full h-full object-cover object-top"
