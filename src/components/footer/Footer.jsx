@@ -3,6 +3,7 @@ import {
   FaMapMarkerAlt,
   FaPhone,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -32,24 +33,24 @@ const Footer = () => {
               </p>
               <ul className="mt-4 space-y-4 font-normal">
                 <li>
-                  <a className="text-gray hover:text-dark" href="/">
+                  <Link to="/about" className="text-gray hover:text-dark">
                     Our beliefs
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray hover:text-dark" href="/">
+                  <Link to="/about" className="text-gray hover:text-dark">
                     Mission & Vision
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray hover:text-dark" href="/">
+                  <Link to="/about" className="text-gray hover:text-dark">
                     Pastors, Elders & Deacons
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray hover:text-dark" href="/">
+                  <Link to="/about" className="text-gray hover:text-dark">
                     About Church
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -60,24 +61,24 @@ const Footer = () => {
               </p>
               <ul className="mt-4 space-y-4 font-normal">
                 <li>
-                  <a className="text-gray hover:text-dark" href="/">
+                  <Link to="/event" className="text-gray hover:text-dark">
                     Events
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray hover:text-dark" href="/">
+                  <Link to="/branch" className="text-gray hover:text-dark">
                     Branches
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray hover:text-dark" href="/">
-                    Notices
-                  </a>
+                  <Link to="/article" className="text-gray hover:text-dark">
+                    Articles
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray hover:text-dark" href="/">
-                    Trainings
-                  </a>
+                  <Link to="/donate" className="text-gray hover:text-dark">
+                    Contribute
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -88,37 +89,34 @@ const Footer = () => {
               </p>
               <ul className="mt-4 space-y-4 font-normal flex items-center flex-col sm:items-start">
                 <li>
-                  <a
+                  <div
                     className="flex items-center justify-center gap-x-4"
-                    href="/"
                   >
                     <FaEnvelope />
                     <span className="flex-1 text-gray hover:text-dark">
                       yeshuanewlife.com
                     </span>
-                  </a>
+                  </div>
                 </li>
                 <li>
-                  <a
+                  <div
                     className="flex items-center justify-center gap-x-4"
-                    href="/"
                   >
                     <FaPhone />
                     <span className="flex-1 text-gray hover:text-dark">
                       +977 987700562200
                     </span>
-                  </a>
+                  </div>
                 </li>
                 <li>
-                  <a
+                  <div
                     className="flex items-center justify-center gap-x-4"
-                    href="/"
                   >
                     <FaMapMarkerAlt />
                     <address className="flex-1 text-gray hover:text-dark not-italic">
                       Lamachaur Marg, Lalitpur
                     </address>
-                  </a>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -129,17 +127,17 @@ const Footer = () => {
               </p>
               <ul className="mt-4 space-y-4 font-normal">
                 <li>
-                  <span className="text-gray hover:text-dark" href="/">
+                  <span className="text-gray hover:text-dark">
                     Saturday: 10AM - 1PM
                   </span>
                 </li>
                 <li>
-                  <span className="text-gray hover:text-dark" href="/">
+                  <span className="text-gray hover:text-dark">
                     Wendesday: 6PM - 7PM
                   </span>
                 </li>
                 <li>
-                  <span className="text-gray hover:text-dark" href="/">
+                  <span className="text-gray hover:text-dark">
                     &copy; Yeshua New Life
                   </span>
                 </li>
