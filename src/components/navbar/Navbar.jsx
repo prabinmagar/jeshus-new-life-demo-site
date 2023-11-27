@@ -22,15 +22,19 @@ import {
   scroller,
 } from "react-scroll";
 import Sidebar from "../sidebar/Sidebar";
+import useScrollProgress from "../../hooks/useScrollProgress";
 
 const Navbar = () => {
   const location = useLocation();
+  const scrollProgress = useScrollProgress();
+  console.log(Math.ceil(scrollProgress));
+
   // ### HEADER CHANGE ON SCROLL
   const scrollThreshold = 100;
   const hasBackground = useNavbarBackground(scrollThreshold);
   const navbarStyle = hasBackground
-    ? "bg-white shadow-normal scrolled-navbar h-[72px]"
-    : "bg-transparent h-[84px]";
+    ? `bg-white shadow-normal scrolled-navbar h-[72px]`
+    : "bg-transparent h-[78px]";
 
   const [openRight, setOpenRight] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
@@ -56,13 +60,22 @@ const Navbar = () => {
 
   return (
     <>
-      <Sidebar openDrawerRight = {openDrawerRight} closeDrawerRight = {closeDrawerRight} openRight = { openRight } />
-
+      <Sidebar
+        openDrawerRight={openDrawerRight}
+        closeDrawerRight={closeDrawerRight}
+        openRight={openRight}
+      />
       <nav
         className={`${navbarStyle} ${
           location.pathname !== "/" && "non-index-navbar default-transition"
         } fixed top-0 left-0 right-0 z-[999] flex items-center`}
       >
+        <div
+          className="absolute bottom-0 left-0 h-[5px] bg-red"
+          style={{
+            width: `${hasBackground ? Math.ceil(scrollProgress) : 0}%`,
+          }}
+        ></div>
         <div className="container flex items-center justify-between">
           <Link
             to="/"
