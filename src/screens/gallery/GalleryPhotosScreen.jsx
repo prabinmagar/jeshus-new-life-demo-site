@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import staticImages from "../../utils/images";
 import { useEffect } from "react";
 import { scrollToTop } from "../../utils/scrollToTop";
@@ -7,6 +6,7 @@ import { FaLongArrowAltLeft } from "react-icons/fa";
 const GalleryPhotosScreen = () => {
   useEffect(() => scrollToTop(), []);
   return (
+    <>
     <main className="content-wrapper">
       <div className="pg-gallery-album py-12 bg-gray/5">
         <div className="container">
@@ -14,8 +14,10 @@ const GalleryPhotosScreen = () => {
             <div className="border-b border-b-gray/20 mb-5 flex justify-between text-sm">
               <div className="text text-dark flex items-center pb-2 pr-2 uppercase">
                 <p>
-                  <span className="font-bold text-red font-lora">Posted On:</span> 16th July,
-                  2023
+                  <span className="font-bold text-red font-lora">
+                    Posted On:
+                  </span>{" "}
+                  16th July, 2023
                 </p>
               </div>
               <button
@@ -32,8 +34,7 @@ const GalleryPhotosScreen = () => {
               </h3>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xxl:grid-cols-4 grid-cols-1 gap-4 lg:gap-6">
-              <Link
-                to="/gallery/1"
+              <div
                 className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group border-8 border-white"
                 data-aos="fade-up"
               >
@@ -42,10 +43,9 @@ const GalleryPhotosScreen = () => {
                   src={staticImages.gallery1}
                   alt=""
                 />
-              </Link>
+              </div>
 
-              <Link
-                to="/gallery/1"
+              <div
                 className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group border-8 border-white"
                 data-aos="fade-up"
               >
@@ -54,10 +54,9 @@ const GalleryPhotosScreen = () => {
                   src={staticImages.gallery2}
                   alt=""
                 />
-              </Link>
+              </div>
 
-              <Link
-                to="/gallery/1"
+              <div
                 className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group border-8 border-white"
                 data-aos="fade-up"
               >
@@ -66,10 +65,9 @@ const GalleryPhotosScreen = () => {
                   src={staticImages.gallery3}
                   alt=""
                 />
-              </Link>
+              </div>
 
-              <Link
-                to="/gallery/1"
+              <div
                 className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group border-8 border-white"
                 data-aos="fade-up"
               >
@@ -78,10 +76,9 @@ const GalleryPhotosScreen = () => {
                   src={staticImages.gallery4}
                   alt=""
                 />
-              </Link>
+              </div>
 
-              <Link
-                to="/gallery/1"
+              <div
                 className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group border-8 border-white"
                 data-aos="fade-up"
               >
@@ -90,10 +87,9 @@ const GalleryPhotosScreen = () => {
                   src={staticImages.gallery5}
                   alt=""
                 />
-              </Link>
+              </div>
 
-              <Link
-                to="/gallery/1"
+              <div
                 className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group border-8 border-white"
                 data-aos="fade-up"
               >
@@ -102,10 +98,9 @@ const GalleryPhotosScreen = () => {
                   src={staticImages.gallery6}
                   alt=""
                 />
-              </Link>
+              </div>
 
-              <Link
-                to="/gallery/1"
+              <div
                 className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group border-8 border-white"
                 data-aos="fade-up"
               >
@@ -114,10 +109,9 @@ const GalleryPhotosScreen = () => {
                   src={staticImages.gallery1}
                   alt=""
                 />
-              </Link>
+              </div>
 
-              <Link
-                to="/gallery/1"
+              <div
                 className="h-[300px] overflow-hidden rounded-lg shadow-normal relative dark-overlay cursor-pointer group border-8 border-white"
                 data-aos="fade-up"
               >
@@ -126,12 +120,71 @@ const GalleryPhotosScreen = () => {
                   src={staticImages.gallery2}
                   alt=""
                 />
-              </Link>
+              </div>
+            </div>
+
+            <div className="gallery mx-auto mt-24">
+              <span style={{ "--i": 1 }}>
+                <img
+                  src={staticImages.gallery1}
+                  alt=""
+                  className="border-[4px] border-white"
+                />
+              </span>
+              <span style={{ "--i": 2 }}>
+                <img
+                  src={staticImages.gallery2}
+                  alt=""
+                  className="border-[4px] border-white"
+                />
+              </span>
+              <span style={{ "--i": 3 }}>
+                <img
+                  src={staticImages.gallery3}
+                  alt=""
+                  className="border-[4px] border-white"
+                />
+              </span>
+              <span style={{ "--i": 4 }}>
+                <img
+                  src={staticImages.gallery4}
+                  alt=""
+                  className="border-[4px] border-white"
+                />
+              </span>
+              <span style={{ "--i": 5 }}>
+                <img
+                  src={staticImages.gallery5}
+                  alt=""
+                  className="border-[4px] border-white"
+                />
+              </span>
+              <span style={{ "--i": 6 }}>
+                <img
+                  src={staticImages.gallery6}
+                  alt=""
+                  className="border-[4px] border-white"
+                />
+              </span>
+              <span style={{ "--i": 7 }}>
+                <img
+                  src={staticImages.temp1}
+                  alt=""
+                  className="border-[4px] border-white"
+                />
+              </span>
+              <span style={{ "--i": 8 }}>
+                <img
+                  src={staticImages.temp2}
+                  alt=""
+                  className="border-[4px] border-white"
+                />
+              </span>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </main></>
   );
 };
 
