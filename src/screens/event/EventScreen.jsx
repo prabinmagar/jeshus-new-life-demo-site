@@ -67,31 +67,31 @@ const EventScreen = () => {
                       </div>
                     </div>
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaMapMarkerAlt className="text-dark" size={15} />
-                            <p className="text-sm text-gray">
-                              House of Worship, Lalitpur
-                            </p>
-                          </div>
-                        </div>
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaCalendarAlt className="text-dark" size={13} />
-                            <p className="text-sm text-gray">
-                              <span className="mr-3">Dec 35, 2023</span>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaClock className="text-dark" size={12} />
-                            <p className="text-sm text-gray">
-                              <span className="mr-3">10:00 AM -3:00 PM</span>
-                            </p>
-                          </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaMapMarkerAlt className="text-dark" size={15} />
+                          <p className="text-sm text-gray">
+                            House of Worship, Lalitpur
+                          </p>
                         </div>
                       </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaCalendarAlt className="text-dark" size={13} />
+                          <p className="text-sm text-gray">
+                            <span className="mr-3">Dec 35, 2023</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaClock className="text-dark" size={12} />
+                          <p className="text-sm text-gray">
+                            <span className="mr-3">10:00 AM -3:00 PM</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div className="flex items-center flex-wrap gap-x-2 mb-1 bg-red/5 py-2 px-2.5 border-r-4 border-red rounded">
                     <span className="w-[26px] h-[24px] red-gradient inline-flex items-center justify-center text-white rounded font-semibold">
@@ -101,15 +101,15 @@ const EventScreen = () => {
                       Days Remaining
                     </span>
                   </div>
-                  <div className="flex items-center gap-x-3 mt-3">
+                  <div className="flex items-center gap-x-3 mt-3 flex-wrap gap-y-2">
                     <button
-                      className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md flex-1 rounded whitespace-nowrap focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                       type="button"
                     >
-                      Register Now!
+                      Register Now
                     </button>
                     <button
-                      className="btn bg-blue capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md flex-1 whitespace-nowrap rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                       type="button"
                     >
                       See Details
@@ -143,31 +143,31 @@ const EventScreen = () => {
                       </div>
                     </div>
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaMapMarkerAlt className="text-dark" size={15} />
-                            <p className="text-sm text-gray">
-                              House of Worship, Lalitpur
-                            </p>
-                          </div>
-                        </div>
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaCalendarAlt className="text-dark" size={13} />
-                            <p className="text-sm text-gray">
-                              <span className="mr-3">Dec 35, 2023</span>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaClock className="text-dark" size={12} />
-                            <p className="text-sm text-gray">
-                              <span className="mr-3">10:00 AM -3:00 PM</span>
-                            </p>
-                          </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaMapMarkerAlt className="text-dark" size={15} />
+                          <p className="text-sm text-gray">
+                            House of Worship, Lalitpur
+                          </p>
                         </div>
                       </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaCalendarAlt className="text-dark" size={13} />
+                          <p className="text-sm text-gray">
+                            <span className="mr-3">Dec 35, 2023</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaClock className="text-dark" size={12} />
+                          <p className="text-sm text-gray">
+                            <span className="mr-3">10:00 AM -3:00 PM</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div className="flex items-center flex-wrap gap-x-2 mb-1 bg-green/5 py-2 px-2.5 border-r-4 border-green rounded">
                     <span className="w-[26px] h-[24px] green-gradient inline-flex items-center justify-center text-white rounded font-semibold">
@@ -177,9 +177,9 @@ const EventScreen = () => {
                       Days Remaining
                     </span>
                   </div>
-                  <div className="flex items-center gap-x-3 mt-3">
+                  <div className="flex items-center gap-x-3 mt-3 flex-wrap gap-y-2">
                     <button
-                      className="btn bg-blue capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md flex-1 whitespace-nowrap rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                       type="button"
                     >
                       See Details
@@ -213,31 +213,31 @@ const EventScreen = () => {
                       </div>
                     </div>
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaMapMarkerAlt className="text-dark" size={15} />
-                            <p className="text-sm text-gray">
-                              House of Worship, Lalitpur
-                            </p>
-                          </div>
-                        </div>
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaCalendarAlt className="text-dark" size={13} />
-                            <p className="text-sm text-gray">
-                              <span className="mr-3">Dec 35, 2023</span>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaClock className="text-dark" size={12} />
-                            <p className="text-sm text-gray">
-                              <span className="mr-3">10:00 AM -3:00 PM</span>
-                            </p>
-                          </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaMapMarkerAlt className="text-dark" size={15} />
+                          <p className="text-sm text-gray">
+                            House of Worship, Lalitpur
+                          </p>
                         </div>
                       </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaCalendarAlt className="text-dark" size={13} />
+                          <p className="text-sm text-gray">
+                            <span className="mr-3">Dec 35, 2023</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaClock className="text-dark" size={12} />
+                          <p className="text-sm text-gray">
+                            <span className="mr-3">10:00 AM -3:00 PM</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div className="flex items-center flex-wrap gap-x-2 mb-1 bg-green/5 py-2 px-2.5 border-r-4 border-green rounded">
                     <span className="w-[26px] h-[24px] green-gradient inline-flex items-center justify-center text-white rounded font-semibold">
@@ -247,15 +247,15 @@ const EventScreen = () => {
                       Days Remaining
                     </span>
                   </div>
-                  <div className="flex items-center gap-x-3 mt-3">
+                  <div className="flex items-center gap-x-3 mt-3 flex-wrap gap-y-2">
                     <button
-                      className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md flex-1 rounded whitespace-nowrap focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                       type="button"
                     >
-                      Register Now!
+                      Register Now
                     </button>
                     <button
-                      className="btn bg-blue capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md flex-1 whitespace-nowrap rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                       type="button"
                     >
                       See Details
@@ -289,31 +289,31 @@ const EventScreen = () => {
                       </div>
                     </div>
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaMapMarkerAlt className="text-dark" size={15} />
-                            <p className="text-sm text-gray">
-                              House of Worship, Lalitpur
-                            </p>
-                          </div>
-                        </div>
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaCalendarAlt className="text-dark" size={13} />
-                            <p className="text-sm text-gray">
-                              <span className="mr-3">Dec 35, 2023</span>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaClock className="text-dark" size={12} />
-                            <p className="text-sm text-gray">
-                              <span className="mr-3">10:00 AM -3:00 PM</span>
-                            </p>
-                          </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaMapMarkerAlt className="text-dark" size={15} />
+                          <p className="text-sm text-gray">
+                            House of Worship, Lalitpur
+                          </p>
                         </div>
                       </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaCalendarAlt className="text-dark" size={13} />
+                          <p className="text-sm text-gray">
+                            <span className="mr-3">Dec 35, 2023</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaClock className="text-dark" size={12} />
+                          <p className="text-sm text-gray">
+                            <span className="mr-3">10:00 AM -3:00 PM</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div className="flex items-center flex-wrap gap-x-2 mb-1 bg-green/5 py-2 px-2.5 border-r-4 border-green rounded">
                     <span className="w-[26px] h-[24px] green-gradient inline-flex items-center justify-center text-white rounded font-semibold">
@@ -323,15 +323,15 @@ const EventScreen = () => {
                       Days Remaining
                     </span>
                   </div>
-                  <div className="flex items-center gap-x-3 mt-3">
+                  <div className="flex items-center gap-x-3 mt-3 flex-wrap gap-y-2">
                     <button
-                      className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md flex-1 rounded whitespace-nowrap focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                       type="button"
                     >
-                      Register Now!
+                      Register Now
                     </button>
                     <button
-                      className="btn bg-blue capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition border-[1px]"
+                      className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md flex-1 whitespace-nowrap rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                       type="button"
                     >
                       See Details
@@ -365,31 +365,31 @@ const EventScreen = () => {
                       </div>
                     </div>
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaMapMarkerAlt className="text-dark" size={15} />
-                            <p className="text-sm text-gray">
-                              House of Worship, Lalitpur
-                            </p>
-                          </div>
-                        </div>
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaCalendarAlt className="text-dark" size={13} />
-                            <p className="text-sm text-gray">
-                              <span className="mr-3">Dec 35, 2023</span>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaClock className="text-dark" size={12} />
-                            <p className="text-sm text-gray">
-                              <span className="mr-3">10:00 AM -3:00 PM</span>
-                            </p>
-                          </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaMapMarkerAlt className="text-dark" size={15} />
+                          <p className="text-sm text-gray">
+                            House of Worship, Lalitpur
+                          </p>
                         </div>
                       </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaCalendarAlt className="text-dark" size={13} />
+                          <p className="text-sm text-gray">
+                            <span className="mr-3">Dec 35, 2023</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaClock className="text-dark" size={12} />
+                          <p className="text-sm text-gray">
+                            <span className="mr-3">10:00 AM -3:00 PM</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div className="flex items-center flex-wrap gap-x-2 mb-1 bg-red/5 py-2 px-2.5 border-r-4 border-red rounded">
                     <span className="w-[26px] h-[24px] red-gradient inline-flex items-center justify-center text-white rounded font-semibold">
@@ -399,9 +399,9 @@ const EventScreen = () => {
                       Days Remaining
                     </span>
                   </div>
-                  <div className="flex items-center gap-x-3 mt-3">
+                  <div className="flex items-center gap-x-3 mt-3 flex-wrap gap-y-2">
                     <button
-                      className="btn bg-blue capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md flex-1 whitespace-nowrap rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                       type="button"
                     >
                       See Details
@@ -435,31 +435,31 @@ const EventScreen = () => {
                       </div>
                     </div>
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaMapMarkerAlt className="text-dark" size={15} />
-                            <p className="text-sm text-gray">
-                              House of Worship, Lalitpur
-                            </p>
-                          </div>
-                        </div>
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaCalendarAlt className="text-dark" size={13} />
-                            <p className="text-sm text-gray">
-                              <span className="mr-3">Dec 35, 2023</span>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaClock className="text-dark" size={12} />
-                            <p className="text-sm text-gray">
-                              <span className="mr-3">10:00 AM -3:00 PM</span>
-                            </p>
-                          </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaMapMarkerAlt className="text-dark" size={15} />
+                          <p className="text-sm text-gray">
+                            House of Worship, Lalitpur
+                          </p>
                         </div>
                       </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaCalendarAlt className="text-dark" size={13} />
+                          <p className="text-sm text-gray">
+                            <span className="mr-3">Dec 35, 2023</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaClock className="text-dark" size={12} />
+                          <p className="text-sm text-gray">
+                            <span className="mr-3">10:00 AM -3:00 PM</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div className="flex items-center flex-wrap gap-x-2 mb-1 bg-green/5 py-2 px-2.5 border-r-4 border-green rounded">
                     <span className="w-[26px] h-[24px] green-gradient inline-flex items-center justify-center text-white rounded font-semibold">
@@ -469,9 +469,9 @@ const EventScreen = () => {
                       Days Remaining
                     </span>
                   </div>
-                  <div className="flex items-center gap-x-3 mt-3">
+                  <div className="flex items-center gap-x-3 mt-3 flex-wrap gap-y-2">
                     <button
-                      className="btn bg-blue capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md flex-1 whitespace-nowrap rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                       type="button"
                     >
                       See Details
@@ -505,31 +505,31 @@ const EventScreen = () => {
                       </div>
                     </div>
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaMapMarkerAlt className="text-dark" size={15} />
-                            <p className="text-sm text-gray">
-                              House of Worship, Lalitpur
-                            </p>
-                          </div>
-                        </div>
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaCalendarAlt className="text-dark" size={13} />
-                            <p className="text-sm text-gray">
-                              <span className="mr-3">Dec 35, 2023</span>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaClock className="text-dark" size={12} />
-                            <p className="text-sm text-gray">
-                              <span className="mr-3">10:00 AM -3:00 PM</span>
-                            </p>
-                          </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaMapMarkerAlt className="text-dark" size={15} />
+                          <p className="text-sm text-gray">
+                            House of Worship, Lalitpur
+                          </p>
                         </div>
                       </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaCalendarAlt className="text-dark" size={13} />
+                          <p className="text-sm text-gray">
+                            <span className="mr-3">Dec 35, 2023</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaClock className="text-dark" size={12} />
+                          <p className="text-sm text-gray">
+                            <span className="mr-3">10:00 AM -3:00 PM</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div className="flex items-center flex-wrap gap-x-2 mb-1 bg-green/5 py-2 px-2.5 border-r-4 border-green rounded">
                     <span className="w-[26px] h-[24px] green-gradient inline-flex items-center justify-center text-white rounded font-semibold">
@@ -539,9 +539,9 @@ const EventScreen = () => {
                       Days Remaining
                     </span>
                   </div>
-                  <div className="flex items-center gap-x-3 mt-3">
+                  <div className="flex items-center gap-x-3 mt-3 flex-wrap gap-y-2">
                     <button
-                      className="btn bg-blue capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md flex-1 whitespace-nowrap rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                       type="button"
                     >
                       See Details
@@ -575,31 +575,31 @@ const EventScreen = () => {
                       </div>
                     </div>
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaMapMarkerAlt className="text-dark" size={15} />
-                            <p className="text-sm text-gray">
-                              House of Worship, Lalitpur
-                            </p>
-                          </div>
-                        </div>
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaCalendarAlt className="text-dark" size={13} />
-                            <p className="text-sm text-gray">
-                              <span className="mr-3">Dec 35, 2023</span>
-                            </p>
-                          </div>
-                        </div>
-                        <div className="inline-flex flex-row items-center">
-                          <div className="inline-flex items-center gap-x-2">
-                            <FaClock className="text-dark" size={12} />
-                            <p className="text-sm text-gray">
-                              <span className="mr-3">10:00 AM -3:00 PM</span>
-                            </p>
-                          </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaMapMarkerAlt className="text-dark" size={15} />
+                          <p className="text-sm text-gray">
+                            House of Worship, Lalitpur
+                          </p>
                         </div>
                       </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaCalendarAlt className="text-dark" size={13} />
+                          <p className="text-sm text-gray">
+                            <span className="mr-3">Dec 35, 2023</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="inline-flex flex-row items-center">
+                        <div className="inline-flex items-center gap-x-2">
+                          <FaClock className="text-dark" size={12} />
+                          <p className="text-sm text-gray">
+                            <span className="mr-3">10:00 AM -3:00 PM</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div className="flex items-center flex-wrap gap-x-2 mb-1 bg-green/5 py-2 px-2.5 border-r-4 border-green rounded">
                     <span className="w-[26px] h-[24px] green-gradient inline-flex items-center justify-center text-white rounded font-semibold">
@@ -609,15 +609,15 @@ const EventScreen = () => {
                       Days Remaining
                     </span>
                   </div>
-                  <div className="flex items-center gap-x-3 mt-3">
+                  <div className="flex items-center gap-x-3 mt-3 flex-wrap gap-y-2">
                     <button
-                      className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition"
+                      className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md flex-1 rounded whitespace-nowrap focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                       type="button"
                     >
-                      Register Now!
+                      Register Now
                     </button>
                     <button
-                      className="btn bg-blue capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none default-transition border-[1px]"
+                      className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md flex-1 whitespace-nowrap rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                       type="button"
                     >
                       See Details

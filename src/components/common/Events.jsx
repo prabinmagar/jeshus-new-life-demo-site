@@ -33,7 +33,7 @@ const Events = () => {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 992,
         settings: {
           slidesToShow: 2,
         },
@@ -127,15 +127,15 @@ const Events = () => {
                         Days Remaining
                       </span>
                     </div>
-                    <div className="flex items-center gap-x-3 mt-3">
+                    <div className="flex items-center gap-x-3 mt-3 flex-wrap gap-y-2">
                       <button
-                        className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
+                        className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md flex-1 rounded whitespace-nowrap focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                         type="button"
                       >
                         Register Now
                       </button>
                       <button
-                        className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
+                        className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md flex-1 whitespace-nowrap rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                         type="button"
                       >
                         See Details
@@ -205,9 +205,9 @@ const Events = () => {
                         Days Remaining
                       </span>
                     </div>
-                    <div className="flex items-center gap-x-3 mt-3">
+                    <div className="flex items-center gap-x-3 mt-3 flex-wrap gap-y-2">
                       <button
-                        className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
+                        className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md flex-1 whitespace-nowrap rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                         type="button"
                       >
                         See Details
@@ -277,15 +277,15 @@ const Events = () => {
                         Days Remaining
                       </span>
                     </div>
-                    <div className="flex items-center gap-x-3 mt-3">
+                    <div className="flex items-center gap-x-3 mt-3 flex-wrap gap-y-2">
                       <button
-                        className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
+                        className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md flex-1 rounded whitespace-nowrap focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                         type="button"
                       >
                         Register Now
                       </button>
                       <button
-                        className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
+                        className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md flex-1 whitespace-nowrap rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                         type="button"
                       >
                         See Details
@@ -355,15 +355,15 @@ const Events = () => {
                         Days Remaining
                       </span>
                     </div>
-                    <div className="flex items-center gap-x-3 mt-3">
+                    <div className="flex items-center gap-x-3 mt-3 flex-wrap gap-y-2">
                       <button
-                        className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
+                        className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md flex-1 rounded whitespace-nowrap focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                         type="button"
                       >
                         Register Now
                       </button>
                       <button
-                        className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition border-[1px]"
+                        className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md flex-1 whitespace-nowrap rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition border-[1px]"
                         type="button"
                       >
                         See Details
@@ -433,15 +433,15 @@ const Events = () => {
                         Days Remaining
                       </span>
                     </div>
-                    <div className="flex items-center gap-x-3 mt-3">
+                    <div className="flex items-center gap-x-3 mt-3 flex-wrap gap-y-2">
                       <button
-                        className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
+                        className="btn bg-red capitalize py-1.5 px-2 text-center shadow-md flex-1 rounded whitespace-nowrap focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                         type="button"
                       >
                         Register Now
                       </button>
                       <button
-                        className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
+                        className="btn bg-blue capitalize py-1.5 px-3 text-center shadow-md flex-1 whitespace-nowrap rounded focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hover:scale-105 default-transition"
                         type="button"
                       >
                         See Details
