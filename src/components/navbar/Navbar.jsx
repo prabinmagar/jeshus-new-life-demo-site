@@ -34,7 +34,7 @@ const Navbar = () => {
   const hasBackground = useNavbarBackground(scrollThreshold);
   const navbarStyle = hasBackground
     ? `bg-white shadow-normal scrolled-navbar h-[72px]`
-    : "bg-transparent h-[78px]";
+    : "bg-transparent h-[84px]";
 
   const [openRight, setOpenRight] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
