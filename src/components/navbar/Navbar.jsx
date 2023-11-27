@@ -61,12 +61,12 @@ const Navbar = () => {
         placement="right"
         open={openRight}
         onClose={closeDrawerRight}
-        className="p-4 sidebar-drawer"
+        className="py-4 px-2 sidebar-drawer red-gradient shadow-shadow3 border-l-[3px] border-l-white"
       >
-        <div className="mb-6 flex items-center justify-between">
+        <div className="mb-6 flex items-center justify-between absolute right-3 top-3">
           <IconButton
             variant="text"
-            color="blue-gray"
+            className="bg-white rounded w-[34px] h-[34px] ms-auto hover:opacity-90 default-transition"
             onClick={closeDrawerRight}
           >
             <svg
@@ -86,79 +86,103 @@ const Navbar = () => {
           </IconButton>
         </div>
         <div className="grid gap-y-6">
+          <div className="px-3 flex items-center gap-x-2 text-2xl text-white font-bold border-b-[1px] border-b-white/30 pb-3">
+            <BiSolidLeaf className="text-red" />
+            <span
+              className="text-white">
+              YNL.
+            </span>
+          </div>
           <ul className="flex flex-col gap-y-2">
-            <li>
+          <li>
               <Link
-                to=""
-                className="text-black text-base capitalize py-1 block hover:opacity-80 font-inter tracking-[0.5px] font-medium border-b-[1px] border-gray outline-none"
+                to="/"
+                className="text-white text-base capitalize py-2 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none px-3 hover:bg-white/10 hover:rounded"
               >
-                Locations
+                Home
               </Link>
             </li>
             <li>
               <Link
-                to=""
-                className="text-black text-base capitalize py-1 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none"
-              >
-                Ministries
-              </Link>
-            </li>
-            <li>
-              <Link
-                to=""
-                className="text-black text-base capitalize py-1 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none"
-              >
-                Missionary
-              </Link>
-            </li>
-            <li>
-              <Link
-                to=""
-                className="text-black text-base capitalize py-1 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none"
+                to="/event"
+                className="text-white text-base capitalize py-2 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none px-3 hover:bg-white/10 hover:rounded"
               >
                 Events
               </Link>
             </li>
             <li>
               <Link
-                to="/media2"
-                className="text-black text-base capitalize py-1 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none"
+                to="/branch"
+                className="text-white text-base capitalize py-2 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none px-3 hover:bg-white/10 hover:rounded"
               >
-                Testimonials
+                Locations
               </Link>
             </li>
             <li>
               <Link
-                to=""
-                className="text-black text-base capitalize py-1 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none"
+                to="/gallery"
+                className="text-white text-base capitalize py-2 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none px-3 hover:bg-white/10 hover:rounded"
+              >
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/article"
+                className="text-white text-base capitalize py-2 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none px-3 hover:bg-white/10 hover:rounded"
               >
                 Articles
               </Link>
             </li>
+            <li>
+              <Link
+                to="/about"
+                className="text-white text-base capitalize py-2 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none px-3 hover:bg-white/10 hover:rounded"
+              >
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/media"
+                className="text-white text-base capitalize py-2 block hover:opacity-80 font-inter tracking-[0.5px] font-medium outline-none px-3 hover:bg-white/10 hover:rounded"
+              >
+                Sermons
+              </Link>
+            </li>
           </ul>
-          <ul className="flex items-center gap-x-4">
+          <ul className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-3 px-3">
             <li>
               <Link
                 to=""
-                className="text-white w-[38px] h-[36px] shadow-md inline-flex items-center justify-center rounded bg-blue"
+                className="text-white w-[38px] h-[36px] shadow-md inline-flex items-center justify-center rounded-full bg-blue group border-[1px] border-white hover:border-transparent"
               >
-                <FaFacebookSquare size={24} />
+                <FaFacebookSquare
+                  size={20}
+                  className="group-hover:scale-90 default-transition"
+                />
               </Link>
             </li>
             <li>
               <Link
                 to=""
-                className="text-white w-[38px] h-[36px] shadow-md inline-flex items-center justify-center rounded bg-green"
+                className="text-white w-[38px] h-[36px] shadow-md inline-flex items-center justify-center rounded-full instagram group border-[1px] border-white hover:border-transparent"
               >
-                <FaEnvelope size={24} />
+                <FaInstagram
+                  size={20}
+                  className="group-hover:scale-90 default-transition"
+                />
               </Link>
             </li>
             <li>
               <Link
                 to=""
-                className="text-white w-[38px] h-[36px] shadow-md inline-flex items-center justify-center rounded bg-red"
+                className="text-white w-[38px] h-[36px] shadow-md inline-flex items-center justify-center rounded-full bg-red group border-[1px] border-white hover:border-transparent"
               >
-                <TbBrandYoutubeFilled size={27} className="me-[1px]" />
+                <TbBrandYoutubeFilled
+                  size={23}
+                  className="me-[1px] group-hover:scale-90 default-transition"
+                />
               </Link>
             </li>
           </ul>
