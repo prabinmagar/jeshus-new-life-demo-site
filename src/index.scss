@@ -175,19 +175,6 @@ $font-family-inter: "Inter", sans-serif;
 
 // navbar
 .scrolled-navbar {
-  // .navbar-brand {
-  //   border-color: $red;
-  //   span {
-  //     &:first-child {
-  //       background-color: $red;
-  //       color: #fff;
-  //     }
-  //     &:last-child {
-  //       color: $dark;
-  //     }
-  //   }
-  // }
-
   .nav-brand {
     span {
       color: #020617;
@@ -219,6 +206,7 @@ $font-family-inter: "Inter", sans-serif;
 body {
   position: relative;
 }
+
 // sidebar drawer css fixes
 header {
   .backdrop-blur-sm {
@@ -265,4 +253,7 @@ header {
 
 .hero-text{
   line-height: 1.15!important;
+}
+.border-white-2{
+  border: 2px solid #ffff!important;
 }

@@ -1,4 +1,4 @@
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaClock, FaMapMarkerAlt } from "react-icons/fa";
 import { EventDialog } from "../../components/common/EventDialog";
 import staticImages from "../../utils/images";
 import { useEffect, useState } from "react";
@@ -66,24 +66,32 @@ const EventScreen = () => {
                         2073 Annual Seminar With Congregation
                       </div>
                     </div>
-                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-                      <div className="inline-flex flex-row items-center">
-                        <div className="inline-flex items-center gap-x-2">
-                          <FaMapMarkerAlt className="text-dark" size={13} />
-                          <p className="text-sm text-gray">
-                            House of Worship, Lalitpur
-                          </p>
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaMapMarkerAlt className="text-dark" size={15} />
+                            <p className="text-sm text-gray">
+                              House of Worship, Lalitpur
+                            </p>
+                          </div>
+                        </div>
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaCalendarAlt className="text-dark" size={13} />
+                            <p className="text-sm text-gray">
+                              <span className="mr-3">Dec 35, 2023</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaClock className="text-dark" size={12} />
+                            <p className="text-sm text-gray">
+                              <span className="mr-3">10:00 AM -3:00 PM</span>
+                            </p>
+                          </div>
                         </div>
                       </div>
-                      <div className="inline-flex flex-row items-center">
-                        <div className="inline-flex items-center gap-x-2">
-                          <FaCalendarAlt className="text-dark" size={12} />
-                          <p className="text-sm text-gray">
-                            <span className="mr-3">Dec 35, 2023</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                   <div className="flex items-center flex-wrap gap-x-2 mb-1 bg-red/5 py-2 px-2.5 border-r-4 border-red rounded">
                     <span className="w-[26px] h-[24px] red-gradient inline-flex items-center justify-center text-white rounded font-semibold">
@@ -134,24 +142,32 @@ const EventScreen = () => {
                         2073 Annual Seminar With Congregation
                       </div>
                     </div>
-                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-                      <div className="inline-flex flex-row items-center">
-                        <div className="inline-flex items-center gap-x-2">
-                          <FaMapMarkerAlt className="text-dark" size={13} />
-                          <p className="text-sm text-gray">
-                            House of Worship, Lalitpur
-                          </p>
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaMapMarkerAlt className="text-dark" size={15} />
+                            <p className="text-sm text-gray">
+                              House of Worship, Lalitpur
+                            </p>
+                          </div>
+                        </div>
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaCalendarAlt className="text-dark" size={13} />
+                            <p className="text-sm text-gray">
+                              <span className="mr-3">Dec 35, 2023</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaClock className="text-dark" size={12} />
+                            <p className="text-sm text-gray">
+                              <span className="mr-3">10:00 AM -3:00 PM</span>
+                            </p>
+                          </div>
                         </div>
                       </div>
-                      <div className="inline-flex flex-row items-center">
-                        <div className="inline-flex items-center gap-x-2">
-                          <FaCalendarAlt className="text-dark" size={12} />
-                          <p className="text-sm text-gray">
-                            <span className="mr-3">Dec 35, 2023</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                   <div className="flex items-center flex-wrap gap-x-2 mb-1 bg-green/5 py-2 px-2.5 border-r-4 border-green rounded">
                     <span className="w-[26px] h-[24px] green-gradient inline-flex items-center justify-center text-white rounded font-semibold">
@@ -196,24 +212,32 @@ const EventScreen = () => {
                         2073 Annual Seminar With Congregation
                       </div>
                     </div>
-                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-                      <div className="inline-flex flex-row items-center">
-                        <div className="inline-flex items-center gap-x-2">
-                          <FaMapMarkerAlt className="text-dark" size={13} />
-                          <p className="text-sm text-gray">
-                            House of Worship, Lalitpur
-                          </p>
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaMapMarkerAlt className="text-dark" size={15} />
+                            <p className="text-sm text-gray">
+                              House of Worship, Lalitpur
+                            </p>
+                          </div>
+                        </div>
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaCalendarAlt className="text-dark" size={13} />
+                            <p className="text-sm text-gray">
+                              <span className="mr-3">Dec 35, 2023</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaClock className="text-dark" size={12} />
+                            <p className="text-sm text-gray">
+                              <span className="mr-3">10:00 AM -3:00 PM</span>
+                            </p>
+                          </div>
                         </div>
                       </div>
-                      <div className="inline-flex flex-row items-center">
-                        <div className="inline-flex items-center gap-x-2">
-                          <FaCalendarAlt className="text-dark" size={12} />
-                          <p className="text-sm text-gray">
-                            <span className="mr-3">Dec 35, 2023</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                   <div className="flex items-center flex-wrap gap-x-2 mb-1 bg-green/5 py-2 px-2.5 border-r-4 border-green rounded">
                     <span className="w-[26px] h-[24px] green-gradient inline-flex items-center justify-center text-white rounded font-semibold">
@@ -264,24 +288,32 @@ const EventScreen = () => {
                         2073 Annual Seminar With Congregation
                       </div>
                     </div>
-                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-                      <div className="inline-flex flex-row items-center">
-                        <div className="inline-flex items-center gap-x-2">
-                          <FaMapMarkerAlt className="text-dark" size={13} />
-                          <p className="text-sm text-gray">
-                            House of Worship, Lalitpur
-                          </p>
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaMapMarkerAlt className="text-dark" size={15} />
+                            <p className="text-sm text-gray">
+                              House of Worship, Lalitpur
+                            </p>
+                          </div>
+                        </div>
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaCalendarAlt className="text-dark" size={13} />
+                            <p className="text-sm text-gray">
+                              <span className="mr-3">Dec 35, 2023</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaClock className="text-dark" size={12} />
+                            <p className="text-sm text-gray">
+                              <span className="mr-3">10:00 AM -3:00 PM</span>
+                            </p>
+                          </div>
                         </div>
                       </div>
-                      <div className="inline-flex flex-row items-center">
-                        <div className="inline-flex items-center gap-x-2">
-                          <FaCalendarAlt className="text-dark" size={12} />
-                          <p className="text-sm text-gray">
-                            <span className="mr-3">Dec 35, 2023</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                   <div className="flex items-center flex-wrap gap-x-2 mb-1 bg-green/5 py-2 px-2.5 border-r-4 border-green rounded">
                     <span className="w-[26px] h-[24px] green-gradient inline-flex items-center justify-center text-white rounded font-semibold">
@@ -332,24 +364,32 @@ const EventScreen = () => {
                         2073 Annual Seminar With Congregation
                       </div>
                     </div>
-                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-                      <div className="inline-flex flex-row items-center">
-                        <div className="inline-flex items-center gap-x-2">
-                          <FaMapMarkerAlt className="text-dark" size={13} />
-                          <p className="text-sm text-gray">
-                            House of Worship, Lalitpur
-                          </p>
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaMapMarkerAlt className="text-dark" size={15} />
+                            <p className="text-sm text-gray">
+                              House of Worship, Lalitpur
+                            </p>
+                          </div>
+                        </div>
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaCalendarAlt className="text-dark" size={13} />
+                            <p className="text-sm text-gray">
+                              <span className="mr-3">Dec 35, 2023</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaClock className="text-dark" size={12} />
+                            <p className="text-sm text-gray">
+                              <span className="mr-3">10:00 AM -3:00 PM</span>
+                            </p>
+                          </div>
                         </div>
                       </div>
-                      <div className="inline-flex flex-row items-center">
-                        <div className="inline-flex items-center gap-x-2">
-                          <FaCalendarAlt className="text-dark" size={12} />
-                          <p className="text-sm text-gray">
-                            <span className="mr-3">Dec 35, 2023</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                   <div className="flex items-center flex-wrap gap-x-2 mb-1 bg-red/5 py-2 px-2.5 border-r-4 border-red rounded">
                     <span className="w-[26px] h-[24px] red-gradient inline-flex items-center justify-center text-white rounded font-semibold">
@@ -394,24 +434,32 @@ const EventScreen = () => {
                         2073 Annual Seminar With Congregation
                       </div>
                     </div>
-                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-                      <div className="inline-flex flex-row items-center">
-                        <div className="inline-flex items-center gap-x-2">
-                          <FaMapMarkerAlt className="text-dark" size={13} />
-                          <p className="text-sm text-gray">
-                            House of Worship, Lalitpur
-                          </p>
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaMapMarkerAlt className="text-dark" size={15} />
+                            <p className="text-sm text-gray">
+                              House of Worship, Lalitpur
+                            </p>
+                          </div>
+                        </div>
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaCalendarAlt className="text-dark" size={13} />
+                            <p className="text-sm text-gray">
+                              <span className="mr-3">Dec 35, 2023</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaClock className="text-dark" size={12} />
+                            <p className="text-sm text-gray">
+                              <span className="mr-3">10:00 AM -3:00 PM</span>
+                            </p>
+                          </div>
                         </div>
                       </div>
-                      <div className="inline-flex flex-row items-center">
-                        <div className="inline-flex items-center gap-x-2">
-                          <FaCalendarAlt className="text-dark" size={12} />
-                          <p className="text-sm text-gray">
-                            <span className="mr-3">Dec 35, 2023</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                   <div className="flex items-center flex-wrap gap-x-2 mb-1 bg-green/5 py-2 px-2.5 border-r-4 border-green rounded">
                     <span className="w-[26px] h-[24px] green-gradient inline-flex items-center justify-center text-white rounded font-semibold">
@@ -456,24 +504,32 @@ const EventScreen = () => {
                         2073 Annual Seminar With Congregation
                       </div>
                     </div>
-                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-                      <div className="inline-flex flex-row items-center">
-                        <div className="inline-flex items-center gap-x-2">
-                          <FaMapMarkerAlt className="text-dark" size={13} />
-                          <p className="text-sm text-gray">
-                            House of Worship, Lalitpur
-                          </p>
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaMapMarkerAlt className="text-dark" size={15} />
+                            <p className="text-sm text-gray">
+                              House of Worship, Lalitpur
+                            </p>
+                          </div>
+                        </div>
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaCalendarAlt className="text-dark" size={13} />
+                            <p className="text-sm text-gray">
+                              <span className="mr-3">Dec 35, 2023</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaClock className="text-dark" size={12} />
+                            <p className="text-sm text-gray">
+                              <span className="mr-3">10:00 AM -3:00 PM</span>
+                            </p>
+                          </div>
                         </div>
                       </div>
-                      <div className="inline-flex flex-row items-center">
-                        <div className="inline-flex items-center gap-x-2">
-                          <FaCalendarAlt className="text-dark" size={12} />
-                          <p className="text-sm text-gray">
-                            <span className="mr-3">Dec 35, 2023</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                   <div className="flex items-center flex-wrap gap-x-2 mb-1 bg-green/5 py-2 px-2.5 border-r-4 border-green rounded">
                     <span className="w-[26px] h-[24px] green-gradient inline-flex items-center justify-center text-white rounded font-semibold">
@@ -518,24 +574,32 @@ const EventScreen = () => {
                         2073 Annual Seminar With Congregation
                       </div>
                     </div>
-                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-                      <div className="inline-flex flex-row items-center">
-                        <div className="inline-flex items-center gap-x-2">
-                          <FaMapMarkerAlt className="text-dark" size={13} />
-                          <p className="text-sm text-gray">
-                            House of Worship, Lalitpur
-                          </p>
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaMapMarkerAlt className="text-dark" size={15} />
+                            <p className="text-sm text-gray">
+                              House of Worship, Lalitpur
+                            </p>
+                          </div>
+                        </div>
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaCalendarAlt className="text-dark" size={13} />
+                            <p className="text-sm text-gray">
+                              <span className="mr-3">Dec 35, 2023</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div className="inline-flex flex-row items-center">
+                          <div className="inline-flex items-center gap-x-2">
+                            <FaClock className="text-dark" size={12} />
+                            <p className="text-sm text-gray">
+                              <span className="mr-3">10:00 AM -3:00 PM</span>
+                            </p>
+                          </div>
                         </div>
                       </div>
-                      <div className="inline-flex flex-row items-center">
-                        <div className="inline-flex items-center gap-x-2">
-                          <FaCalendarAlt className="text-dark" size={12} />
-                          <p className="text-sm text-gray">
-                            <span className="mr-3">Dec 35, 2023</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                   <div className="flex items-center flex-wrap gap-x-2 mb-1 bg-green/5 py-2 px-2.5 border-r-4 border-green rounded">
                     <span className="w-[26px] h-[24px] green-gradient inline-flex items-center justify-center text-white rounded font-semibold">

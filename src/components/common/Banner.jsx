@@ -16,10 +16,10 @@ const Banner = () => {
         </video>
         <div className="text-white flex items-center justify-center pt-[80px] absolute top-0 bottom-0 left-0 right-0 z-50">
           <div className="container py-12" data-aos="fade-up">
-            <h1 className="uppercase text-center xxl:text-7xl lg:6xl text-5xl font-semibold drop-shadow-lg">
+            <h1 className="uppercase text-center xxl:text-7xl lg:6xl text-5xl font-semibold drop-shadow-lg font-lora">
               Welcome to Our{" "}
             </h1>
-            <h3 className="xxl:text-5xl lg:text-4xl text-3xl drop-shadow-lg mt-4 uppercase font-medium mb-10 text-center">
+            <h3 className="xxl:text-5xl lg:text-4xl text-3xl drop-shadow-lg mt-4 uppercase font-medium mb-10 text-center font-lora">
               Yeshua new life
             </h3>
             <p className="text-xl max-w-[620px] text-center opacity-90 mx-auto drop-shadow">

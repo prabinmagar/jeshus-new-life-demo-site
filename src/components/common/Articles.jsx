@@ -36,7 +36,7 @@ const Articles = () => {
                   इतिहास तथा भूगोल
                 </div>
               </div>
-              <h3 className="font-bold text-gray-800 md:text-2xl text-xl">
+              <h3 className="font-bold text-gray-800 md:text-2xl text-xl font-lora font-lora">
                 सञ्चारको पहुँच पुग्न नसकेको एउटा गाउँ
               </h3>
               <div className="my-5">
@@ -96,7 +96,7 @@ const Articles = () => {
                   इतिहास तथा भूगोल
                 </div>
               </div>
-              <h3 className="font-bold text-gray-800 md:text-2xl text-xl">
+              <h3 className="font-bold text-gray-800 md:text-2xl text-xl font-lora">
                 सञ्चारको पहुँच पुग्न नसकेको एउटा गाउँ
               </h3>
               <div className="my-5">
@@ -156,7 +156,7 @@ const Articles = () => {
                   इतिहास तथा भूगोल
                 </div>
               </div>
-              <h3 className="font-bold text-gray-800 md:text-2xl text-xl">
+              <h3 className="font-bold text-gray-800 md:text-2xl text-xl font-lora">
                 सञ्चारको पहुँच पुग्न नसकेको एउटा गाउँ
               </h3>
               <div className="my-5">
@@ -216,7 +216,7 @@ const Articles = () => {
                   इतिहास तथा भूगोल
                 </div>
               </div>
-              <h3 className="font-bold text-gray-800 md:text-2xl text-xl">
+              <h3 className="font-bold text-gray-800 md:text-2xl text-xl font-lora">
                 Every Next Level of Your Life Will Demand a Different You
               </h3>
               <div className="my-5">

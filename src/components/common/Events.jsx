@@ -88,11 +88,11 @@ const Events = () => {
                   <div className="lg:px-5 p-4 flex flex-col justify-between flex-1">
                     <div className="mb-3 flex items-start flex-col">
                       <div className="flex flex-col">
-                        <div className="w-full text-xl xl:leading-8 text-gray-200 font-bold mb-3">
+                        <div className="w-full text-xl xl:leading-8 text-gray-200 font-bold mb-3 font-lora">
                           2073 Annual Seminar With Congregation
                         </div>
                       </div>
-                      <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+                      <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1.5">
                         <div className="inline-flex flex-row items-center">
                           <div className="inline-flex items-center gap-x-2">
                             <FaMapMarkerAlt className="text-dark" size={15} />
@@ -166,11 +166,11 @@ const Events = () => {
                   <div className="lg:px-5 p-4 flex flex-col justify-between flex-1">
                     <div className="mb-3 flex items-start flex-col">
                       <div className="flex flex-col">
-                        <div className="w-full text-xl xl:leading-8 text-gray-200 font-bold mb-3">
+                        <div className="w-full text-xl xl:leading-8 text-gray-200 font-bold mb-3 font-lora">
                           2073 Annual Seminar With Congregation
                         </div>
                       </div>
-                      <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+                      <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
                         <div className="inline-flex flex-row items-center">
                           <div className="inline-flex items-center gap-x-2">
                             <FaMapMarkerAlt className="text-dark" size={15} />
@@ -238,11 +238,11 @@ const Events = () => {
                   <div className="lg:px-5 p-4 flex flex-col justify-between flex-1">
                     <div className="mb-3 flex items-start flex-col">
                       <div className="flex flex-col">
-                        <div className="w-full text-xl xl:leading-8 text-gray-200 font-bold mb-3">
+                        <div className="w-full text-xl xl:leading-8 text-gray-200 font-bold mb-3 font-lora">
                           2073 Annual Seminar With Congregation
                         </div>
                       </div>
-                      <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+                      <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
                         <div className="inline-flex flex-row items-center">
                           <div className="inline-flex items-center gap-x-2">
                             <FaMapMarkerAlt className="text-dark" size={15} />
@@ -316,11 +316,11 @@ const Events = () => {
                   <div className="lg:px-5 p-4 flex flex-col justify-between flex-1">
                     <div className="mb-3 flex items-start flex-col">
                       <div className="flex flex-col">
-                        <div className="w-full text-xl xl:leading-8 text-gray-200 font-bold mb-3">
+                        <div className="w-full text-xl xl:leading-8 text-gray-200 font-bold mb-3 font-lora">
                           2073 Annual Seminar With Congregation
                         </div>
                       </div>
-                      <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+                      <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
                         <div className="inline-flex flex-row items-center">
                           <div className="inline-flex items-center gap-x-2">
                             <FaMapMarkerAlt className="text-dark" size={15} />
@@ -394,11 +394,11 @@ const Events = () => {
                   <div className="lg:px-5 p-4 flex flex-col justify-between flex-1">
                     <div className="mb-3 flex items-start flex-col">
                       <div className="flex flex-col">
-                        <div className="w-full text-xl xl:leading-8 text-gray-200 font-bold mb-3">
+                        <div className="w-full text-xl xl:leading-8 text-gray-200 font-bold mb-3 font-lora">
                           2073 Annual Seminar With Congregation
                         </div>
                       </div>
-                      <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+                      <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 my-1">
                         <div className="inline-flex flex-row items-center">
                           <div className="inline-flex items-center gap-x-2">
                             <FaMapMarkerAlt className="text-dark" size={15} />

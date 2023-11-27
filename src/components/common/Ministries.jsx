@@ -36,12 +36,12 @@ const Ministries = () => {
                 />
                 <button
                   onClick={onVideoDialogOpen}
-                  className="absolute top-1/3 left-1/2 -translate-x-1/2 bg-red text-white font-semibold px-3 py-2 rounded shadow-xl opacity-0 group-hover:opacity-100 default-transition"
+                  className="absolute top-1/3 left-1/2 -translate-x-1/2 bg-red text-white font-semibold px-3 whitespace-nowrap py-2 rounded shadow-xl opacity-0 border-white-2 hover:bg-white group-hover:opacity-100 hover:text-dark default-transition"
                 >
                   Watch Intro Video
                 </button>
                 <div className="absolute bottom-2 left-1/2 text-center bg-white/90 rounded -translate-x-1/2 w-[92%] py-3 px-2">
-                  <h3 className="text-xl font-semibold capitalize text-red mb-1">
+                  <h3 className="text-xl font-semibold capitalize text-red mb-1 font-lora">
                     Children’s Ministry
                   </h3>
                   <p className="text text-gray">
@@ -60,12 +60,12 @@ const Ministries = () => {
                 />
                 <button
                   onClick={onVideoDialogOpen}
-                  className="absolute top-1/3 left-1/2 -translate-x-1/2 bg-red text-white font-semibold px-3 py-2 rounded shadow-xl opacity-0 group-hover:opacity-100 default-transition"
+                  className="absolute top-1/3 left-1/2 -translate-x-1/2 bg-red text-white font-semibold px-3 whitespace-nowrap py-2 rounded shadow-xl opacity-0 border-white-2 hover:bg-white group-hover:opacity-100 hover:text-dark default-transition"
                 >
                   Watch Intro Video
                 </button>
                 <div className="absolute bottom-2 left-1/2 text-center bg-white/90 rounded -translate-x-1/2 w-[92%] py-3 px-2">
-                  <h3 className="text-xl font-semibold capitalize text-blue mb-1">
+                  <h3 className="text-xl font-semibold capitalize text-blue mb-1 font-lora">
                     Youth Ministry
                   </h3>
                   <p className="text text-gray">
@@ -85,12 +85,12 @@ const Ministries = () => {
                 />
                 <button
                   onClick={onVideoDialogOpen}
-                  className="absolute top-1/3 left-1/2 -translate-x-1/2 bg-red text-white font-semibold px-3 py-2 rounded shadow-xl opacity-0 group-hover:opacity-100 default-transition"
+                  className="absolute top-1/3 left-1/2 -translate-x-1/2 bg-red text-white font-semibold px-3 whitespace-nowrap py-2 rounded shadow-xl opacity-0 border-white-2 hover:bg-white group-hover:opacity-100 hover:text-dark default-transition"
                 >
                   Watch Intro Video
                 </button>
                 <div className="absolute bottom-2 left-1/2 text-center bg-white/90 rounded -translate-x-1/2 w-[92%] py-3 px-2">
-                  <h3 className="text-xl font-semibold capitalize text-green mb-1">
+                  <h3 className="text-xl font-semibold capitalize text-green mb-1 font-lora">
                     Women’s ministry
                   </h3>
                   <p className="text text-gray">
@@ -110,12 +110,12 @@ const Ministries = () => {
                 />
                 <button
                   onClick={onVideoDialogOpen}
-                  className="absolute top-1/3 left-1/2 -translate-x-1/2 bg-red text-white font-semibold px-3 py-2 rounded shadow-xl opacity-0 group-hover:opacity-100 default-transition"
+                  className="absolute top-1/3 left-1/2 -translate-x-1/2 bg-red text-white font-semibold px-3 whitespace-nowrap py-2 rounded shadow-xl opacity-0 border-white-2 hover:bg-white group-hover:opacity-100 hover:text-dark default-transition"
                 >
                   Watch Intro Video
                 </button>
                 <div className="absolute bottom-2 left-1/2 text-center bg-white/90 rounded -translate-x-1/2 w-[92%] py-3 px-2">
-                  <h3 className="text-xl font-semibold capitalize text-gray mb-1">
+                  <h3 className="text-xl font-semibold capitalize text-gray mb-1 font-lora">
                     Mission and Outreach
                   </h3>
                   <p className="text text-gray">

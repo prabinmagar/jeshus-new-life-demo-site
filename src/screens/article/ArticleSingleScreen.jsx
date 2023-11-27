@@ -73,7 +73,7 @@ const ArticleSingleScreen = () => {
               </div>
               <div>
                 <div>
-                  <h2 className="text-2xl font-bold md:text-3xl">
+                  <h2 className="text-2xl font-bold md:text-3xl font-lora">
                     स्वास्थ्यको लागि घातक छन् यी फुड कम्बिनेशन
                   </h2>
                   {/* content stylings */}
@@ -273,7 +273,7 @@ const ArticleSingleScreen = () => {
                 </div>
                 <div>
                   <div className="mb-2">
-                    <h3 className="text-lg font-medium text-gray-800 dark:text-gray-300">
+                    <h3 className="text-lg font-medium text-gray-800 dark:text-gray-300 font-lora">
                       About David Paul
                     </h3>
                   </div>
@@ -297,18 +297,18 @@ const ArticleSingleScreen = () => {
             {/* end of author card */}
           </div>
 
-          <div className="sticky mt-6 bottom-6 inset-x-0 text-center">
+          <div className="fixed mt-6 bottom-6 inset-x-0 text-center">
             <div className="inline-block blue-gradient text-white shadow-md rounded-full py-3 px-4 dark:bg-gray-800">
               <div className="flex items-center gap-x-1.5">
                 <div className="hs-tooltip inline-block">
                   <button
                     type="button"
-                    className="hs-tooltip-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                   >
                     <BsFillEyeFill size={16} />
                     875
                     <span
-                      className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded-md shadow-sm dark:bg-black"
+                      className="hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded-md shadow-sm dark:bg-black"
                       role="tooltip"
                     >
                       Like
@@ -318,11 +318,10 @@ const ArticleSingleScreen = () => {
 
                 <div className="block h-3 border-r border-gray-300 mx-3 dark:border-gray-600"></div>
 
-                <div className="hs-dropdown relative inline-flex">
+                <div className="relative inline-flex">
                   <button
                     type="button"
-                    id="blog-article-share-dropdown"
-                    className="hs-dropdown-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                   >
                     <svg
                       className="w-4 h-4"

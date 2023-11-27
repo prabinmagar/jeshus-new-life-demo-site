@@ -209,9 +209,7 @@ const Navbar = () => {
                 >
                   <MenuHandler>
                     <Link className="text-white capitalize py-1 xl:mx-3 mx-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2 outline-none group">
-                      <span className="">
-                        About
-                      </span>
+                      <span className="">About</span>
                       <ChevronDownIcon
                         strokeWidth={2.5}
                         className={`h-3.5 w-3.5 transition-transform  ${
@@ -232,19 +230,33 @@ const Navbar = () => {
                           </h4>
                         </div>
                       </Link>
-                      <ScrollLink
-                        className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
-                        to="intro"
-                        smooth={true}
-                        duration={400}
-                        offset={-40}
-                      >
-                        <div className="px-1 py-1">
-                          <h4 className="text-sm font-medium text">
-                            Our beliefs
-                          </h4>
-                        </div>
-                      </ScrollLink>
+                      {location.pathname === "/" ? (
+                        <ScrollLink
+                          className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
+                          to="intro"
+                          smooth={true}
+                          duration={400}
+                          offset={-40}
+                        >
+                          <div className="px-1 py-1">
+                            <h4 className="text-sm font-medium text">
+                              Our beliefs
+                            </h4>
+                          </div>
+                        </ScrollLink>
+                      ) : (
+                        <Link
+                          className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
+                          to="/#intro"
+                        >
+                          <div className="px-1 py-1">
+                            <h4 className="text-sm font-medium text">
+                              Our beliefs
+                            </h4>
+                          </div>
+                        </Link>
+                      )}
+
                       <ScrollLink
                         className="w-full hover:bg-transparent active:bg-transparent py-0 px-1.5 cursor-pointer hover:bg-whitesmoke rounded"
                         to="members"
@@ -284,9 +296,7 @@ const Navbar = () => {
                 >
                   <MenuHandler>
                     <Link className="text-white capitalize py-1 xl:mx-3 mx-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2 outline-none group">
-                      <span className="">
-                        Locations
-                      </span>
+                      <span className="">Locations</span>
                       <ChevronDownIcon
                         strokeWidth={2.5}
                         className={`h-3.5 w-3.5 transition-transform  ${
@@ -359,9 +369,7 @@ const Navbar = () => {
                 >
                   <MenuHandler>
                     <Link className="text-white capitalize py-1 xl:mx-3 mx-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2 outline-none group">
-                      <span className="">
-                        Services
-                      </span>
+                      <span className="">Services</span>
                       <ChevronDownIcon
                         strokeWidth={2.5}
                         className={`h-3.5 w-3.5 transition-transform  ${
@@ -413,9 +421,7 @@ const Navbar = () => {
                 >
                   <MenuHandler>
                     <Link className="text-white capitalize py-1 xl:mx-3 mx-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium flex items-center gap-x-2 outline-none group">
-                      <span className="">
-                        Media
-                      </span>
+                      <span className="">Media</span>
                       <ChevronDownIcon
                         strokeWidth={2.5}
                         className={`h-3.5 w-3.5 transition-transform  ${
@@ -471,9 +477,7 @@ const Navbar = () => {
                   className="text-white capitalize py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium cursor-pointer group"
                   to="/event"
                 >
-                  <span className="">
-                    Events
-                  </span>
+                  <span className="">Events</span>
                 </Link>
               </li>
               <li>
@@ -481,9 +485,7 @@ const Navbar = () => {
                   to="/article"
                   className="text-white capitalize py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium group"
                 >
-                  <span className="">
-                    Articles
-                  </span>
+                  <span className="">Articles</span>
                 </Link>
               </li>
               <li>
@@ -491,9 +493,7 @@ const Navbar = () => {
                   to="/donate"
                   className="text-white capitalize py-1 xl:px-3 px-2 hover:opacity-80 font-inter tracking-[0.5px] font-medium inline-flex items-center gap-x-2 group"
                 >
-                  <span className="">
-                    Contribute
-                  </span>
+                  <span className="">Contribute</span>
                   <FaHandHoldingHeart className="" />
                 </Link>
               </li>
@@ -517,7 +517,7 @@ const Navbar = () => {
                   to=""
                   className="text-white w-[38px] h-[36px] shadow-md inline-flex items-center justify-center rounded-full instagram group"
                 >
-                  <FaInstagram 
+                  <FaInstagram
                     size={20}
                     className="group-hover:scale-90 default-transition"
                   />

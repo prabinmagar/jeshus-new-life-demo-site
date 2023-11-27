@@ -10,7 +10,6 @@ import staticImages from "../../utils/images";
 import { Link } from "react-router-dom";
 import {
   BsBookHalf,
-  BsFillCalendarCheckFill,
   BsFillEyeFill,
 } from "react-icons/bs";
 import { FaShareAlt } from "react-icons/fa";
@@ -107,7 +106,7 @@ const ArticlesScreen = () => {
                     <div className="mt-2">
                       <Link
                         to="/article/1"
-                        className="text-xl font-bold text-dark hover:text-red hover:underline"
+                        className="text-xl font-bold text-dark hover:text-red hover:underline font-lora"
                       >
                         बाइडेनले भने- इजरायल-हमास युद्ध रोकिनुपर्छ
                       </Link>
@@ -170,7 +169,7 @@ const ArticlesScreen = () => {
                     <div className="mt-2">
                       <Link
                         to="/article/1"
-                        className="text-xl font-bold text-dark hover:text-red hover:underline"
+                        className="text-xl font-bold text-dark hover:text-red hover:underline font-lora"
                       >
                         सञ्चारको पहुँच पुग्न नसकेको एउटा गाउँ
                       </Link>
@@ -229,7 +228,7 @@ const ArticlesScreen = () => {
                     <div className="mt-2">
                       <Link
                         to="/article/1"
-                        className="text-xl font-bold text-dark hover:text-red hover:underline"
+                        className="text-xl font-bold text-dark hover:text-red hover:underline font-lora"
                       >
                         आफ्नो इ‍च्छाअनुरूप पढ्ने कोठा यसरी सजाउनुस्
                       </Link>
@@ -288,7 +287,7 @@ const ArticlesScreen = () => {
                     <div className="mt-2">
                       <Link
                         to="/article/1"
-                        className="text-xl font-bold text-dark hover:text-red hover:underline"
+                        className="text-xl font-bold text-dark hover:text-red hover:underline font-lora"
                       >
                         What does the natural reveal about its existence?
                       </Link>
