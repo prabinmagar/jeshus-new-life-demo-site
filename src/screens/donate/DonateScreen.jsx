@@ -65,7 +65,7 @@ const DonateScreen = () => {
                   to="donate"
                   smooth={true}
                   duration={300}
-                  offset={-100}
+                  offset={-200}
                   className="mt-4 cursor-pointer relative inline-flex items-center gap-x-2 rounded border border-red bg-red px-3 py-2 pl-4 text-base text-white font-medium text-gray-500 hover:border-red hover:bg-white hover:text-red"
                 >
                   <span>Contribute</span>
